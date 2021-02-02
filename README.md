@@ -1,1 +1,0 @@
-# lexico-do-samba

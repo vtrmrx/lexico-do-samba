@@ -1,0 +1,92 @@
+[
+  {
+    "palavra": "amor",
+    "quantidade_total": "31458",
+    "artistas": [
+      {
+        "id": "alcione",
+        "artista": "Alcione",
+        "quantidade": "454",
+        "genero": "Mulher",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "MA"
+      },
+      {
+        "id": "chico-buarque",
+        "artista": "Chico Buarque",
+        "quantidade": "318",
+        "genero": "Homem",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "RJ"
+      },
+      {
+        "id": "paulinho-da-viola",
+        "artista": "Paulinho da Viola",
+        "quantidade": "140",
+        "genero": "Homem",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "RJ"
+      }
+    ]
+  },
+  {
+    "palavra": "amar",
+    "quantidade_total": "9816",
+    "artistas": [
+      {
+        "id": "alcione",
+        "artista": "Alcione",
+        "quantidade": "148",
+        "genero": "Mulher",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "MA"
+      },
+      {
+        "id": "chico-buarque",
+        "artista": "Chico Buarque",
+        "quantidade": "116",
+        "genero": "Homem",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "RJ"
+      },
+      {
+        "id": "paulinho-da-viola",
+        "artista": "Paulinho da Viola",
+        "quantidade": "38",
+        "genero": "Homem",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "RJ"
+      }
+    ]
+  },
+  {
+    "palavra": "ver",
+    "quantidade_total": "9632",
+    "artistas": [
+      {
+        "id": "alcione",
+        "artista": "Alcione",
+        "quantidade": "227",
+        "genero": "Mulher",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "MA"
+      },
+      {
+        "id": "chico-buarque",
+        "artista": "Chico Buarque",
+        "quantidade": "278",
+        "genero": "Homem",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "RJ"
+      },
+      {
+        "id": "paulinho-da-viola",
+        "artista": "Paulinho da Viola",
+        "quantidade": "58",
+        "genero": "Homem",
+        "decada_nascimento": "1940-1949",
+        "uf_nascimento": "RJ"
+      }
+    ]
+  }
+]
