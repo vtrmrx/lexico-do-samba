@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   let containerWidth = document.getElementById("mostUsedViz").offsetWidth,
+      viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
+      viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0),
+      aspectRatio = (viewportHeight > viewportWidth) ? 1 : viewportHeight / viewportWidth,
       svgWidth = containerWidth,
-      svgHeight = containerWidth / 2;
+      svgHeight = svgWidth * aspectRatio;
+
+  console.log(aspectRatio);
 
   let svg = d3.select("#mostUsedViz")
               .append("svg")
-              .attr("width", svgWidth)
-              .attr("height", svgHeight)
-              .attr("viewBox", `0 0 ${svgWidth} ${svgHeight}`);
+              .style("width", "100%")
+              .attr("viewBox", `0 0 ${svgWidth} ${Math.round(svgHeight)}`);
 
   svg.append("g").attr("class", "circle-nodes");
   svg.append("g").attr("class", "label-nodes");
@@ -16,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
   d3.csv("../assets/data/mostUsedWords_2.csv").then( function(data) {
 
     let dataSet = data,
-        rangeMin = containerWidth / 40,
-        rangeMax = containerWidth / 8;
+        rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
+        rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
 
-    setNodes(dataSet, svg, rangeMin, rangeMax);
+    setNodes(dataSet, svg, rangeMin, rangeMax, aspectRatio);
 
     let filtersDesktopContainer = d3.select("[data-filter-desktop]"),
         filtersMobileContainer = d3.select("[data-filter-mobile]");
@@ -32,11 +36,30 @@ document.addEventListener("DOMContentLoaded", function() {
     setFilters(availableOptions, filtersDesktopContainer, filtersMobileContainer);
 
     filtersDesktop.on("change", function(){
-      updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax);
+      updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
     });
 
     filtersMobile.on("change", function(){
-      updateFilters("mobile", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax);
+      updateFilters("mobile", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
+    });
+
+
+    let resizeTimeout;
+    window.addEventListener("resize", function(event) {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function(){
+        containerWidth = document.getElementById("mostUsedViz").offsetWidth,
+        viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
+        viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0),
+        aspectRatio = (viewportHeight > viewportWidth) ? 1 : viewportHeight / viewportWidth,
+        svgWidth = containerWidth,
+        svgHeight = svgWidth * aspectRatio,
+        rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
+        rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
+        svg.attr("viewBox", `0 0 ${svgWidth} ${ Math.round(svgHeight) }`);
+        console.log(aspectRatio);
+        updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
+      }, 1500);
     });
 
   });
@@ -74,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  function updateFilters(eventSource, dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax) {
+  function updateFilters(eventSource, dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio) {
     let dataSubset = dataSet;
     let filterArray = [],
         filterTarget = (eventSource == "mobile") ? filtersMobileContainer : filtersDesktopContainer,
@@ -87,11 +110,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       }
     });
+    let filtersSource = (eventSource == "mobile") ? filtersMobileContainer : filtersDesktopContainer,
+        filtersTarget = (eventSource == "mobile") ? filtersDesktopContainer : filtersMobileContainer;
+    filtersSource.selectAll("[data-filter-dynamic]")["_groups"][0].forEach(function(filter, i) {
+      let filterKey = filter.getAttribute("data-filter-key");
+      filtersTarget.select(`[data-filter-key="${filterKey}"]`)["_groups"][0][0].value = filter.value;
+    });
     if(dataSubset.length > 0) {
-      resetNodes(dataSubset, svg, rangeMin, rangeMax);
+      resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio);
     } else {
       console.log("busca não encontrou resultados");
-      resetNodes(dataSubset, svg, rangeMin, rangeMax);
+      resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio);
     }
   }
 
@@ -113,13 +142,14 @@ document.addEventListener("DOMContentLoaded", function() {
     return sortedWords;
   }
 
-  function setNodes(data, svg, rangeMin, rangeMax) {
+  function setNodes(data, svg, rangeMin, rangeMax, aspectRatio) {
 
     let sortedWords = sortWords(data);
     let domainMax = sortedWords[0].size;
     let domainMin = sortedWords[29].size;
 
     let scaleSize = d3.scaleLinear().domain([domainMin, domainMax]).range([rangeMin, rangeMax]);
+    let scaleForce = d3.scaleLinear().domain([1, 0.5]).range([0, 0.05]);
 
     //.attr("cx", function(d){ return getRandom(0, svgWidth)})
 
@@ -180,8 +210,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     simulation.nodes(sortedWords)
-      .alpha(1).alphaTarget(0.001)
-      .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(.05))
+      .alpha(1).alphaTarget(0)
+      .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(function(d) {
+        console.log(scaleForce(aspectRatio)); return scaleForce(aspectRatio)
+      }))
       .force("center", d3.forceCenter().x(svgWidth / 2).y(svgHeight / 2))
       .force("charge", d3.forceManyBody().strength(.1))
       .force("collide", d3.forceCollide().strength(.2).radius(function(d){
@@ -191,11 +223,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  function resetNodes(newData, svg, rangeMin, rangeMax) {
+  function resetNodes(newData, svg, rangeMin, rangeMax, aspectRatio) {
     let sortedWords = sortWords(newData);
     let domainMax = (sortedWords.length > 0) ? sortedWords[0].size : 0;
     let domainMin = (sortedWords.length > 0) ? sortedWords[sortedWords.length - 1].size : 0;
+
     let scaleSize = d3.scaleLinear().domain([domainMin, domainMax]).range([rangeMin, rangeMax]);
+    let scaleForce = d3.scaleLinear().domain([1, 0.5]).range([0, 0.05]);
 
     let circles = svg.select(".circle-nodes")
       .selectAll("circle")
@@ -290,8 +324,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     simulation.nodes(sortedWords)
-      .alpha(1).alphaTarget(0.001)
-      .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(.05))
+      .alpha(1).alphaTarget(0)
+      .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(function(d) { console.log(scaleForce(aspectRatio)); return scaleForce(aspectRatio) }))
       .force("center", d3.forceCenter().x(svgWidth / 2).y(svgHeight / 2))
       .force("charge", d3.forceManyBody().strength(.1))
       .force("collide", d3.forceCollide().strength(.2).radius(function(d){

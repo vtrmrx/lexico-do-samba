@@ -4,127 +4,14 @@ title: Homepage
 slug: home
 ---
 
-<section class="section-most-used">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-header">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <h2 class="section-title text-center">As palavras mais usadas (top 30?)</h2>
-            </div>
-            <div class="col-12 col-lg-8">
-              <div class="section-description text-center">
-                <p>Falar aqui as palavras que foram excluídas e tal...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est dui, gravida id ex et, tempor sodales augue. Quisque lobortis velit id nisi ultrices pretium.</p>
-                <span class="section-info"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="section-content">
-          <div class="info-custom">
-            <div class="filter-most-used">
-              <div class="filter-most-used--mobile d-lg-none">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#filterMostUsed">
-                  Organizar por
-                </button>
-                <div data-filter-mobile class="modal fade" id="filterMostUsed" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="filterMostUsedLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="filterMostUsedLabel">Filtros</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterName">Artista</label>
-                              <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
-                                <option label="Todos" value="all">Todos</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterGender">Gênero</label>
-                              <select class="form-control" name="filterGender" data-filter-dynamic="true" data-filter-key="Gênero">
-                                <option label="Todos" value="all">Todos</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterDecade">Década de nascimento</label>
-                              <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="Década de nascimento">
-                                <option label="Todas" value="all">Todas</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterState">Estado</label>
-                              <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="UF de nascimento">
-                                <option label="Todos" value="all">Todos</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="filter-most-used--desktop d-none d-lg-block" data-filter-desktop>
-                <h5>Filtros</h5>
-                <div class="row">
-                  <div class="col-12 col-lg-3">
-                    <div class="form-group w-100">
-                      <label for="filterName">Artista</label>
-                      <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
-                        <option label="Todos" value="all">Todos</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-3">
-                    <div class="form-group w-100">
-                      <label for="filterGender">Gênero</label>
-                      <select class="form-control" name="filterGender" data-filter-dynamic="true" data-filter-key="Gênero">
-                        <option label="Todos" value="all">Todos</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-3">
-                    <div class="form-group w-100">
-                      <label for="filterDecade">Década de nascimento</label>
-                      <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="Década de nascimento">
-                        <option label="Todas" value="all">Todas</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-3">
-                    <div class="form-group w-100">
-                      <label for="filterState">Estado</label>
-                      <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="UF de nascimento">
-                        <option label="Todos" value="all">Todos</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="info-custom__viz">
-              <div id="mostUsedViz" style="position: relative;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script src="{{ '/assets/js/mostUsedWords.js' | prepend: site.baseurl }}"></script>
+{% include section/cover.html %}
+{% include section/trends.html %}
+{% include section/playlists.html %}
+{% include section/lyrics.html %}
+{% include section/most-used.html %}
+{% include section/decades.html %}
+{% include section/king.html %}
+{% include section/terms.html %}
+{% include section/deities.html %}
+{% include section/believers.html %}
+{% include section/schools.html %}

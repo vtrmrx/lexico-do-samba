@@ -4,3 +4,9 @@
 * {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
+
+@import "variables";
+
+section {
+  background-color: $color-bege;
+}
