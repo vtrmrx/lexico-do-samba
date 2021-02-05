@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  let containerWidth = document.getElementById("mostUsedViz").offsetWidth,
-      viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
+  let viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
       viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0),
+      containerWidth = document.getElementById("mostUsedViz").offsetWidth,
       aspectRatio = (viewportHeight > viewportWidth) ? 1 : viewportHeight / viewportWidth,
       svgWidth = containerWidth,
       svgHeight = svgWidth * aspectRatio;
@@ -46,20 +46,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let resizeTimeout;
     window.addEventListener("resize", function(event) {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(function(){
-        containerWidth = document.getElementById("mostUsedViz").offsetWidth,
-        viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
-        viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0),
-        aspectRatio = (viewportHeight > viewportWidth) ? 1 : viewportHeight / viewportWidth,
-        svgWidth = containerWidth,
-        svgHeight = svgWidth * aspectRatio,
-        rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
-        rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
-        svg.attr("viewBox", `0 0 ${svgWidth} ${ Math.round(svgHeight) }`);
-        console.log(aspectRatio);
-        updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
-      }, 1500);
+      let newViewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+      if ( newViewportWidth !== viewportWidth ) {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function(){
+          containerWidth = document.getElementById("mostUsedViz").offsetWidth,
+          viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0),
+          viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0),
+          aspectRatio = (viewportHeight > viewportWidth) ? 1 : viewportHeight / viewportWidth,
+          svgWidth = containerWidth,
+          svgHeight = svgWidth * aspectRatio,
+          rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
+          rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
+          svg.attr("viewBox", `0 0 ${svgWidth} ${ Math.round(svgHeight) }`);
+          console.log(aspectRatio);
+          updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
+          viewportWidth = newViewportWidth;
+        }, 1500);
+      }
     });
 
   });
