@@ -1,6 +1,22 @@
-<section class="section-king">
-  <div class="container">
-    <div class="row">
+<section class="section section-king">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section__title text-center">O rei de cada palavra</h2>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="section__description text-center">
+          <p>Explicar melhor o lance e parabi parapa lorem ipsum dolor sit amet lorem consectetur lorem sit amet.</p>
+          {% include section-info.html
+            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          %}
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="section__content">
+          {% include content-placeholder.html %}
+        </div>
+      </div>
     </div>
   </div>
 </section>

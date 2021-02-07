@@ -1,23 +1,25 @@
-<section class="section-most-used">
-  <div class="container">
+<section class="section section-most-used">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12">
-        <div class="section-header">
+        <div class="section__header">
           <div class="row justify-content-center">
             <div class="col-12">
-              <h2 class="section-title text-center">As palavras mais usadas (top 30?)</h2>
+              <h2 class="section__title text-center">As palavras mais usadas (top 30?)</h2>
             </div>
             <div class="col-12 col-lg-8">
-              <div class="section-description text-center">
+              <div class="section__description text-center">
                 <p>Falar aqui as palavras que foram excluídas e tal...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est dui, gravida id ex et, tempor sodales augue. Quisque lobortis velit id nisi ultrices pretium.</p>
-                <span class="section-info"></span>
+                {% include section-info.html
+                  content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                %}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12">
-        <div class="section-content">
+        <div class="section__content">
           <div class="info-custom">
             <div class="filter-most-used">
               <div class="filter-most-used--mobile d-lg-none">
@@ -120,4 +122,10 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>
 <script src="{{ '/assets/js/mostUsedWords.js' | prepend: site.baseurl }}"></script>

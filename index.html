@@ -5,6 +5,7 @@ slug: home
 ---
 
 {% include section/cover.html %}
+{% include section/intro.html %}
 {% include section/trends.html %}
 {% include section/playlists.html %}
 {% include section/lyrics.html %}
@@ -13,5 +14,9 @@ slug: home
 {% include section/king.html %}
 {% include section/terms.html %}
 {% include section/deities.html %}
-{% include section/believers.html %}
-{% include section/schools.html %}
+<div class="d-flex flex-column flex-lg-row align-items-stretch flex-nowrap">
+  {% include section/believers.html %}
+  {% include section/schools.html %}
+</div>
+{% include section/battle.html %}
+{% include section/spotify.html %}

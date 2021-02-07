@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
       svgWidth = containerWidth,
       svgHeight = svgWidth * aspectRatio;
 
-  console.log(aspectRatio);
-
   let svg = d3.select("#mostUsedViz")
               .append("svg")
               .style("width", "100%")
@@ -41,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     filtersMobile.on("change", function(){
       updateFilters("mobile", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
+      $(filtersMobileContainer["_groups"][0][0]).modal('hide');
     });
 
 
@@ -105,15 +104,21 @@ document.addEventListener("DOMContentLoaded", function() {
     let dataSubset = dataSet;
     let filterArray = [],
         filterTarget = (eventSource == "mobile") ? filtersMobileContainer : filtersDesktopContainer,
-        filters = filterTarget.selectAll("[data-filter-dynamic]");
-    filters["_groups"][0].forEach(function(filter, index) {
-      let filterKey = filter.getAttribute("data-filter-key");
-      if (filter.value !== "all") {
-        dataSubset = dataSubset.filter(function( obj ) {
-          return obj[filterKey] == filter.value;
-        });
-      }
-    });
+        filters = filterTarget.selectAll("[data-filter-dynamic]"),
+        filterName = filterTarget.select('[data-filter-key="Nome"]'),
+        filterNameValue = filterName["_groups"][0][0].value;
+    if (filterNameValue !== "all") {
+      console.log(filterNameValue);
+    } else {
+      filters["_groups"][0].forEach(function(filter, index) {
+        let filterKey = filter.getAttribute("data-filter-key");
+        if (filter.value !== "all") {
+          dataSubset = dataSubset.filter(function( obj ) {
+            return obj[filterKey] == filter.value;
+          });
+        }
+      });
+    }
     let filtersSource = (eventSource == "mobile") ? filtersMobileContainer : filtersDesktopContainer,
         filtersTarget = (eventSource == "mobile") ? filtersDesktopContainer : filtersMobileContainer;
     filtersSource.selectAll("[data-filter-dynamic]")["_groups"][0].forEach(function(filter, i) {

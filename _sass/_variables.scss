@@ -10,3 +10,11 @@ $color-azul: rgba(31,25,221,1);
 $color-amarelo: rgba(255,161,39,1);
 $color-verde-escuro: rgba(2,89,32,1);
 $color-marrom-escuro: rgba(63,30,12,1);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;

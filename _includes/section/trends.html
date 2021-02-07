@@ -1,6 +1,48 @@
-<section class="section-trends">
-  <div class="container">
+<section class="section section-trends">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section__title text-center">“To me guardando pra quando o carnaval chegar”</h2>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="section__description text-center">
+          <p>Analisando buscas no google no brasil desde 2004, o samba tem um pico de interesse geral nas épocas de carnaval. Lorem ipsum dolor sit amet.</p>
+          {% include section-info.html
+            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          %}
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="section__content">
+          <div class="flourish-embed flourish-chart" data-src="visualisation/4089388">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row">
+      <div class="col-12 col-lg-6">
+        <h3 class="section__subtitle">
+          As regiões que mais se interessam
+          {% include section-info.html
+            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          %}
+        </h3>
+        <div class="section__content">
+          {% include content-placeholder.html %}
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <h3 class="section__subtitle">
+          Os termos mais relacionados
+          {% include section-info.html
+            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          %}
+        </h3>
+        <div class="section__content">
+          {% include content-placeholder.html %}
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -6,7 +6,130 @@
 }
 
 @import "variables";
+@import "breakpoints";
 
-section {
-  background-color: $color-bege;
+.content-placeholder {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, .1);
+  margin-bottom: 32px;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &-header {
+    background-color: $color-vermelho;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    &__collapse {
+      @include media-breakpoint-up(lg) {
+        width: auto;
+      }
+    }
+  }
+  &-cover {
+    padding-top: 80px;
+    background-color: $color-verde-escuro;
+    position: relative;
+    &__title {
+      position: relative;
+      z-index: 1;
+    }
+    &__logo {
+      max-width: 80%;
+    }
+    &__illustration {
+      width: 100%;
+      margin-bottom: 0;
+      z-index: 0;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        min-width: 800px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &-intro {
+    background-color: $color-vermelho;
+    &__text {
+      color: $color-preto;
+    }
+    &__more {
+
+    }
+    &__more-button {
+      color: $color-preto;
+      &::after {
+        content: "menos";
+      }
+      &.collapsed {
+        &::after {
+          content: "mais";
+        }
+      }
+    }
+  }
+  &-trends {
+    background-color: $color-bege;
+  }
+  &-playlists {
+    background-color: $color-branco;
+  }
+  &-lyrics {
+    background-color: $color-verde-escuro;
+  }
+  &-most-used {
+    background-color: $color-vermelho;
+  }
+  &-decades {
+    background-color: $color-rosa;
+  }
+  &-king {
+    background-color: $color-branco;
+  }
+  &-terms {
+    background-color: $color-verde-escuro;
+  }
+  &-deities {
+    background-color: $color-bege;
+  }
+  &-believers {
+    background-color: $color-vermelho;
+    width: 100%;
+  }
+  &-schools {
+    background-color: $color-rosa;
+    width: 100%;
+  }
+  &-battle {
+    background-color: $color-bege;
+  }
+  &-spotify {
+    background-color: $color-branco;
+  }
+  &-footer {
+    background-color: $color-branco;
+    position: relative;
+    &__illustration {
+      width: 100%;
+      margin-bottom: 0;
+      z-index: 0;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        // min-width: 800px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }

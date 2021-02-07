@@ -142,7 +142,7 @@
 140,madrugar,adoniran-barbosa,2,674,Homem,1910-1919,SP,Adoniran Barbosa
 141,maior,adoniran-barbosa,1,628,Homem,1910-1919,SP,Adoniran Barbosa
 142,mal,adoniran-barbosa,7,1934,Homem,1910-1919,SP,Adoniran Barbosa
-143,malandrar,adoniran-barbosa,2,604,Homem,1910-1919,SP,Adoniran Barbosa
+143,malandro,adoniran-barbosa,2,604,Homem,1910-1919,SP,Adoniran Barbosa
 144,mandar,adoniran-barbosa,3,1580,Homem,1910-1919,SP,Adoniran Barbosa
 145,manhã,adoniran-barbosa,7,794,Homem,1910-1919,SP,Adoniran Barbosa
 146,mar,adoniran-barbosa,2,2991,Homem,1910-1919,SP,Adoniran Barbosa
@@ -713,7 +713,7 @@
 711,madrugar,alcione,19,674,Mulher,1940-1949,MA,Alcione
 712,maior,alcione,15,628,Mulher,1940-1949,MA,Alcione
 713,mal,alcione,70,1934,Mulher,1940-1949,MA,Alcione
-714,malandrar,alcione,19,604,Mulher,1940-1949,MA,Alcione
+714,malandro,alcione,19,604,Mulher,1940-1949,MA,Alcione
 715,mandar,alcione,37,1580,Mulher,1940-1949,MA,Alcione
 716,mangueira,alcione,58,520,Mulher,1940-1949,MA,Alcione
 717,manhã,alcione,26,794,Mulher,1940-1949,MA,Alcione
@@ -1212,7 +1212,7 @@
 1210,madrugar,almir-guineto,4,674,Homem,1940-1949,RJ,Almir Guineto
 1211,maior,almir-guineto,2,628,Homem,1940-1949,RJ,Almir Guineto
 1212,mal,almir-guineto,14,1934,Homem,1940-1949,RJ,Almir Guineto
-1213,malandrar,almir-guineto,3,604,Homem,1940-1949,RJ,Almir Guineto
+1213,malandro,almir-guineto,3,604,Homem,1940-1949,RJ,Almir Guineto
 1214,mandar,almir-guineto,14,1580,Homem,1940-1949,RJ,Almir Guineto
 1215,manhã,almir-guineto,1,794,Homem,1940-1949,RJ,Almir Guineto
 1216,mar,almir-guineto,9,2991,Homem,1940-1949,RJ,Almir Guineto
@@ -1656,7 +1656,7 @@
 1654,lutar,aracy-de-almeida,1,636,Mulher,1910-1919,RJ,Aracy De Almeida
 1655,maior,aracy-de-almeida,5,628,Mulher,1910-1919,RJ,Aracy De Almeida
 1656,mal,aracy-de-almeida,9,1934,Mulher,1910-1919,RJ,Aracy De Almeida
-1657,malandrar,aracy-de-almeida,3,604,Mulher,1910-1919,RJ,Aracy De Almeida
+1657,malandro,aracy-de-almeida,3,604,Mulher,1910-1919,RJ,Aracy De Almeida
 1658,mandar,aracy-de-almeida,5,1580,Mulher,1910-1919,RJ,Aracy De Almeida
 1659,mangueira,aracy-de-almeida,1,520,Mulher,1910-1919,RJ,Aracy De Almeida
 1660,manhã,aracy-de-almeida,1,794,Mulher,1910-1919,RJ,Aracy De Almeida
@@ -1928,7 +1928,7 @@
 1926,madrugar,arlindo-cruz,9,674,Homem,1950-1959,RJ,Arlindo Cruz
 1927,maior,arlindo-cruz,20,628,Homem,1950-1959,RJ,Arlindo Cruz
 1928,mal,arlindo-cruz,34,1934,Homem,1950-1959,RJ,Arlindo Cruz
-1929,malandrar,arlindo-cruz,17,604,Homem,1950-1959,RJ,Arlindo Cruz
+1929,malandro,arlindo-cruz,17,604,Homem,1950-1959,RJ,Arlindo Cruz
 1930,mandar,arlindo-cruz,48,1580,Homem,1950-1959,RJ,Arlindo Cruz
 1931,mangueira,arlindo-cruz,9,520,Homem,1950-1959,RJ,Arlindo Cruz
 1932,manhã,arlindo-cruz,10,794,Homem,1950-1959,RJ,Arlindo Cruz
@@ -2511,7 +2511,7 @@
 2509,madrugar,ary-barroso,5,674,Homem,1900-1909,MG,Ary Barroso
 2510,maior,ary-barroso,4,628,Homem,1900-1909,MG,Ary Barroso
 2511,mal,ary-barroso,11,1934,Homem,1900-1909,MG,Ary Barroso
-2512,malandrar,ary-barroso,4,604,Homem,1900-1909,MG,Ary Barroso
+2512,malandro,ary-barroso,4,604,Homem,1900-1909,MG,Ary Barroso
 2513,mandar,ary-barroso,5,1580,Homem,1900-1909,MG,Ary Barroso
 2514,mangueira,ary-barroso,4,520,Homem,1900-1909,MG,Ary Barroso
 2515,manhã,ary-barroso,3,794,Homem,1900-1909,MG,Ary Barroso
@@ -3062,7 +3062,7 @@
 3060,luzir,bebeto,2,1704,Homem,1940-1949,SP,Bebeto
 3061,madrugar,bebeto,2,674,Homem,1940-1949,SP,Bebeto
 3062,maior,bebeto,1,628,Homem,1940-1949,SP,Bebeto
-3063,malandrar,bebeto,4,604,Homem,1940-1949,SP,Bebeto
+3063,malandro,bebeto,4,604,Homem,1940-1949,SP,Bebeto
 3064,mandar,bebeto,5,1580,Homem,1940-1949,SP,Bebeto
 3065,manhã,bebeto,1,794,Homem,1940-1949,SP,Bebeto
 3066,mar,bebeto,26,2991,Homem,1940-1949,SP,Bebeto
@@ -3634,7 +3634,7 @@
 3632,madrugar,beth-carvalho,11,674,Mulher,1940-1949,RJ,Beth Carvalho
 3633,maior,beth-carvalho,15,628,Mulher,1940-1949,RJ,Beth Carvalho
 3634,mal,beth-carvalho,39,1934,Mulher,1940-1949,RJ,Beth Carvalho
-3635,malandrar,beth-carvalho,5,604,Mulher,1940-1949,RJ,Beth Carvalho
+3635,malandro,beth-carvalho,5,604,Mulher,1940-1949,RJ,Beth Carvalho
 3636,mandar,beth-carvalho,12,1580,Mulher,1940-1949,RJ,Beth Carvalho
 3637,mangueira,beth-carvalho,32,520,Mulher,1940-1949,RJ,Beth Carvalho
 3638,manhã,beth-carvalho,14,794,Mulher,1940-1949,RJ,Beth Carvalho
@@ -3816,7 +3816,7 @@
 3814,louco,beto-sem-braco,5,1032,Homem,1940-1949,RJ,Beto Sem Braço
 3815,lua,beto-sem-braco,1,1323,Homem,1940-1949,RJ,Beto Sem Braço
 3816,madrugar,beto-sem-braco,1,674,Homem,1940-1949,RJ,Beto Sem Braço
-3817,malandrar,beto-sem-braco,5,604,Homem,1940-1949,RJ,Beto Sem Braço
+3817,malandro,beto-sem-braco,5,604,Homem,1940-1949,RJ,Beto Sem Braço
 3818,mandar,beto-sem-braco,1,1580,Homem,1940-1949,RJ,Beto Sem Braço
 3819,maria,beto-sem-braco,2,1022,Homem,1940-1949,RJ,Beto Sem Braço
 3820,melhor,beto-sem-braco,2,1360,Homem,1940-1949,RJ,Beto Sem Braço
@@ -4029,7 +4029,7 @@
 4027,madrugar,bezerra-da-silva,27,674,Homem,1920-1929,PE,Bezerra Da Silva
 4028,maior,bezerra-da-silva,30,628,Homem,1920-1929,PE,Bezerra Da Silva
 4029,mal,bezerra-da-silva,68,1934,Homem,1920-1929,PE,Bezerra Da Silva
-4030,malandrar,bezerra-da-silva,218,604,Homem,1920-1929,PE,Bezerra Da Silva
+4030,malandro,bezerra-da-silva,218,604,Homem,1920-1929,PE,Bezerra Da Silva
 4031,mandar,bezerra-da-silva,101,1580,Homem,1920-1929,PE,Bezerra Da Silva
 4032,mangueira,bezerra-da-silva,11,520,Homem,1920-1929,PE,Bezerra Da Silva
 4033,manhã,bezerra-da-silva,2,794,Homem,1920-1929,PE,Bezerra Da Silva
@@ -4325,7 +4325,7 @@
 4323,madrugar,caetano-veloso,17,674,Homem,1940-1949,BA,Caetano Veloso
 4324,maior,caetano-veloso,15,628,Homem,1940-1949,BA,Caetano Veloso
 4325,mal,caetano-veloso,45,1934,Homem,1940-1949,BA,Caetano Veloso
-4326,malandrar,caetano-veloso,6,604,Homem,1940-1949,BA,Caetano Veloso
+4326,malandro,caetano-veloso,6,604,Homem,1940-1949,BA,Caetano Veloso
 4327,mandar,caetano-veloso,42,1580,Homem,1940-1949,BA,Caetano Veloso
 4328,mangueira,caetano-veloso,8,520,Homem,1940-1949,BA,Caetano Veloso
 4329,manhã,caetano-veloso,28,794,Homem,1940-1949,BA,Caetano Veloso
@@ -4597,7 +4597,7 @@
 4595,luzir,candeia,3,1704,Homem,1930-1939,RJ,Candeia
 4596,madrugar,candeia,4,674,Homem,1930-1939,RJ,Candeia
 4597,mal,candeia,4,1934,Homem,1930-1939,RJ,Candeia
-4598,malandrar,candeia,2,604,Homem,1930-1939,RJ,Candeia
+4598,malandro,candeia,2,604,Homem,1930-1939,RJ,Candeia
 4599,mandar,candeia,4,1580,Homem,1930-1939,RJ,Candeia
 4600,manhã,candeia,5,794,Homem,1930-1939,RJ,Candeia
 4601,mar,candeia,13,2991,Homem,1930-1939,RJ,Candeia
@@ -4871,7 +4871,7 @@
 4869,madrugar,carmen-miranda,5,674,Mulher,1900-1909,Portugal,Carmen Miranda
 4870,maior,carmen-miranda,1,628,Mulher,1900-1909,Portugal,Carmen Miranda
 4871,mal,carmen-miranda,13,1934,Mulher,1900-1909,Portugal,Carmen Miranda
-4872,malandrar,carmen-miranda,3,604,Mulher,1900-1909,Portugal,Carmen Miranda
+4872,malandro,carmen-miranda,3,604,Mulher,1900-1909,Portugal,Carmen Miranda
 4873,mandar,carmen-miranda,3,1580,Mulher,1900-1909,Portugal,Carmen Miranda
 4874,manhã,carmen-miranda,2,794,Mulher,1900-1909,Portugal,Carmen Miranda
 4875,mar,carmen-miranda,6,2991,Mulher,1900-1909,Portugal,Carmen Miranda
@@ -5406,7 +5406,7 @@
 5404,madrugar,casuarina,1,674,Grupo,,,Casuarina
 5405,maior,casuarina,3,628,Grupo,,,Casuarina
 5406,mal,casuarina,7,1934,Grupo,,,Casuarina
-5407,malandrar,casuarina,3,604,Grupo,,,Casuarina
+5407,malandro,casuarina,3,604,Grupo,,,Casuarina
 5408,mandar,casuarina,4,1580,Grupo,,,Casuarina
 5409,mangueira,casuarina,9,520,Grupo,,,Casuarina
 5410,manhã,casuarina,3,794,Grupo,,,Casuarina
@@ -5695,7 +5695,7 @@
 5693,madrugar,chico-buarque,10,674,Homem,1940-1949,RJ,Chico Buarque
 5694,maior,chico-buarque,9,628,Homem,1940-1949,RJ,Chico Buarque
 5695,mal,chico-buarque,47,1934,Homem,1940-1949,RJ,Chico Buarque
-5696,malandrar,chico-buarque,39,604,Homem,1940-1949,RJ,Chico Buarque
+5696,malandro,chico-buarque,39,604,Homem,1940-1949,RJ,Chico Buarque
 5697,mandar,chico-buarque,48,1580,Homem,1940-1949,RJ,Chico Buarque
 5698,mangueira,chico-buarque,28,520,Homem,1940-1949,RJ,Chico Buarque
 5699,manhã,chico-buarque,29,794,Homem,1940-1949,RJ,Chico Buarque
@@ -6153,7 +6153,7 @@
 6151,luzir,chrigor,6,1704,Homem,1970-1979,SP,Chrigor
 6152,madrugar,chrigor,5,674,Homem,1970-1979,SP,Chrigor
 6153,mal,chrigor,4,1934,Homem,1970-1979,SP,Chrigor
-6154,malandrar,chrigor,1,604,Homem,1970-1979,SP,Chrigor
+6154,malandro,chrigor,1,604,Homem,1970-1979,SP,Chrigor
 6155,mandar,chrigor,1,1580,Homem,1970-1979,SP,Chrigor
 6156,manhã,chrigor,1,794,Homem,1970-1979,SP,Chrigor
 6157,mar,chrigor,6,2991,Homem,1970-1979,SP,Chrigor
@@ -6424,7 +6424,7 @@
 6422,madrugar,clara-nunes,11,674,Mulher,1940-1949,MG,Clara Nunes
 6423,maior,clara-nunes,5,628,Mulher,1940-1949,MG,Clara Nunes
 6424,mal,clara-nunes,20,1934,Mulher,1940-1949,MG,Clara Nunes
-6425,malandrar,clara-nunes,2,604,Mulher,1940-1949,MG,Clara Nunes
+6425,malandro,clara-nunes,2,604,Mulher,1940-1949,MG,Clara Nunes
 6426,mandar,clara-nunes,17,1580,Mulher,1940-1949,MG,Clara Nunes
 6427,mangueira,clara-nunes,4,520,Mulher,1940-1949,MG,Clara Nunes
 6428,manhã,clara-nunes,21,794,Mulher,1940-1949,MG,Clara Nunes
@@ -6696,7 +6696,7 @@
 6694,madrugar,dicro,2,674,Homem,1940-1949,RJ,Dicró
 6695,maior,dicro,9,628,Homem,1940-1949,RJ,Dicró
 6696,mal,dicro,12,1934,Homem,1940-1949,RJ,Dicró
-6697,malandrar,dicro,11,604,Homem,1940-1949,RJ,Dicró
+6697,malandro,dicro,11,604,Homem,1940-1949,RJ,Dicró
 6698,mandar,dicro,18,1580,Homem,1940-1949,RJ,Dicró
 6699,mangueira,dicro,3,520,Homem,1940-1949,RJ,Dicró
 6700,manhã,dicro,1,794,Homem,1940-1949,RJ,Dicró
@@ -6974,7 +6974,7 @@
 6972,luzir,diogo-nogueira,28,1704,Homem,1980-1989,RJ,Diogo Nogueira
 6973,maior,diogo-nogueira,14,628,Homem,1980-1989,RJ,Diogo Nogueira
 6974,mal,diogo-nogueira,27,1934,Homem,1980-1989,RJ,Diogo Nogueira
-6975,malandrar,diogo-nogueira,17,604,Homem,1980-1989,RJ,Diogo Nogueira
+6975,malandro,diogo-nogueira,17,604,Homem,1980-1989,RJ,Diogo Nogueira
 6976,mandar,diogo-nogueira,31,1580,Homem,1980-1989,RJ,Diogo Nogueira
 6977,mangueira,diogo-nogueira,6,520,Homem,1980-1989,RJ,Diogo Nogueira
 6978,manhã,diogo-nogueira,4,794,Homem,1980-1989,RJ,Diogo Nogueira
@@ -7333,7 +7333,7 @@
 7331,madrugar,djavan,10,674,Homem,1940-1949,AL,Djavan
 7332,maior,djavan,7,628,Homem,1940-1949,AL,Djavan
 7333,mal,djavan,41,1934,Homem,1940-1949,AL,Djavan
-7334,malandrar,djavan,1,604,Homem,1940-1949,AL,Djavan
+7334,malandro,djavan,1,604,Homem,1940-1949,AL,Djavan
 7335,mandar,djavan,25,1580,Homem,1940-1949,AL,Djavan
 7336,mangueira,djavan,1,520,Homem,1940-1949,AL,Djavan
 7337,manhã,djavan,23,794,Homem,1940-1949,AL,Djavan
@@ -7808,7 +7808,7 @@
 7806,madrugar,dona-ivone-lara,6,674,Mulher,1920-1929,RJ,Dona Ivone Lara
 7807,maior,dona-ivone-lara,2,628,Mulher,1920-1929,RJ,Dona Ivone Lara
 7808,mal,dona-ivone-lara,9,1934,Mulher,1920-1929,RJ,Dona Ivone Lara
-7809,malandrar,dona-ivone-lara,1,604,Mulher,1920-1929,RJ,Dona Ivone Lara
+7809,malandro,dona-ivone-lara,1,604,Mulher,1920-1929,RJ,Dona Ivone Lara
 7810,mandar,dona-ivone-lara,4,1580,Mulher,1920-1929,RJ,Dona Ivone Lara
 7811,mangueira,dona-ivone-lara,1,520,Mulher,1920-1929,RJ,Dona Ivone Lara
 7812,manhã,dona-ivone-lara,1,794,Mulher,1920-1929,RJ,Dona Ivone Lara
@@ -8394,7 +8394,7 @@
 8392,madrugar,dudu-nobre,4,674,Homem,1970-1979,RJ,Dudu Nobre
 8393,maior,dudu-nobre,5,628,Homem,1970-1979,RJ,Dudu Nobre
 8394,mal,dudu-nobre,16,1934,Homem,1970-1979,RJ,Dudu Nobre
-8395,malandrar,dudu-nobre,6,604,Homem,1970-1979,RJ,Dudu Nobre
+8395,malandro,dudu-nobre,6,604,Homem,1970-1979,RJ,Dudu Nobre
 8396,mandar,dudu-nobre,11,1580,Homem,1970-1979,RJ,Dudu Nobre
 8397,mangueira,dudu-nobre,7,520,Homem,1970-1979,RJ,Dudu Nobre
 8398,manhã,dudu-nobre,3,794,Homem,1970-1979,RJ,Dudu Nobre
@@ -8523,235 +8523,235 @@
 8521,vontade,dudu-nobre,2,833,Homem,1970-1979,RJ,Dudu Nobre
 8522,voz,dudu-nobre,10,1099,Homem,1970-1979,RJ,Dudu Nobre
 8523,água,dudu-nobre,9,1388,Homem,1970-1979,RJ,Dudu Nobre
-8524,abraçar,eliana-de-lima,2,742,Mulher,1960-1961,SP,Eliana De Lima
-8525,abrir,eliana-de-lima,3,912,Mulher,1960-1961,SP,Eliana De Lima
-8526,acabar,eliana-de-lima,12,1832,Mulher,1960-1961,SP,Eliana De Lima
-8527,achar,eliana-de-lima,5,1151,Mulher,1960-1961,SP,Eliana De Lima
-8528,acontecer,eliana-de-lima,2,929,Mulher,1960-1961,SP,Eliana De Lima
-8529,acordar,eliana-de-lima,3,698,Mulher,1960-1961,SP,Eliana De Lima
-8530,acreditar,eliana-de-lima,1,756,Mulher,1960-1961,SP,Eliana De Lima
-8531,adeus,eliana-de-lima,2,801,Mulher,1960-1961,SP,Eliana De Lima
-8532,agora,eliana-de-lima,10,2881,Mulher,1960-1961,SP,Eliana De Lima
-8533,algum,eliana-de-lima,1,538,Mulher,1960-1961,SP,Eliana De Lima
-8534,almo,eliana-de-lima,2,613,Mulher,1960-1961,SP,Eliana De Lima
-8535,alto,eliana-de-lima,1,649,Mulher,1960-1961,SP,Eliana De Lima
-8536,amanhã,eliana-de-lima,2,1094,Mulher,1960-1961,SP,Eliana De Lima
-8537,amar,eliana-de-lima,36,9816,Mulher,1960-1961,SP,Eliana De Lima
-8538,amigo,eliana-de-lima,4,635,Mulher,1960-1961,SP,Eliana De Lima
-8539,amor,eliana-de-lima,131,31458,Mulher,1960-1961,SP,Eliana De Lima
-8540,andar,eliana-de-lima,3,1990,Mulher,1960-1961,SP,Eliana De Lima
-8541,apaixonar,eliana-de-lima,4,714,Mulher,1960-1961,SP,Eliana De Lima
-8542,apenas,eliana-de-lima,2,538,Mulher,1960-1961,SP,Eliana De Lima
-8543,ar,eliana-de-lima,2,778,Mulher,1960-1961,SP,Eliana De Lima
-8544,azul,eliana-de-lima,2,668,Mulher,1960-1961,SP,Eliana De Lima
-8545,bahia,eliana-de-lima,1,658,Mulher,1960-1961,SP,Eliana De Lima
-8546,bater,eliana-de-lima,2,1694,Mulher,1960-1961,SP,Eliana De Lima
-8547,beijar,eliana-de-lima,5,1982,Mulher,1960-1961,SP,Eliana De Lima
-8548,beleza,eliana-de-lima,1,765,Mulher,1960-1961,SP,Eliana De Lima
-8549,boca,eliana-de-lima,2,1198,Mulher,1960-1961,SP,Eliana De Lima
-8550,bom,eliana-de-lima,8,3691,Mulher,1960-1961,SP,Eliana De Lima
-8551,bonito,eliana-de-lima,2,1166,Mulher,1960-1961,SP,Eliana De Lima
-8552,brasil,eliana-de-lima,1,1094,Mulher,1960-1961,SP,Eliana De Lima
-8553,brasileiro,eliana-de-lima,1,549,Mulher,1960-1961,SP,Eliana De Lima
-8554,brigar,eliana-de-lima,1,610,Mulher,1960-1961,SP,Eliana De Lima
-8555,brilhar,eliana-de-lima,1,921,Mulher,1960-1961,SP,Eliana De Lima
-8556,brincar,eliana-de-lima,3,742,Mulher,1960-1961,SP,Eliana De Lima
-8557,buscar,eliana-de-lima,1,674,Mulher,1960-1961,SP,Eliana De Lima
-8558,cabeça,eliana-de-lima,4,760,Mulher,1960-1961,SP,Eliana De Lima
-8559,cair,eliana-de-lima,2,1544,Mulher,1960-1961,SP,Eliana De Lima
-8560,calar,eliana-de-lima,1,549,Mulher,1960-1961,SP,Eliana De Lima
-8561,calor,eliana-de-lima,4,629,Mulher,1960-1961,SP,Eliana De Lima
-8562,caminhar,eliana-de-lima,3,1179,Mulher,1960-1961,SP,Eliana De Lima
-8563,cansar,eliana-de-lima,9,880,Mulher,1960-1961,SP,Eliana De Lima
-8564,cantar,eliana-de-lima,14,8891,Mulher,1960-1961,SP,Eliana De Lima
-8565,canção,eliana-de-lima,2,1030,Mulher,1960-1961,SP,Eliana De Lima
-8566,carnaval,eliana-de-lima,2,816,Mulher,1960-1961,SP,Eliana De Lima
-8567,caro,eliana-de-lima,5,2089,Mulher,1960-1961,SP,Eliana De Lima
-8568,casar,eliana-de-lima,2,2147,Mulher,1960-1961,SP,Eliana De Lima
-8569,certa,eliana-de-lima,2,522,Mulher,1960-1961,SP,Eliana De Lima
-8570,certo,eliana-de-lima,2,571,Mulher,1960-1961,SP,Eliana De Lima
-8571,chamar,eliana-de-lima,3,1650,Mulher,1960-1961,SP,Eliana De Lima
-8572,chegar,eliana-de-lima,11,4489,Mulher,1960-1961,SP,Eliana De Lima
-8573,cheio,eliana-de-lima,4,743,Mulher,1960-1961,SP,Eliana De Lima
-8574,chorar,eliana-de-lima,24,4386,Mulher,1960-1961,SP,Eliana De Lima
-8575,chuva,eliana-de-lima,2,635,Mulher,1960-1961,SP,Eliana De Lima
-8576,chão,eliana-de-lima,3,1037,Mulher,1960-1961,SP,Eliana De Lima
-8577,cidade,eliana-de-lima,2,1002,Mulher,1960-1961,SP,Eliana De Lima
-8578,coisa,eliana-de-lima,3,2410,Mulher,1960-1961,SP,Eliana De Lima
-8579,comer,eliana-de-lima,9,4536,Mulher,1960-1961,SP,Eliana De Lima
-8580,comigo,eliana-de-lima,2,1583,Mulher,1960-1961,SP,Eliana De Lima
-8581,como,eliana-de-lima,4,3838,Mulher,1960-1961,SP,Eliana De Lima
-8582,conseguir,eliana-de-lima,6,767,Mulher,1960-1961,SP,Eliana De Lima
-8583,contar,eliana-de-lima,3,1269,Mulher,1960-1961,SP,Eliana De Lima
-8584,cor,eliana-de-lima,5,821,Mulher,1960-1961,SP,Eliana De Lima
-8585,coração,eliana-de-lima,21,6266,Mulher,1960-1961,SP,Eliana De Lima
-8586,corpo,eliana-de-lima,9,1523,Mulher,1960-1961,SP,Eliana De Lima
-8587,correr,eliana-de-lima,1,1081,Mulher,1960-1961,SP,Eliana De Lima
-8588,criança,eliana-de-lima,1,708,Mulher,1960-1961,SP,Eliana De Lima
-8589,céu,eliana-de-lima,2,2061,Mulher,1960-1961,SP,Eliana De Lima
-8590,dançar,eliana-de-lima,2,1429,Mulher,1960-1961,SP,Eliana De Lima
-8591,dentro,eliana-de-lima,4,1212,Mulher,1960-1961,SP,Eliana De Lima
-8592,depois,eliana-de-lima,3,1839,Mulher,1960-1961,SP,Eliana De Lima
-8593,desde,eliana-de-lima,2,562,Mulher,1960-1961,SP,Eliana De Lima
-8594,desejar,eliana-de-lima,3,1051,Mulher,1960-1961,SP,Eliana De Lima
-8595,desfazer,eliana-de-lima,2,554,Mulher,1960-1961,SP,Eliana De Lima
-8596,destinar,eliana-de-lima,2,562,Mulher,1960-1961,SP,Eliana De Lima
-8597,deus,eliana-de-lima,1,3257,Mulher,1960-1961,SP,Eliana De Lima
-8598,dever,eliana-de-lima,3,955,Mulher,1960-1961,SP,Eliana De Lima
-8599,dia,eliana-de-lima,11,4842,Mulher,1960-1961,SP,Eliana De Lima
-8600,dizer,eliana-de-lima,17,8012,Mulher,1960-1961,SP,Eliana De Lima
-8601,doer,eliana-de-lima,3,639,Mulher,1960-1961,SP,Eliana De Lima
-8602,dono,eliana-de-lima,1,564,Mulher,1960-1961,SP,Eliana De Lima
-8603,dor,eliana-de-lima,3,2290,Mulher,1960-1961,SP,Eliana De Lima
-8604,dormir,eliana-de-lima,1,868,Mulher,1960-1961,SP,Eliana De Lima
-8605,embora,eliana-de-lima,3,1492,Mulher,1960-1961,SP,Eliana De Lima
-8606,emoção,eliana-de-lima,4,671,Mulher,1960-1961,SP,Eliana De Lima
-8607,encantar,eliana-de-lima,2,514,Mulher,1960-1961,SP,Eliana De Lima
-8608,encontrar,eliana-de-lima,7,2135,Mulher,1960-1961,SP,Eliana De Lima
-8609,entender,eliana-de-lima,5,970,Mulher,1960-1961,SP,Eliana De Lima
-8610,entrar,eliana-de-lima,4,1652,Mulher,1960-1961,SP,Eliana De Lima
-8611,entregar,eliana-de-lima,3,774,Mulher,1960-1961,SP,Eliana De Lima
-8612,errar,eliana-de-lima,1,872,Mulher,1960-1961,SP,Eliana De Lima
-8613,esperar,eliana-de-lima,2,1753,Mulher,1960-1961,SP,Eliana De Lima
-8614,esquecer,eliana-de-lima,11,2291,Mulher,1960-1961,SP,Eliana De Lima
-8615,existir,eliana-de-lima,2,1025,Mulher,1960-1961,SP,Eliana De Lima
-8616,falar,eliana-de-lima,1,2676,Mulher,1960-1961,SP,Eliana De Lima
-8617,falir,eliana-de-lima,1,940,Mulher,1960-1961,SP,Eliana De Lima
-8618,faltar,eliana-de-lima,2,925,Mulher,1960-1961,SP,Eliana De Lima
-8619,favor,eliana-de-lima,1,665,Mulher,1960-1961,SP,Eliana De Lima
-8620,felicidade,eliana-de-lima,3,1110,Mulher,1960-1961,SP,Eliana De Lima
-8621,feliz,eliana-de-lima,10,2585,Mulher,1960-1961,SP,Eliana De Lima
-8622,festa,eliana-de-lima,2,808,Mulher,1960-1961,SP,Eliana De Lima
-8623,fim,eliana-de-lima,5,1834,Mulher,1960-1961,SP,Eliana De Lima
-8624,flor,eliana-de-lima,6,1265,Mulher,1960-1961,SP,Eliana De Lima
-8625,fogo,eliana-de-lima,4,724,Mulher,1960-1961,SP,Eliana De Lima
-8626,forte,eliana-de-lima,6,723,Mulher,1960-1961,SP,Eliana De Lima
-8627,fugir,eliana-de-lima,1,584,Mulher,1960-1961,SP,Eliana De Lima
-8628,fundir,eliana-de-lima,3,635,Mulher,1960-1961,SP,Eliana De Lima
-8629,fé,eliana-de-lima,1,861,Mulher,1960-1961,SP,Eliana De Lima
-8630,gente,eliana-de-lima,6,5724,Mulher,1960-1961,SP,Eliana De Lima
-8631,grande,eliana-de-lima,4,1626,Mulher,1960-1961,SP,Eliana De Lima
-8632,gritar,eliana-de-lima,3,642,Mulher,1960-1961,SP,Eliana De Lima
-8633,guardar,eliana-de-lima,4,807,Mulher,1960-1961,SP,Eliana De Lima
-8634,história,eliana-de-lima,3,728,Mulher,1960-1961,SP,Eliana De Lima
-8635,hoje,eliana-de-lima,16,2878,Mulher,1960-1961,SP,Eliana De Lima
-8636,hora,eliana-de-lima,5,2096,Mulher,1960-1961,SP,Eliana De Lima
-8637,ilusão,eliana-de-lima,4,847,Mulher,1960-1961,SP,Eliana De Lima
-8638,jeito,eliana-de-lima,11,1733,Mulher,1960-1961,SP,Eliana De Lima
-8639,jogar,eliana-de-lima,4,1562,Mulher,1960-1961,SP,Eliana De Lima
-8640,juntar,eliana-de-lima,1,544,Mulher,1960-1961,SP,Eliana De Lima
-8641,junto,eliana-de-lima,4,755,Mulher,1960-1961,SP,Eliana De Lima
-8642,lado,eliana-de-lima,2,1321,Mulher,1960-1961,SP,Eliana De Lima
-8643,lembrar,eliana-de-lima,3,1250,Mulher,1960-1961,SP,Eliana De Lima
-8644,ler,eliana-de-lima,1,934,Mulher,1960-1961,SP,Eliana De Lima
-8645,levar,eliana-de-lima,6,2918,Mulher,1960-1961,SP,Eliana De Lima
-8646,ligar,eliana-de-lima,1,835,Mulher,1960-1961,SP,Eliana De Lima
-8647,linda,eliana-de-lima,2,843,Mulher,1960-1961,SP,Eliana De Lima
-8648,lindo,eliana-de-lima,1,954,Mulher,1960-1961,SP,Eliana De Lima
-8649,longe,eliana-de-lima,3,852,Mulher,1960-1961,SP,Eliana De Lima
-8650,louco,eliana-de-lima,1,1032,Mulher,1960-1961,SP,Eliana De Lima
-8651,lua,eliana-de-lima,2,1323,Mulher,1960-1961,SP,Eliana De Lima
-8652,lugar,eliana-de-lima,2,1602,Mulher,1960-1961,SP,Eliana De Lima
-8653,lutar,eliana-de-lima,1,636,Mulher,1960-1961,SP,Eliana De Lima
-8654,luzir,eliana-de-lima,6,1704,Mulher,1960-1961,SP,Eliana De Lima
-8655,mal,eliana-de-lima,2,1934,Mulher,1960-1961,SP,Eliana De Lima
-8656,mar,eliana-de-lima,6,2991,Mulher,1960-1961,SP,Eliana De Lima
-8657,matar,eliana-de-lima,1,1245,Mulher,1960-1961,SP,Eliana De Lima
-8658,melhor,eliana-de-lima,4,1360,Mulher,1960-1961,SP,Eliana De Lima
-8659,mentir,eliana-de-lima,1,855,Mulher,1960-1961,SP,Eliana De Lima
-8660,merecer,eliana-de-lima,3,621,Mulher,1960-1961,SP,Eliana De Lima
-8661,mesmo,eliana-de-lima,4,2388,Mulher,1960-1961,SP,Eliana De Lima
-8662,mexer,eliana-de-lima,1,533,Mulher,1960-1961,SP,Eliana De Lima
-8663,mil,eliana-de-lima,2,621,Mulher,1960-1961,SP,Eliana De Lima
-8664,momento,eliana-de-lima,8,820,Mulher,1960-1961,SP,Eliana De Lima
-8665,morar,eliana-de-lima,1,1152,Mulher,1960-1961,SP,Eliana De Lima
-8666,moreno,eliana-de-lima,1,931,Mulher,1960-1961,SP,Eliana De Lima
-8667,morrer,eliana-de-lima,2,2666,Mulher,1960-1961,SP,Eliana De Lima
-8668,mostrar,eliana-de-lima,1,717,Mulher,1960-1961,SP,Eliana De Lima
-8669,mudar,eliana-de-lima,3,1098,Mulher,1960-1961,SP,Eliana De Lima
-8670,mulher,eliana-de-lima,8,2994,Mulher,1960-1961,SP,Eliana De Lima
-8671,mundo,eliana-de-lima,2,3522,Mulher,1960-1961,SP,Eliana De Lima
-8672,mão,eliana-de-lima,5,2300,Mulher,1960-1961,SP,Eliana De Lima
-8673,namorar,eliana-de-lima,1,737,Mulher,1960-1961,SP,Eliana De Lima
-8674,negro,eliana-de-lima,2,671,Mulher,1960-1961,SP,Eliana De Lima
-8675,ninguém,eliana-de-lima,5,3085,Mulher,1960-1961,SP,Eliana De Lima
-8676,noite,eliana-de-lima,8,2864,Mulher,1960-1961,SP,Eliana De Lima
-8677,nome,eliana-de-lima,1,928,Mulher,1960-1961,SP,Eliana De Lima
-8678,novo,eliana-de-lima,7,1685,Mulher,1960-1961,SP,Eliana De Lima
-8679,nunca,eliana-de-lima,1,2565,Mulher,1960-1961,SP,Eliana De Lima
-8680,olhar,eliana-de-lima,9,4919,Mulher,1960-1961,SP,Eliana De Lima
-8681,olho,eliana-de-lima,3,1668,Mulher,1960-1961,SP,Eliana De Lima
-8682,outro,eliana-de-lima,4,2805,Mulher,1960-1961,SP,Eliana De Lima
-8683,ouvir,eliana-de-lima,2,1639,Mulher,1960-1961,SP,Eliana De Lima
-8684,pagode,eliana-de-lima,4,658,Mulher,1960-1961,SP,Eliana De Lima
-8685,pai,eliana-de-lima,1,835,Mulher,1960-1961,SP,Eliana De Lima
-8686,paixão,eliana-de-lima,7,1591,Mulher,1960-1961,SP,Eliana De Lima
-8687,parar,eliana-de-lima,1,1510,Mulher,1960-1961,SP,Eliana De Lima
-8688,parir,eliana-de-lima,1,3158,Mulher,1960-1961,SP,Eliana De Lima
-8689,partir,eliana-de-lima,1,1209,Mulher,1960-1961,SP,Eliana De Lima
-8690,passar,eliana-de-lima,13,4368,Mulher,1960-1961,SP,Eliana De Lima
-8691,paz,eliana-de-lima,2,1855,Mulher,1960-1961,SP,Eliana De Lima
-8692,pedir,eliana-de-lima,4,2118,Mulher,1960-1961,SP,Eliana De Lima
-8693,pegar,eliana-de-lima,1,1843,Mulher,1960-1961,SP,Eliana De Lima
-8694,peitar,eliana-de-lima,4,1462,Mulher,1960-1961,SP,Eliana De Lima
-8695,pelo,eliana-de-lima,3,598,Mulher,1960-1961,SP,Eliana De Lima
-8696,pensar,eliana-de-lima,7,2418,Mulher,1960-1961,SP,Eliana De Lima
-8697,perder,eliana-de-lima,4,2443,Mulher,1960-1961,SP,Eliana De Lima
-8698,perdoar,eliana-de-lima,1,606,Mulher,1960-1961,SP,Eliana De Lima
-8699,perdão,eliana-de-lima,1,586,Mulher,1960-1961,SP,Eliana De Lima
-8700,perguntar,eliana-de-lima,2,563,Mulher,1960-1961,SP,Eliana De Lima
-8701,perto,eliana-de-lima,6,647,Mulher,1960-1961,SP,Eliana De Lima
-8702,plantar,eliana-de-lima,2,762,Mulher,1960-1961,SP,Eliana De Lima
-8703,poder,eliana-de-lima,17,7634,Mulher,1960-1961,SP,Eliana De Lima
-8704,portar,eliana-de-lima,2,690,Mulher,1960-1961,SP,Eliana De Lima
-8705,pouco,eliana-de-lima,6,1124,Mulher,1960-1961,SP,Eliana De Lima
-8706,povo,eliana-de-lima,3,1256,Mulher,1960-1961,SP,Eliana De Lima
-8707,prazer,eliana-de-lima,3,1042,Mulher,1960-1961,SP,Eliana De Lima
-8708,precisar,eliana-de-lima,21,2443,Mulher,1960-1961,SP,Eliana De Lima
-8709,primeiro,eliana-de-lima,1,882,Mulher,1960-1961,SP,Eliana De Lima
-8710,procurar,eliana-de-lima,2,2198,Mulher,1960-1961,SP,Eliana De Lima
-8711,pé,eliana-de-lima,2,1424,Mulher,1960-1961,SP,Eliana De Lima
-8712,quantum,eliana-de-lima,1,531,Mulher,1960-1961,SP,Eliana De Lima
-8713,quase,eliana-de-lima,2,764,Mulher,1960-1961,SP,Eliana De Lima
-8714,quebrar,eliana-de-lima,1,614,Mulher,1960-1961,SP,Eliana De Lima
-8715,razão,eliana-de-lima,8,1038,Mulher,1960-1961,SP,Eliana De Lima
-8716,refrão,eliana-de-lima,4,1021,Mulher,1960-1961,SP,Eliana De Lima
-8717,rei,eliana-de-lima,2,998,Mulher,1960-1961,SP,Eliana De Lima
-8718,repente,eliana-de-lima,4,1108,Mulher,1960-1961,SP,Eliana De Lima
-8719,rio,eliana-de-lima,1,758,Mulher,1960-1961,SP,Eliana De Lima
-8720,rir,eliana-de-lima,1,839,Mulher,1960-1961,SP,Eliana De Lima
-8721,rolar,eliana-de-lima,2,626,Mulher,1960-1961,SP,Eliana De Lima
-8722,ruir,eliana-de-lima,3,868,Mulher,1960-1961,SP,Eliana De Lima
-8723,sambar,eliana-de-lima,2,6306,Mulher,1960-1961,SP,Eliana De Lima
-8724,saudade,eliana-de-lima,16,2670,Mulher,1960-1961,SP,Eliana De Lima
-8725,seguir,eliana-de-lima,1,771,Mulher,1960-1961,SP,Eliana De Lima
-8726,sempre,eliana-de-lima,5,3360,Mulher,1960-1961,SP,Eliana De Lima
-8727,senhor,eliana-de-lima,4,1178,Mulher,1960-1961,SP,Eliana De Lima
-8728,sentir,eliana-de-lima,14,3125,Mulher,1960-1961,SP,Eliana De Lima
-8729,sobrar,eliana-de-lima,2,608,Mulher,1960-1961,SP,Eliana De Lima
-8730,sofrer,eliana-de-lima,15,2090,Mulher,1960-1961,SP,Eliana De Lima
-8731,sol,eliana-de-lima,6,2154,Mulher,1960-1961,SP,Eliana De Lima
-8732,solidão,eliana-de-lima,12,878,Mulher,1960-1961,SP,Eliana De Lima
-8733,sonhar,eliana-de-lima,8,2462,Mulher,1960-1961,SP,Eliana De Lima
-8734,sonho,eliana-de-lima,4,1098,Mulher,1960-1961,SP,Eliana De Lima
-8735,sorriso,eliana-de-lima,1,896,Mulher,1960-1961,SP,Eliana De Lima
-8736,suar,eliana-de-lima,6,3445,Mulher,1960-1961,SP,Eliana De Lima
-8737,tardar,eliana-de-lima,1,608,Mulher,1960-1961,SP,Eliana De Lima
-8738,tempo,eliana-de-lima,9,3470,Mulher,1960-1961,SP,Eliana De Lima
-8739,tentar,eliana-de-lima,3,1107,Mulher,1960-1961,SP,Eliana De Lima
-8740,tocar,eliana-de-lima,3,1207,Mulher,1960-1961,SP,Eliana De Lima
-8741,tomar,eliana-de-lima,2,897,Mulher,1960-1961,SP,Eliana De Lima
-8742,tristeza,eliana-de-lima,2,1071,Mulher,1960-1961,SP,Eliana De Lima
-8743,valer,eliana-de-lima,1,1283,Mulher,1960-1961,SP,Eliana De Lima
-8744,ventar,eliana-de-lima,3,911,Mulher,1960-1961,SP,Eliana De Lima
-8745,ver,eliana-de-lima,13,9632,Mulher,1960-1961,SP,Eliana De Lima
-8746,verdade,eliana-de-lima,2,1075,Mulher,1960-1961,SP,Eliana De Lima
-8747,vida,eliana-de-lima,6,6401,Mulher,1960-1961,SP,Eliana De Lima
-8748,virar,eliana-de-lima,1,1109,Mulher,1960-1961,SP,Eliana De Lima
-8749,viver,eliana-de-lima,12,4828,Mulher,1960-1961,SP,Eliana De Lima
-8750,voltar,eliana-de-lima,21,3429,Mulher,1960-1961,SP,Eliana De Lima
-8751,vontade,eliana-de-lima,5,833,Mulher,1960-1961,SP,Eliana De Lima
-8752,voz,eliana-de-lima,1,1099,Mulher,1960-1961,SP,Eliana De Lima
+8524,abraçar,eliana-de-lima,2,742,Mulher,1960-1969,SP,Eliana De Lima
+8525,abrir,eliana-de-lima,3,912,Mulher,1960-1969,SP,Eliana De Lima
+8526,acabar,eliana-de-lima,12,1832,Mulher,1960-1969,SP,Eliana De Lima
+8527,achar,eliana-de-lima,5,1151,Mulher,1960-1969,SP,Eliana De Lima
+8528,acontecer,eliana-de-lima,2,929,Mulher,1960-1969,SP,Eliana De Lima
+8529,acordar,eliana-de-lima,3,698,Mulher,1960-1969,SP,Eliana De Lima
+8530,acreditar,eliana-de-lima,1,756,Mulher,1960-1969,SP,Eliana De Lima
+8531,adeus,eliana-de-lima,2,801,Mulher,1960-1969,SP,Eliana De Lima
+8532,agora,eliana-de-lima,10,2881,Mulher,1960-1969,SP,Eliana De Lima
+8533,algum,eliana-de-lima,1,538,Mulher,1960-1969,SP,Eliana De Lima
+8534,almo,eliana-de-lima,2,613,Mulher,1960-1969,SP,Eliana De Lima
+8535,alto,eliana-de-lima,1,649,Mulher,1960-1969,SP,Eliana De Lima
+8536,amanhã,eliana-de-lima,2,1094,Mulher,1960-1969,SP,Eliana De Lima
+8537,amar,eliana-de-lima,36,9816,Mulher,1960-1969,SP,Eliana De Lima
+8538,amigo,eliana-de-lima,4,635,Mulher,1960-1969,SP,Eliana De Lima
+8539,amor,eliana-de-lima,131,31458,Mulher,1960-1969,SP,Eliana De Lima
+8540,andar,eliana-de-lima,3,1990,Mulher,1960-1969,SP,Eliana De Lima
+8541,apaixonar,eliana-de-lima,4,714,Mulher,1960-1969,SP,Eliana De Lima
+8542,apenas,eliana-de-lima,2,538,Mulher,1960-1969,SP,Eliana De Lima
+8543,ar,eliana-de-lima,2,778,Mulher,1960-1969,SP,Eliana De Lima
+8544,azul,eliana-de-lima,2,668,Mulher,1960-1969,SP,Eliana De Lima
+8545,bahia,eliana-de-lima,1,658,Mulher,1960-1969,SP,Eliana De Lima
+8546,bater,eliana-de-lima,2,1694,Mulher,1960-1969,SP,Eliana De Lima
+8547,beijar,eliana-de-lima,5,1982,Mulher,1960-1969,SP,Eliana De Lima
+8548,beleza,eliana-de-lima,1,765,Mulher,1960-1969,SP,Eliana De Lima
+8549,boca,eliana-de-lima,2,1198,Mulher,1960-1969,SP,Eliana De Lima
+8550,bom,eliana-de-lima,8,3691,Mulher,1960-1969,SP,Eliana De Lima
+8551,bonito,eliana-de-lima,2,1166,Mulher,1960-1969,SP,Eliana De Lima
+8552,brasil,eliana-de-lima,1,1094,Mulher,1960-1969,SP,Eliana De Lima
+8553,brasileiro,eliana-de-lima,1,549,Mulher,1960-1969,SP,Eliana De Lima
+8554,brigar,eliana-de-lima,1,610,Mulher,1960-1969,SP,Eliana De Lima
+8555,brilhar,eliana-de-lima,1,921,Mulher,1960-1969,SP,Eliana De Lima
+8556,brincar,eliana-de-lima,3,742,Mulher,1960-1969,SP,Eliana De Lima
+8557,buscar,eliana-de-lima,1,674,Mulher,1960-1969,SP,Eliana De Lima
+8558,cabeça,eliana-de-lima,4,760,Mulher,1960-1969,SP,Eliana De Lima
+8559,cair,eliana-de-lima,2,1544,Mulher,1960-1969,SP,Eliana De Lima
+8560,calar,eliana-de-lima,1,549,Mulher,1960-1969,SP,Eliana De Lima
+8561,calor,eliana-de-lima,4,629,Mulher,1960-1969,SP,Eliana De Lima
+8562,caminhar,eliana-de-lima,3,1179,Mulher,1960-1969,SP,Eliana De Lima
+8563,cansar,eliana-de-lima,9,880,Mulher,1960-1969,SP,Eliana De Lima
+8564,cantar,eliana-de-lima,14,8891,Mulher,1960-1969,SP,Eliana De Lima
+8565,canção,eliana-de-lima,2,1030,Mulher,1960-1969,SP,Eliana De Lima
+8566,carnaval,eliana-de-lima,2,816,Mulher,1960-1969,SP,Eliana De Lima
+8567,caro,eliana-de-lima,5,2089,Mulher,1960-1969,SP,Eliana De Lima
+8568,casar,eliana-de-lima,2,2147,Mulher,1960-1969,SP,Eliana De Lima
+8569,certa,eliana-de-lima,2,522,Mulher,1960-1969,SP,Eliana De Lima
+8570,certo,eliana-de-lima,2,571,Mulher,1960-1969,SP,Eliana De Lima
+8571,chamar,eliana-de-lima,3,1650,Mulher,1960-1969,SP,Eliana De Lima
+8572,chegar,eliana-de-lima,11,4489,Mulher,1960-1969,SP,Eliana De Lima
+8573,cheio,eliana-de-lima,4,743,Mulher,1960-1969,SP,Eliana De Lima
+8574,chorar,eliana-de-lima,24,4386,Mulher,1960-1969,SP,Eliana De Lima
+8575,chuva,eliana-de-lima,2,635,Mulher,1960-1969,SP,Eliana De Lima
+8576,chão,eliana-de-lima,3,1037,Mulher,1960-1969,SP,Eliana De Lima
+8577,cidade,eliana-de-lima,2,1002,Mulher,1960-1969,SP,Eliana De Lima
+8578,coisa,eliana-de-lima,3,2410,Mulher,1960-1969,SP,Eliana De Lima
+8579,comer,eliana-de-lima,9,4536,Mulher,1960-1969,SP,Eliana De Lima
+8580,comigo,eliana-de-lima,2,1583,Mulher,1960-1969,SP,Eliana De Lima
+8581,como,eliana-de-lima,4,3838,Mulher,1960-1969,SP,Eliana De Lima
+8582,conseguir,eliana-de-lima,6,767,Mulher,1960-1969,SP,Eliana De Lima
+8583,contar,eliana-de-lima,3,1269,Mulher,1960-1969,SP,Eliana De Lima
+8584,cor,eliana-de-lima,5,821,Mulher,1960-1969,SP,Eliana De Lima
+8585,coração,eliana-de-lima,21,6266,Mulher,1960-1969,SP,Eliana De Lima
+8586,corpo,eliana-de-lima,9,1523,Mulher,1960-1969,SP,Eliana De Lima
+8587,correr,eliana-de-lima,1,1081,Mulher,1960-1969,SP,Eliana De Lima
+8588,criança,eliana-de-lima,1,708,Mulher,1960-1969,SP,Eliana De Lima
+8589,céu,eliana-de-lima,2,2061,Mulher,1960-1969,SP,Eliana De Lima
+8590,dançar,eliana-de-lima,2,1429,Mulher,1960-1969,SP,Eliana De Lima
+8591,dentro,eliana-de-lima,4,1212,Mulher,1960-1969,SP,Eliana De Lima
+8592,depois,eliana-de-lima,3,1839,Mulher,1960-1969,SP,Eliana De Lima
+8593,desde,eliana-de-lima,2,562,Mulher,1960-1969,SP,Eliana De Lima
+8594,desejar,eliana-de-lima,3,1051,Mulher,1960-1969,SP,Eliana De Lima
+8595,desfazer,eliana-de-lima,2,554,Mulher,1960-1969,SP,Eliana De Lima
+8596,destinar,eliana-de-lima,2,562,Mulher,1960-1969,SP,Eliana De Lima
+8597,deus,eliana-de-lima,1,3257,Mulher,1960-1969,SP,Eliana De Lima
+8598,dever,eliana-de-lima,3,955,Mulher,1960-1969,SP,Eliana De Lima
+8599,dia,eliana-de-lima,11,4842,Mulher,1960-1969,SP,Eliana De Lima
+8600,dizer,eliana-de-lima,17,8012,Mulher,1960-1969,SP,Eliana De Lima
+8601,doer,eliana-de-lima,3,639,Mulher,1960-1969,SP,Eliana De Lima
+8602,dono,eliana-de-lima,1,564,Mulher,1960-1969,SP,Eliana De Lima
+8603,dor,eliana-de-lima,3,2290,Mulher,1960-1969,SP,Eliana De Lima
+8604,dormir,eliana-de-lima,1,868,Mulher,1960-1969,SP,Eliana De Lima
+8605,embora,eliana-de-lima,3,1492,Mulher,1960-1969,SP,Eliana De Lima
+8606,emoção,eliana-de-lima,4,671,Mulher,1960-1969,SP,Eliana De Lima
+8607,encantar,eliana-de-lima,2,514,Mulher,1960-1969,SP,Eliana De Lima
+8608,encontrar,eliana-de-lima,7,2135,Mulher,1960-1969,SP,Eliana De Lima
+8609,entender,eliana-de-lima,5,970,Mulher,1960-1969,SP,Eliana De Lima
+8610,entrar,eliana-de-lima,4,1652,Mulher,1960-1969,SP,Eliana De Lima
+8611,entregar,eliana-de-lima,3,774,Mulher,1960-1969,SP,Eliana De Lima
+8612,errar,eliana-de-lima,1,872,Mulher,1960-1969,SP,Eliana De Lima
+8613,esperar,eliana-de-lima,2,1753,Mulher,1960-1969,SP,Eliana De Lima
+8614,esquecer,eliana-de-lima,11,2291,Mulher,1960-1969,SP,Eliana De Lima
+8615,existir,eliana-de-lima,2,1025,Mulher,1960-1969,SP,Eliana De Lima
+8616,falar,eliana-de-lima,1,2676,Mulher,1960-1969,SP,Eliana De Lima
+8617,falir,eliana-de-lima,1,940,Mulher,1960-1969,SP,Eliana De Lima
+8618,faltar,eliana-de-lima,2,925,Mulher,1960-1969,SP,Eliana De Lima
+8619,favor,eliana-de-lima,1,665,Mulher,1960-1969,SP,Eliana De Lima
+8620,felicidade,eliana-de-lima,3,1110,Mulher,1960-1969,SP,Eliana De Lima
+8621,feliz,eliana-de-lima,10,2585,Mulher,1960-1969,SP,Eliana De Lima
+8622,festa,eliana-de-lima,2,808,Mulher,1960-1969,SP,Eliana De Lima
+8623,fim,eliana-de-lima,5,1834,Mulher,1960-1969,SP,Eliana De Lima
+8624,flor,eliana-de-lima,6,1265,Mulher,1960-1969,SP,Eliana De Lima
+8625,fogo,eliana-de-lima,4,724,Mulher,1960-1969,SP,Eliana De Lima
+8626,forte,eliana-de-lima,6,723,Mulher,1960-1969,SP,Eliana De Lima
+8627,fugir,eliana-de-lima,1,584,Mulher,1960-1969,SP,Eliana De Lima
+8628,fundir,eliana-de-lima,3,635,Mulher,1960-1969,SP,Eliana De Lima
+8629,fé,eliana-de-lima,1,861,Mulher,1960-1969,SP,Eliana De Lima
+8630,gente,eliana-de-lima,6,5724,Mulher,1960-1969,SP,Eliana De Lima
+8631,grande,eliana-de-lima,4,1626,Mulher,1960-1969,SP,Eliana De Lima
+8632,gritar,eliana-de-lima,3,642,Mulher,1960-1969,SP,Eliana De Lima
+8633,guardar,eliana-de-lima,4,807,Mulher,1960-1969,SP,Eliana De Lima
+8634,história,eliana-de-lima,3,728,Mulher,1960-1969,SP,Eliana De Lima
+8635,hoje,eliana-de-lima,16,2878,Mulher,1960-1969,SP,Eliana De Lima
+8636,hora,eliana-de-lima,5,2096,Mulher,1960-1969,SP,Eliana De Lima
+8637,ilusão,eliana-de-lima,4,847,Mulher,1960-1969,SP,Eliana De Lima
+8638,jeito,eliana-de-lima,11,1733,Mulher,1960-1969,SP,Eliana De Lima
+8639,jogar,eliana-de-lima,4,1562,Mulher,1960-1969,SP,Eliana De Lima
+8640,juntar,eliana-de-lima,1,544,Mulher,1960-1969,SP,Eliana De Lima
+8641,junto,eliana-de-lima,4,755,Mulher,1960-1969,SP,Eliana De Lima
+8642,lado,eliana-de-lima,2,1321,Mulher,1960-1969,SP,Eliana De Lima
+8643,lembrar,eliana-de-lima,3,1250,Mulher,1960-1969,SP,Eliana De Lima
+8644,ler,eliana-de-lima,1,934,Mulher,1960-1969,SP,Eliana De Lima
+8645,levar,eliana-de-lima,6,2918,Mulher,1960-1969,SP,Eliana De Lima
+8646,ligar,eliana-de-lima,1,835,Mulher,1960-1969,SP,Eliana De Lima
+8647,linda,eliana-de-lima,2,843,Mulher,1960-1969,SP,Eliana De Lima
+8648,lindo,eliana-de-lima,1,954,Mulher,1960-1969,SP,Eliana De Lima
+8649,longe,eliana-de-lima,3,852,Mulher,1960-1969,SP,Eliana De Lima
+8650,louco,eliana-de-lima,1,1032,Mulher,1960-1969,SP,Eliana De Lima
+8651,lua,eliana-de-lima,2,1323,Mulher,1960-1969,SP,Eliana De Lima
+8652,lugar,eliana-de-lima,2,1602,Mulher,1960-1969,SP,Eliana De Lima
+8653,lutar,eliana-de-lima,1,636,Mulher,1960-1969,SP,Eliana De Lima
+8654,luzir,eliana-de-lima,6,1704,Mulher,1960-1969,SP,Eliana De Lima
+8655,mal,eliana-de-lima,2,1934,Mulher,1960-1969,SP,Eliana De Lima
+8656,mar,eliana-de-lima,6,2991,Mulher,1960-1969,SP,Eliana De Lima
+8657,matar,eliana-de-lima,1,1245,Mulher,1960-1969,SP,Eliana De Lima
+8658,melhor,eliana-de-lima,4,1360,Mulher,1960-1969,SP,Eliana De Lima
+8659,mentir,eliana-de-lima,1,855,Mulher,1960-1969,SP,Eliana De Lima
+8660,merecer,eliana-de-lima,3,621,Mulher,1960-1969,SP,Eliana De Lima
+8661,mesmo,eliana-de-lima,4,2388,Mulher,1960-1969,SP,Eliana De Lima
+8662,mexer,eliana-de-lima,1,533,Mulher,1960-1969,SP,Eliana De Lima
+8663,mil,eliana-de-lima,2,621,Mulher,1960-1969,SP,Eliana De Lima
+8664,momento,eliana-de-lima,8,820,Mulher,1960-1969,SP,Eliana De Lima
+8665,morar,eliana-de-lima,1,1152,Mulher,1960-1969,SP,Eliana De Lima
+8666,moreno,eliana-de-lima,1,931,Mulher,1960-1969,SP,Eliana De Lima
+8667,morrer,eliana-de-lima,2,2666,Mulher,1960-1969,SP,Eliana De Lima
+8668,mostrar,eliana-de-lima,1,717,Mulher,1960-1969,SP,Eliana De Lima
+8669,mudar,eliana-de-lima,3,1098,Mulher,1960-1969,SP,Eliana De Lima
+8670,mulher,eliana-de-lima,8,2994,Mulher,1960-1969,SP,Eliana De Lima
+8671,mundo,eliana-de-lima,2,3522,Mulher,1960-1969,SP,Eliana De Lima
+8672,mão,eliana-de-lima,5,2300,Mulher,1960-1969,SP,Eliana De Lima
+8673,namorar,eliana-de-lima,1,737,Mulher,1960-1969,SP,Eliana De Lima
+8674,negro,eliana-de-lima,2,671,Mulher,1960-1969,SP,Eliana De Lima
+8675,ninguém,eliana-de-lima,5,3085,Mulher,1960-1969,SP,Eliana De Lima
+8676,noite,eliana-de-lima,8,2864,Mulher,1960-1969,SP,Eliana De Lima
+8677,nome,eliana-de-lima,1,928,Mulher,1960-1969,SP,Eliana De Lima
+8678,novo,eliana-de-lima,7,1685,Mulher,1960-1969,SP,Eliana De Lima
+8679,nunca,eliana-de-lima,1,2565,Mulher,1960-1969,SP,Eliana De Lima
+8680,olhar,eliana-de-lima,9,4919,Mulher,1960-1969,SP,Eliana De Lima
+8681,olho,eliana-de-lima,3,1668,Mulher,1960-1969,SP,Eliana De Lima
+8682,outro,eliana-de-lima,4,2805,Mulher,1960-1969,SP,Eliana De Lima
+8683,ouvir,eliana-de-lima,2,1639,Mulher,1960-1969,SP,Eliana De Lima
+8684,pagode,eliana-de-lima,4,658,Mulher,1960-1969,SP,Eliana De Lima
+8685,pai,eliana-de-lima,1,835,Mulher,1960-1969,SP,Eliana De Lima
+8686,paixão,eliana-de-lima,7,1591,Mulher,1960-1969,SP,Eliana De Lima
+8687,parar,eliana-de-lima,1,1510,Mulher,1960-1969,SP,Eliana De Lima
+8688,parir,eliana-de-lima,1,3158,Mulher,1960-1969,SP,Eliana De Lima
+8689,partir,eliana-de-lima,1,1209,Mulher,1960-1969,SP,Eliana De Lima
+8690,passar,eliana-de-lima,13,4368,Mulher,1960-1969,SP,Eliana De Lima
+8691,paz,eliana-de-lima,2,1855,Mulher,1960-1969,SP,Eliana De Lima
+8692,pedir,eliana-de-lima,4,2118,Mulher,1960-1969,SP,Eliana De Lima
+8693,pegar,eliana-de-lima,1,1843,Mulher,1960-1969,SP,Eliana De Lima
+8694,peitar,eliana-de-lima,4,1462,Mulher,1960-1969,SP,Eliana De Lima
+8695,pelo,eliana-de-lima,3,598,Mulher,1960-1969,SP,Eliana De Lima
+8696,pensar,eliana-de-lima,7,2418,Mulher,1960-1969,SP,Eliana De Lima
+8697,perder,eliana-de-lima,4,2443,Mulher,1960-1969,SP,Eliana De Lima
+8698,perdoar,eliana-de-lima,1,606,Mulher,1960-1969,SP,Eliana De Lima
+8699,perdão,eliana-de-lima,1,586,Mulher,1960-1969,SP,Eliana De Lima
+8700,perguntar,eliana-de-lima,2,563,Mulher,1960-1969,SP,Eliana De Lima
+8701,perto,eliana-de-lima,6,647,Mulher,1960-1969,SP,Eliana De Lima
+8702,plantar,eliana-de-lima,2,762,Mulher,1960-1969,SP,Eliana De Lima
+8703,poder,eliana-de-lima,17,7634,Mulher,1960-1969,SP,Eliana De Lima
+8704,portar,eliana-de-lima,2,690,Mulher,1960-1969,SP,Eliana De Lima
+8705,pouco,eliana-de-lima,6,1124,Mulher,1960-1969,SP,Eliana De Lima
+8706,povo,eliana-de-lima,3,1256,Mulher,1960-1969,SP,Eliana De Lima
+8707,prazer,eliana-de-lima,3,1042,Mulher,1960-1969,SP,Eliana De Lima
+8708,precisar,eliana-de-lima,21,2443,Mulher,1960-1969,SP,Eliana De Lima
+8709,primeiro,eliana-de-lima,1,882,Mulher,1960-1969,SP,Eliana De Lima
+8710,procurar,eliana-de-lima,2,2198,Mulher,1960-1969,SP,Eliana De Lima
+8711,pé,eliana-de-lima,2,1424,Mulher,1960-1969,SP,Eliana De Lima
+8712,quantum,eliana-de-lima,1,531,Mulher,1960-1969,SP,Eliana De Lima
+8713,quase,eliana-de-lima,2,764,Mulher,1960-1969,SP,Eliana De Lima
+8714,quebrar,eliana-de-lima,1,614,Mulher,1960-1969,SP,Eliana De Lima
+8715,razão,eliana-de-lima,8,1038,Mulher,1960-1969,SP,Eliana De Lima
+8716,refrão,eliana-de-lima,4,1021,Mulher,1960-1969,SP,Eliana De Lima
+8717,rei,eliana-de-lima,2,998,Mulher,1960-1969,SP,Eliana De Lima
+8718,repente,eliana-de-lima,4,1108,Mulher,1960-1969,SP,Eliana De Lima
+8719,rio,eliana-de-lima,1,758,Mulher,1960-1969,SP,Eliana De Lima
+8720,rir,eliana-de-lima,1,839,Mulher,1960-1969,SP,Eliana De Lima
+8721,rolar,eliana-de-lima,2,626,Mulher,1960-1969,SP,Eliana De Lima
+8722,ruir,eliana-de-lima,3,868,Mulher,1960-1969,SP,Eliana De Lima
+8723,sambar,eliana-de-lima,2,6306,Mulher,1960-1969,SP,Eliana De Lima
+8724,saudade,eliana-de-lima,16,2670,Mulher,1960-1969,SP,Eliana De Lima
+8725,seguir,eliana-de-lima,1,771,Mulher,1960-1969,SP,Eliana De Lima
+8726,sempre,eliana-de-lima,5,3360,Mulher,1960-1969,SP,Eliana De Lima
+8727,senhor,eliana-de-lima,4,1178,Mulher,1960-1969,SP,Eliana De Lima
+8728,sentir,eliana-de-lima,14,3125,Mulher,1960-1969,SP,Eliana De Lima
+8729,sobrar,eliana-de-lima,2,608,Mulher,1960-1969,SP,Eliana De Lima
+8730,sofrer,eliana-de-lima,15,2090,Mulher,1960-1969,SP,Eliana De Lima
+8731,sol,eliana-de-lima,6,2154,Mulher,1960-1969,SP,Eliana De Lima
+8732,solidão,eliana-de-lima,12,878,Mulher,1960-1969,SP,Eliana De Lima
+8733,sonhar,eliana-de-lima,8,2462,Mulher,1960-1969,SP,Eliana De Lima
+8734,sonho,eliana-de-lima,4,1098,Mulher,1960-1969,SP,Eliana De Lima
+8735,sorriso,eliana-de-lima,1,896,Mulher,1960-1969,SP,Eliana De Lima
+8736,suar,eliana-de-lima,6,3445,Mulher,1960-1969,SP,Eliana De Lima
+8737,tardar,eliana-de-lima,1,608,Mulher,1960-1969,SP,Eliana De Lima
+8738,tempo,eliana-de-lima,9,3470,Mulher,1960-1969,SP,Eliana De Lima
+8739,tentar,eliana-de-lima,3,1107,Mulher,1960-1969,SP,Eliana De Lima
+8740,tocar,eliana-de-lima,3,1207,Mulher,1960-1969,SP,Eliana De Lima
+8741,tomar,eliana-de-lima,2,897,Mulher,1960-1969,SP,Eliana De Lima
+8742,tristeza,eliana-de-lima,2,1071,Mulher,1960-1969,SP,Eliana De Lima
+8743,valer,eliana-de-lima,1,1283,Mulher,1960-1969,SP,Eliana De Lima
+8744,ventar,eliana-de-lima,3,911,Mulher,1960-1969,SP,Eliana De Lima
+8745,ver,eliana-de-lima,13,9632,Mulher,1960-1969,SP,Eliana De Lima
+8746,verdade,eliana-de-lima,2,1075,Mulher,1960-1969,SP,Eliana De Lima
+8747,vida,eliana-de-lima,6,6401,Mulher,1960-1969,SP,Eliana De Lima
+8748,virar,eliana-de-lima,1,1109,Mulher,1960-1969,SP,Eliana De Lima
+8749,viver,eliana-de-lima,12,4828,Mulher,1960-1969,SP,Eliana De Lima
+8750,voltar,eliana-de-lima,21,3429,Mulher,1960-1969,SP,Eliana De Lima
+8751,vontade,eliana-de-lima,5,833,Mulher,1960-1969,SP,Eliana De Lima
+8752,voz,eliana-de-lima,1,1099,Mulher,1960-1969,SP,Eliana De Lima
 8753,abraçar,elizeth-cardoso,14,742,Mulher,1920-1929,RJ,Elizeth Cardoso
 8754,abrir,elizeth-cardoso,17,912,Mulher,1920-1929,RJ,Elizeth Cardoso
 8755,acabar,elizeth-cardoso,45,1832,Mulher,1920-1929,RJ,Elizeth Cardoso
@@ -8916,7 +8916,7 @@
 8914,madrugar,elizeth-cardoso,16,674,Mulher,1920-1929,RJ,Elizeth Cardoso
 8915,maior,elizeth-cardoso,9,628,Mulher,1920-1929,RJ,Elizeth Cardoso
 8916,mal,elizeth-cardoso,51,1934,Mulher,1920-1929,RJ,Elizeth Cardoso
-8917,malandrar,elizeth-cardoso,5,604,Mulher,1920-1929,RJ,Elizeth Cardoso
+8917,malandro,elizeth-cardoso,5,604,Mulher,1920-1929,RJ,Elizeth Cardoso
 8918,mandar,elizeth-cardoso,26,1580,Mulher,1920-1929,RJ,Elizeth Cardoso
 8919,mangueira,elizeth-cardoso,10,520,Mulher,1920-1929,RJ,Elizeth Cardoso
 8920,manhã,elizeth-cardoso,28,794,Mulher,1920-1929,RJ,Elizeth Cardoso
@@ -9533,7 +9533,7 @@
 9531,madrugar,ferrugem,11,674,Homem,1980-1989,RJ,Ferrugem
 9532,maior,ferrugem,3,628,Homem,1980-1989,RJ,Ferrugem
 9533,mal,ferrugem,1,1934,Homem,1980-1989,RJ,Ferrugem
-9534,malandrar,ferrugem,2,604,Homem,1980-1989,RJ,Ferrugem
+9534,malandro,ferrugem,2,604,Homem,1980-1989,RJ,Ferrugem
 9535,mandar,ferrugem,9,1580,Homem,1980-1989,RJ,Ferrugem
 9536,manhã,ferrugem,4,794,Homem,1980-1989,RJ,Ferrugem
 9537,mar,ferrugem,5,2991,Homem,1980-1989,RJ,Ferrugem
@@ -9802,7 +9802,7 @@
 9800,madrugar,francisco-alves,3,674,Homem,1890-1899,RJ,Francisco Alves
 9801,maior,francisco-alves,10,628,Homem,1890-1899,RJ,Francisco Alves
 9802,mal,francisco-alves,10,1934,Homem,1890-1899,RJ,Francisco Alves
-9803,malandrar,francisco-alves,3,604,Homem,1890-1899,RJ,Francisco Alves
+9803,malandro,francisco-alves,3,604,Homem,1890-1899,RJ,Francisco Alves
 9804,mandar,francisco-alves,9,1580,Homem,1890-1899,RJ,Francisco Alves
 9805,mangueira,francisco-alves,3,520,Homem,1890-1899,RJ,Francisco Alves
 9806,manhã,francisco-alves,2,794,Homem,1890-1899,RJ,Francisco Alves
@@ -10089,7 +10089,7 @@
 10087,madrugar,fundo-de-quintal,17,674,Grupo,,,Fundo De Quintal
 10088,maior,fundo-de-quintal,18,628,Grupo,,,Fundo De Quintal
 10089,mal,fundo-de-quintal,49,1934,Grupo,,,Fundo De Quintal
-10090,malandrar,fundo-de-quintal,10,604,Grupo,,,Fundo De Quintal
+10090,malandro,fundo-de-quintal,10,604,Grupo,,,Fundo De Quintal
 10091,mandar,fundo-de-quintal,64,1580,Grupo,,,Fundo De Quintal
 10092,mangueira,fundo-de-quintal,20,520,Grupo,,,Fundo De Quintal
 10093,manhã,fundo-de-quintal,15,794,Grupo,,,Fundo De Quintal
@@ -10385,7 +10385,7 @@
 10383,madrugar,gonzaguinha,3,674,Homem,1940-1949,RJ,Gonzaguinha
 10384,maior,gonzaguinha,9,628,Homem,1940-1949,RJ,Gonzaguinha
 10385,mal,gonzaguinha,21,1934,Homem,1940-1949,RJ,Gonzaguinha
-10386,malandrar,gonzaguinha,2,604,Homem,1940-1949,RJ,Gonzaguinha
+10386,malandro,gonzaguinha,2,604,Homem,1940-1949,RJ,Gonzaguinha
 10387,mandar,gonzaguinha,10,1580,Homem,1940-1949,RJ,Gonzaguinha
 10388,manhã,gonzaguinha,11,794,Homem,1940-1949,RJ,Gonzaguinha
 10389,mar,gonzaguinha,21,2991,Homem,1940-1949,RJ,Gonzaguinha
@@ -10980,7 +10980,7 @@
 10978,madrugar,jackson-do-pandeiro,11,674,Homem,1910-1919,PB,Jackson do Pandeiro
 10979,maior,jackson-do-pandeiro,7,628,Homem,1910-1919,PB,Jackson do Pandeiro
 10980,mal,jackson-do-pandeiro,16,1934,Homem,1910-1919,PB,Jackson do Pandeiro
-10981,malandrar,jackson-do-pandeiro,2,604,Homem,1910-1919,PB,Jackson do Pandeiro
+10981,malandro,jackson-do-pandeiro,2,604,Homem,1910-1919,PB,Jackson do Pandeiro
 10982,mandar,jackson-do-pandeiro,40,1580,Homem,1910-1919,PB,Jackson do Pandeiro
 10983,manhã,jackson-do-pandeiro,7,794,Homem,1910-1919,PB,Jackson do Pandeiro
 10984,mar,jackson-do-pandeiro,33,2991,Homem,1910-1919,PB,Jackson do Pandeiro
@@ -11506,7 +11506,7 @@
 11504,madrugar,jeito-moleque,5,674,Grupo,,,Jeito Moleque
 11505,maior,jeito-moleque,4,628,Grupo,,,Jeito Moleque
 11506,mal,jeito-moleque,22,1934,Grupo,,,Jeito Moleque
-11507,malandrar,jeito-moleque,1,604,Grupo,,,Jeito Moleque
+11507,malandro,jeito-moleque,1,604,Grupo,,,Jeito Moleque
 11508,mandar,jeito-moleque,5,1580,Grupo,,,Jeito Moleque
 11509,mangueira,jeito-moleque,1,520,Grupo,,,Jeito Moleque
 11510,manhã,jeito-moleque,5,794,Grupo,,,Jeito Moleque
@@ -11787,7 +11787,7 @@
 11785,madrugar,joao-bosco,4,674,Homem,1940-1949,MG,João Bosco
 11786,maior,joao-bosco,5,628,Homem,1940-1949,MG,João Bosco
 11787,mal,joao-bosco,13,1934,Homem,1940-1949,MG,João Bosco
-11788,malandrar,joao-bosco,1,604,Homem,1940-1949,MG,João Bosco
+11788,malandro,joao-bosco,1,604,Homem,1940-1949,MG,João Bosco
 11789,mandar,joao-bosco,24,1580,Homem,1940-1949,MG,João Bosco
 11790,mangueira,joao-bosco,1,520,Homem,1940-1949,MG,João Bosco
 11791,manhã,joao-bosco,15,794,Homem,1940-1949,MG,João Bosco
@@ -12081,7 +12081,7 @@
 12079,madrugar,joao-nogueira,1,674,Homem,1940-1949,RJ,João Nogueira
 12080,maior,joao-nogueira,11,628,Homem,1940-1949,RJ,João Nogueira
 12081,mal,joao-nogueira,26,1934,Homem,1940-1949,RJ,João Nogueira
-12082,malandrar,joao-nogueira,7,604,Homem,1940-1949,RJ,João Nogueira
+12082,malandro,joao-nogueira,7,604,Homem,1940-1949,RJ,João Nogueira
 12083,mandar,joao-nogueira,22,1580,Homem,1940-1949,RJ,João Nogueira
 12084,mangueira,joao-nogueira,1,520,Homem,1940-1949,RJ,João Nogueira
 12085,manhã,joao-nogueira,15,794,Homem,1940-1949,RJ,João Nogueira
@@ -12374,7 +12374,7 @@
 12372,madrugar,jorge-aragao,6,674,Homem,1940-1949,RJ,Jorge Aragão
 12373,maior,jorge-aragao,14,628,Homem,1940-1949,RJ,Jorge Aragão
 12374,mal,jorge-aragao,48,1934,Homem,1940-1949,RJ,Jorge Aragão
-12375,malandrar,jorge-aragao,3,604,Homem,1940-1949,RJ,Jorge Aragão
+12375,malandro,jorge-aragao,3,604,Homem,1940-1949,RJ,Jorge Aragão
 12376,mandar,jorge-aragao,25,1580,Homem,1940-1949,RJ,Jorge Aragão
 12377,manhã,jorge-aragao,1,794,Homem,1940-1949,RJ,Jorge Aragão
 12378,mar,jorge-aragao,26,2991,Homem,1940-1949,RJ,Jorge Aragão
@@ -12667,7 +12667,7 @@
 12665,madrugar,jorge-ben-jor,6,674,Homem,1940-1949,RJ,Jorge Ben Jor
 12666,maior,jorge-ben-jor,3,628,Homem,1940-1949,RJ,Jorge Ben Jor
 12667,mal,jorge-ben-jor,20,1934,Homem,1940-1949,RJ,Jorge Ben Jor
-12668,malandrar,jorge-ben-jor,15,604,Homem,1940-1949,RJ,Jorge Ben Jor
+12668,malandro,jorge-ben-jor,15,604,Homem,1940-1949,RJ,Jorge Ben Jor
 12669,mandar,jorge-ben-jor,58,1580,Homem,1940-1949,RJ,Jorge Ben Jor
 12670,mangueira,jorge-ben-jor,9,520,Homem,1940-1949,RJ,Jorge Ben Jor
 12671,manhã,jorge-ben-jor,10,794,Homem,1940-1949,RJ,Jorge Ben Jor
@@ -13153,7 +13153,7 @@
 13151,madrugar,jorginho-do-imperio,1,674,Homem,1940-1949,RJ,Jorginho do Império
 13152,maior,jorginho-do-imperio,3,628,Homem,1940-1949,RJ,Jorginho do Império
 13153,mal,jorginho-do-imperio,3,1934,Homem,1940-1949,RJ,Jorginho do Império
-13154,malandrar,jorginho-do-imperio,1,604,Homem,1940-1949,RJ,Jorginho do Império
+13154,malandro,jorginho-do-imperio,1,604,Homem,1940-1949,RJ,Jorginho do Império
 13155,mandar,jorginho-do-imperio,20,1580,Homem,1940-1949,RJ,Jorginho do Império
 13156,mangueira,jorginho-do-imperio,1,520,Homem,1940-1949,RJ,Jorginho do Império
 13157,mar,jorginho-do-imperio,34,2991,Homem,1940-1949,RJ,Jorginho do Império
@@ -13422,7 +13422,7 @@
 13420,madrugar,jovelina-perola-negra,2,674,Mulher,1940-1949,RJ,Jovelina Pérola Negra
 13421,maior,jovelina-perola-negra,3,628,Mulher,1940-1949,RJ,Jovelina Pérola Negra
 13422,mal,jovelina-perola-negra,8,1934,Mulher,1940-1949,RJ,Jovelina Pérola Negra
-13423,malandrar,jovelina-perola-negra,4,604,Mulher,1940-1949,RJ,Jovelina Pérola Negra
+13423,malandro,jovelina-perola-negra,4,604,Mulher,1940-1949,RJ,Jovelina Pérola Negra
 13424,mandar,jovelina-perola-negra,22,1580,Mulher,1940-1949,RJ,Jovelina Pérola Negra
 13425,mangueira,jovelina-perola-negra,1,520,Mulher,1940-1949,RJ,Jovelina Pérola Negra
 13426,manhã,jovelina-perola-negra,2,794,Mulher,1940-1949,RJ,Jovelina Pérola Negra
@@ -14340,7 +14340,7 @@
 14338,luzir,lamartine-babo,5,1704,Homem,1900-1909,RJ,Lamartine Babo
 14339,maior,lamartine-babo,2,628,Homem,1900-1909,RJ,Lamartine Babo
 14340,mal,lamartine-babo,3,1934,Homem,1900-1909,RJ,Lamartine Babo
-14341,malandrar,lamartine-babo,1,604,Homem,1900-1909,RJ,Lamartine Babo
+14341,malandro,lamartine-babo,1,604,Homem,1900-1909,RJ,Lamartine Babo
 14342,mandar,lamartine-babo,4,1580,Homem,1900-1909,RJ,Lamartine Babo
 14343,manhã,lamartine-babo,3,794,Homem,1900-1909,RJ,Lamartine Babo
 14344,mar,lamartine-babo,4,2991,Homem,1900-1909,RJ,Lamartine Babo
@@ -14567,7 +14567,7 @@
 14565,luzir,leandro-sapucahy,7,1704,Homem,1970-1979,RJ,Leandro Sapucahy
 14566,madrugar,leandro-sapucahy,3,674,Homem,1970-1979,RJ,Leandro Sapucahy
 14567,mal,leandro-sapucahy,15,1934,Homem,1970-1979,RJ,Leandro Sapucahy
-14568,malandrar,leandro-sapucahy,2,604,Homem,1970-1979,RJ,Leandro Sapucahy
+14568,malandro,leandro-sapucahy,2,604,Homem,1970-1979,RJ,Leandro Sapucahy
 14569,mandar,leandro-sapucahy,11,1580,Homem,1970-1979,RJ,Leandro Sapucahy
 14570,mangueira,leandro-sapucahy,1,520,Homem,1970-1979,RJ,Leandro Sapucahy
 14571,mar,leandro-sapucahy,2,2991,Homem,1970-1979,RJ,Leandro Sapucahy
@@ -14839,7 +14839,7 @@
 14837,madrugar,leci-brandao,2,674,Mulher,1940-1949,RJ,Leci Brandão
 14838,maior,leci-brandao,12,628,Mulher,1940-1949,RJ,Leci Brandão
 14839,mal,leci-brandao,15,1934,Mulher,1940-1949,RJ,Leci Brandão
-14840,malandrar,leci-brandao,1,604,Mulher,1940-1949,RJ,Leci Brandão
+14840,malandro,leci-brandao,1,604,Mulher,1940-1949,RJ,Leci Brandão
 14841,mandar,leci-brandao,12,1580,Mulher,1940-1949,RJ,Leci Brandão
 14842,mangueira,leci-brandao,6,520,Mulher,1940-1949,RJ,Leci Brandão
 14843,manhã,leci-brandao,1,794,Mulher,1940-1949,RJ,Leci Brandão
@@ -15343,7 +15343,7 @@
 15341,madrugar,luciana-mello,1,674,Mulher,1970-1979,SP,Luciana Mello
 15342,maior,luciana-mello,2,628,Mulher,1970-1979,SP,Luciana Mello
 15343,mal,luciana-mello,12,1934,Mulher,1970-1979,SP,Luciana Mello
-15344,malandrar,luciana-mello,3,604,Mulher,1970-1979,SP,Luciana Mello
+15344,malandro,luciana-mello,3,604,Mulher,1970-1979,SP,Luciana Mello
 15345,mandar,luciana-mello,12,1580,Mulher,1970-1979,SP,Luciana Mello
 15346,mangueira,luciana-mello,1,520,Mulher,1970-1979,SP,Luciana Mello
 15347,manhã,luciana-mello,11,794,Mulher,1970-1979,SP,Luciana Mello
@@ -15622,7 +15622,7 @@
 15620,madrugar,luiz-ayrao,12,674,Homem,1940-1949,RJ,Luiz Airão
 15621,maior,luiz-ayrao,5,628,Homem,1940-1949,RJ,Luiz Airão
 15622,mal,luiz-ayrao,6,1934,Homem,1940-1949,RJ,Luiz Airão
-15623,malandrar,luiz-ayrao,1,604,Homem,1940-1949,RJ,Luiz Airão
+15623,malandro,luiz-ayrao,1,604,Homem,1940-1949,RJ,Luiz Airão
 15624,mandar,luiz-ayrao,8,1580,Homem,1940-1949,RJ,Luiz Airão
 15625,mangueira,luiz-ayrao,5,520,Homem,1940-1949,RJ,Luiz Airão
 15626,manhã,luiz-ayrao,3,794,Homem,1940-1949,RJ,Luiz Airão
@@ -15890,7 +15890,7 @@
 15888,madrugar,luiz-carlos-da-vila,4,674,Homem,1940-1949,RJ,Luiz Carlos da Vila
 15889,maior,luiz-carlos-da-vila,4,628,Homem,1940-1949,RJ,Luiz Carlos da Vila
 15890,mal,luiz-carlos-da-vila,10,1934,Homem,1940-1949,RJ,Luiz Carlos da Vila
-15891,malandrar,luiz-carlos-da-vila,1,604,Homem,1940-1949,RJ,Luiz Carlos da Vila
+15891,malandro,luiz-carlos-da-vila,1,604,Homem,1940-1949,RJ,Luiz Carlos da Vila
 15892,mandar,luiz-carlos-da-vila,1,1580,Homem,1940-1949,RJ,Luiz Carlos da Vila
 15893,mangueira,luiz-carlos-da-vila,1,520,Homem,1940-1949,RJ,Luiz Carlos da Vila
 15894,manhã,luiz-carlos-da-vila,3,794,Homem,1940-1949,RJ,Luiz Carlos da Vila
@@ -16168,7 +16168,7 @@
 16166,madrugar,luiz-melodia,14,674,Homem,1950-1959,RJ,Luiz Melodia
 16167,maior,luiz-melodia,5,628,Homem,1950-1959,RJ,Luiz Melodia
 16168,mal,luiz-melodia,14,1934,Homem,1950-1959,RJ,Luiz Melodia
-16169,malandrar,luiz-melodia,6,604,Homem,1950-1959,RJ,Luiz Melodia
+16169,malandro,luiz-melodia,6,604,Homem,1950-1959,RJ,Luiz Melodia
 16170,mandar,luiz-melodia,5,1580,Homem,1950-1959,RJ,Luiz Melodia
 16171,manhã,luiz-melodia,1,794,Homem,1950-1959,RJ,Luiz Melodia
 16172,mar,luiz-melodia,39,2991,Homem,1950-1959,RJ,Luiz Melodia
@@ -16728,7 +16728,7 @@
 16726,madrugar,maria-bethania,32,674,Mulher,1940-1949,BA,Maria Bethânia
 16727,maior,maria-bethania,16,628,Mulher,1940-1949,BA,Maria Bethânia
 16728,mal,maria-bethania,54,1934,Mulher,1940-1949,BA,Maria Bethânia
-16729,malandrar,maria-bethania,1,604,Mulher,1940-1949,BA,Maria Bethânia
+16729,malandro,maria-bethania,1,604,Mulher,1940-1949,BA,Maria Bethânia
 16730,mandar,maria-bethania,37,1580,Mulher,1940-1949,BA,Maria Bethânia
 16731,mangueira,maria-bethania,6,520,Mulher,1940-1949,BA,Maria Bethânia
 16732,manhã,maria-bethania,67,794,Mulher,1940-1949,BA,Maria Bethânia
@@ -17022,7 +17022,7 @@
 17020,madrugar,maria-rita,3,674,Mulher,1970-1979,SP,Maria Rita
 17021,maior,maria-rita,5,628,Mulher,1970-1979,SP,Maria Rita
 17022,mal,maria-rita,31,1934,Mulher,1970-1979,SP,Maria Rita
-17023,malandrar,maria-rita,2,604,Mulher,1970-1979,SP,Maria Rita
+17023,malandro,maria-rita,2,604,Mulher,1970-1979,SP,Maria Rita
 17024,mandar,maria-rita,20,1580,Mulher,1970-1979,SP,Maria Rita
 17025,manhã,maria-rita,17,794,Mulher,1970-1979,SP,Maria Rita
 17026,mar,maria-rita,22,2991,Mulher,1970-1979,SP,Maria Rita
@@ -17318,7 +17318,7 @@
 17316,madrugar,martinho-da-vila,12,674,Homem,1930-1939,RJ,Martinho da Vila
 17317,maior,martinho-da-vila,13,628,Homem,1930-1939,RJ,Martinho da Vila
 17318,mal,martinho-da-vila,25,1934,Homem,1930-1939,RJ,Martinho da Vila
-17319,malandrar,martinho-da-vila,14,604,Homem,1930-1939,RJ,Martinho da Vila
+17319,malandro,martinho-da-vila,14,604,Homem,1930-1939,RJ,Martinho da Vila
 17320,mandar,martinho-da-vila,36,1580,Homem,1930-1939,RJ,Martinho da Vila
 17321,mangueira,martinho-da-vila,4,520,Homem,1930-1939,RJ,Martinho da Vila
 17322,manhã,martinho-da-vila,6,794,Homem,1930-1939,RJ,Martinho da Vila
@@ -18239,7 +18239,7 @@
 18237,madrugar,moreira-da-silva,3,674,Homem,1900-1909,RJ,Moreira da Silva
 18238,maior,moreira-da-silva,8,628,Homem,1900-1909,RJ,Moreira da Silva
 18239,mal,moreira-da-silva,15,1934,Homem,1900-1909,RJ,Moreira da Silva
-18240,malandrar,moreira-da-silva,13,604,Homem,1900-1909,RJ,Moreira da Silva
+18240,malandro,moreira-da-silva,13,604,Homem,1900-1909,RJ,Moreira da Silva
 18241,mandar,moreira-da-silva,15,1580,Homem,1900-1909,RJ,Moreira da Silva
 18242,mangueira,moreira-da-silva,1,520,Homem,1900-1909,RJ,Moreira da Silva
 18243,maria,moreira-da-silva,2,1022,Homem,1900-1909,RJ,Moreira da Silva
@@ -18507,7 +18507,7 @@
 18505,madrugar,mumuzinho,2,674,Homem,1980-1989,RJ,Mumuzinho
 18506,maior,mumuzinho,2,628,Homem,1980-1989,RJ,Mumuzinho
 18507,mal,mumuzinho,21,1934,Homem,1980-1989,RJ,Mumuzinho
-18508,malandrar,mumuzinho,2,604,Homem,1980-1989,RJ,Mumuzinho
+18508,malandro,mumuzinho,2,604,Homem,1980-1989,RJ,Mumuzinho
 18509,mandar,mumuzinho,14,1580,Homem,1980-1989,RJ,Mumuzinho
 18510,manhã,mumuzinho,2,794,Homem,1980-1989,RJ,Mumuzinho
 18511,mar,mumuzinho,20,2991,Homem,1980-1989,RJ,Mumuzinho
@@ -18796,7 +18796,7 @@
 18794,madrugar,nara-leao,12,674,Mulher,1930-1939,ES,Nara Leão
 18795,maior,nara-leao,11,628,Mulher,1930-1939,ES,Nara Leão
 18796,mal,nara-leao,16,1934,Mulher,1930-1939,ES,Nara Leão
-18797,malandrar,nara-leao,9,604,Mulher,1930-1939,ES,Nara Leão
+18797,malandro,nara-leao,9,604,Mulher,1930-1939,ES,Nara Leão
 18798,mandar,nara-leao,7,1580,Mulher,1930-1939,ES,Nara Leão
 18799,mangueira,nara-leao,3,520,Mulher,1930-1939,ES,Nara Leão
 18800,manhã,nara-leao,23,794,Mulher,1930-1939,ES,Nara Leão
@@ -19354,7 +19354,7 @@
 19352,madrugar,neguinho-da-beija-flor,2,674,Homem,1940-1949,RJ,Neguinho da Beija-Flor
 19353,maior,neguinho-da-beija-flor,4,628,Homem,1940-1949,RJ,Neguinho da Beija-Flor
 19354,mal,neguinho-da-beija-flor,9,1934,Homem,1940-1949,RJ,Neguinho da Beija-Flor
-19355,malandrar,neguinho-da-beija-flor,12,604,Homem,1940-1949,RJ,Neguinho da Beija-Flor
+19355,malandro,neguinho-da-beija-flor,12,604,Homem,1940-1949,RJ,Neguinho da Beija-Flor
 19356,mandar,neguinho-da-beija-flor,5,1580,Homem,1940-1949,RJ,Neguinho da Beija-Flor
 19357,mangueira,neguinho-da-beija-flor,2,520,Homem,1940-1949,RJ,Neguinho da Beija-Flor
 19358,manhã,neguinho-da-beija-flor,2,794,Homem,1940-1949,RJ,Neguinho da Beija-Flor
@@ -20292,7 +20292,7 @@
 20290,madrugar,nilze-carvalho,7,674,Mulher,1960-1969,RJ,Nilze Carvalho
 20291,maior,nilze-carvalho,4,628,Mulher,1960-1969,RJ,Nilze Carvalho
 20292,mal,nilze-carvalho,8,1934,Mulher,1960-1969,RJ,Nilze Carvalho
-20293,malandrar,nilze-carvalho,2,604,Mulher,1960-1969,RJ,Nilze Carvalho
+20293,malandro,nilze-carvalho,2,604,Mulher,1960-1969,RJ,Nilze Carvalho
 20294,mandar,nilze-carvalho,1,1580,Mulher,1960-1969,RJ,Nilze Carvalho
 20295,mangueira,nilze-carvalho,5,520,Mulher,1960-1969,RJ,Nilze Carvalho
 20296,mar,nilze-carvalho,36,2991,Mulher,1960-1969,RJ,Nilze Carvalho
@@ -20562,7 +20562,7 @@
 20560,madrugar,noel-rosa,1,674,Homem,1910-1919,RJ,Noel Rosa
 20561,maior,noel-rosa,10,628,Homem,1910-1919,RJ,Noel Rosa
 20562,mal,noel-rosa,29,1934,Homem,1910-1919,RJ,Noel Rosa
-20563,malandrar,noel-rosa,10,604,Homem,1910-1919,RJ,Noel Rosa
+20563,malandro,noel-rosa,10,604,Homem,1910-1919,RJ,Noel Rosa
 20564,mandar,noel-rosa,24,1580,Homem,1910-1919,RJ,Noel Rosa
 20565,mangueira,noel-rosa,2,520,Homem,1910-1919,RJ,Noel Rosa
 20566,manhã,noel-rosa,5,794,Homem,1910-1919,RJ,Noel Rosa
@@ -20837,7 +20837,7 @@
 20835,madrugar,noite-ilustrada,6,674,Homem,1920-1929,MG,Noite Ilustrada
 20836,maior,noite-ilustrada,7,628,Homem,1920-1929,MG,Noite Ilustrada
 20837,mal,noite-ilustrada,8,1934,Homem,1920-1929,MG,Noite Ilustrada
-20838,malandrar,noite-ilustrada,1,604,Homem,1920-1929,MG,Noite Ilustrada
+20838,malandro,noite-ilustrada,1,604,Homem,1920-1929,MG,Noite Ilustrada
 20839,mandar,noite-ilustrada,2,1580,Homem,1920-1929,MG,Noite Ilustrada
 20840,mar,noite-ilustrada,1,2991,Homem,1920-1929,MG,Noite Ilustrada
 20841,maria,noite-ilustrada,13,1022,Homem,1920-1929,MG,Noite Ilustrada
@@ -21099,7 +21099,7 @@
 21097,luzir,novos-baianos,27,1704,Grupo,,,Novos Baianos
 21098,maior,novos-baianos,12,628,Grupo,,,Novos Baianos
 21099,mal,novos-baianos,3,1934,Grupo,,,Novos Baianos
-21100,malandrar,novos-baianos,4,604,Grupo,,,Novos Baianos
+21100,malandro,novos-baianos,4,604,Grupo,,,Novos Baianos
 21101,mandar,novos-baianos,5,1580,Grupo,,,Novos Baianos
 21102,manhã,novos-baianos,1,794,Grupo,,,Novos Baianos
 21103,mar,novos-baianos,18,2991,Grupo,,,Novos Baianos
@@ -22136,7 +22136,7 @@
 22134,madrugar,paulinho-da-viola,6,674,Homem,1940-1949,RJ,Paulinho da Viola
 22135,maior,paulinho-da-viola,8,628,Homem,1940-1949,RJ,Paulinho da Viola
 22136,mal,paulinho-da-viola,13,1934,Homem,1940-1949,RJ,Paulinho da Viola
-22137,malandrar,paulinho-da-viola,2,604,Homem,1940-1949,RJ,Paulinho da Viola
+22137,malandro,paulinho-da-viola,2,604,Homem,1940-1949,RJ,Paulinho da Viola
 22138,mandar,paulinho-da-viola,8,1580,Homem,1940-1949,RJ,Paulinho da Viola
 22139,mangueira,paulinho-da-viola,11,520,Homem,1940-1949,RJ,Paulinho da Viola
 22140,manhã,paulinho-da-viola,6,794,Homem,1940-1949,RJ,Paulinho da Viola
@@ -22393,7 +22393,7 @@
 22391,madrugar,paulo-cesar-pinheiro,2,674,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
 22392,maior,paulo-cesar-pinheiro,6,628,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
 22393,mal,paulo-cesar-pinheiro,15,1934,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
-22394,malandrar,paulo-cesar-pinheiro,1,604,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
+22394,malandro,paulo-cesar-pinheiro,1,604,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
 22395,mandar,paulo-cesar-pinheiro,5,1580,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
 22396,mangueira,paulo-cesar-pinheiro,1,520,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
 22397,manhã,paulo-cesar-pinheiro,2,794,Homem,1940-1949,RJ,Paulo Cesar Pinheiro
@@ -23052,7 +23052,7 @@
 23050,madrugar,pericles,3,674,Homem,1960-1969,SP,Péricles
 23051,maior,pericles,4,628,Homem,1960-1969,SP,Péricles
 23052,mal,pericles,31,1934,Homem,1960-1969,SP,Péricles
-23053,malandrar,pericles,2,604,Homem,1960-1969,SP,Péricles
+23053,malandro,pericles,2,604,Homem,1960-1969,SP,Péricles
 23054,mandar,pericles,10,1580,Homem,1960-1969,SP,Péricles
 23055,mangueira,pericles,7,520,Homem,1960-1969,SP,Péricles
 23056,manhã,pericles,88,794,Homem,1960-1969,SP,Péricles
@@ -23296,7 +23296,7 @@
 23294,luzir,pixinguinha,3,1704,Homem,1890-1899,RJ,Pixinguinha
 23295,maior,pixinguinha,2,628,Homem,1890-1899,RJ,Pixinguinha
 23296,mal,pixinguinha,2,1934,Homem,1890-1899,RJ,Pixinguinha
-23297,malandrar,pixinguinha,1,604,Homem,1890-1899,RJ,Pixinguinha
+23297,malandro,pixinguinha,1,604,Homem,1890-1899,RJ,Pixinguinha
 23298,mandar,pixinguinha,1,1580,Homem,1890-1899,RJ,Pixinguinha
 23299,mangueira,pixinguinha,1,520,Homem,1890-1899,RJ,Pixinguinha
 23300,matar,pixinguinha,5,1245,Homem,1890-1899,RJ,Pixinguinha
@@ -23547,7 +23547,7 @@
 23545,madrugar,pixote,11,674,Grupo,,,Pixote
 23546,maior,pixote,7,628,Grupo,,,Pixote
 23547,mal,pixote,23,1934,Grupo,,,Pixote
-23548,malandrar,pixote,1,604,Grupo,,,Pixote
+23548,malandro,pixote,1,604,Grupo,,,Pixote
 23549,mandar,pixote,20,1580,Grupo,,,Pixote
 23550,manhã,pixote,4,794,Grupo,,,Pixote
 23551,mar,pixote,10,2991,Grupo,,,Pixote
@@ -23826,7 +23826,7 @@
 23824,madrugar,roberta-sa,8,674,Mulher,1980-1989,RN,Roberta Sá
 23825,maior,roberta-sa,6,628,Mulher,1980-1989,RN,Roberta Sá
 23826,mal,roberta-sa,17,1934,Mulher,1980-1989,RN,Roberta Sá
-23827,malandrar,roberta-sa,1,604,Mulher,1980-1989,RN,Roberta Sá
+23827,malandro,roberta-sa,1,604,Mulher,1980-1989,RN,Roberta Sá
 23828,mandar,roberta-sa,5,1580,Mulher,1980-1989,RN,Roberta Sá
 23829,mangueira,roberta-sa,4,520,Mulher,1980-1989,RN,Roberta Sá
 23830,manhã,roberta-sa,8,794,Mulher,1980-1989,RN,Roberta Sá
@@ -24116,7 +24116,7 @@
 24114,madrugar,roberto-ribeiro,8,674,Homem,1940-1949,RJ,Roberto Ribeiro
 24115,maior,roberto-ribeiro,6,628,Homem,1940-1949,RJ,Roberto Ribeiro
 24116,mal,roberto-ribeiro,23,1934,Homem,1940-1949,RJ,Roberto Ribeiro
-24117,malandrar,roberto-ribeiro,6,604,Homem,1940-1949,RJ,Roberto Ribeiro
+24117,malandro,roberto-ribeiro,6,604,Homem,1940-1949,RJ,Roberto Ribeiro
 24118,mandar,roberto-ribeiro,19,1580,Homem,1940-1949,RJ,Roberto Ribeiro
 24119,mangueira,roberto-ribeiro,3,520,Homem,1940-1949,RJ,Roberto Ribeiro
 24120,manhã,roberto-ribeiro,12,794,Homem,1940-1949,RJ,Roberto Ribeiro
@@ -24560,7 +24560,7 @@
 24558,madrugar,seu-jorge,8,674,Homem,1970-1979,RJ,Seu Jorge
 24559,maior,seu-jorge,4,628,Homem,1970-1979,RJ,Seu Jorge
 24560,mal,seu-jorge,14,1934,Homem,1970-1979,RJ,Seu Jorge
-24561,malandrar,seu-jorge,9,604,Homem,1970-1979,RJ,Seu Jorge
+24561,malandro,seu-jorge,9,604,Homem,1970-1979,RJ,Seu Jorge
 24562,mandar,seu-jorge,2,1580,Homem,1970-1979,RJ,Seu Jorge
 24563,mangueira,seu-jorge,7,520,Homem,1970-1979,RJ,Seu Jorge
 24564,manhã,seu-jorge,6,794,Homem,1970-1979,RJ,Seu Jorge
@@ -24853,7 +24853,7 @@
 24851,madrugar,simone,9,674,Mulher,1950-1959,BA,Simone
 24852,maior,simone,9,628,Mulher,1950-1959,BA,Simone
 24853,mal,simone,29,1934,Mulher,1950-1959,BA,Simone
-24854,malandrar,simone,1,604,Mulher,1950-1959,BA,Simone
+24854,malandro,simone,1,604,Mulher,1950-1959,BA,Simone
 24855,mandar,simone,15,1580,Mulher,1950-1959,BA,Simone
 24856,mangueira,simone,5,520,Mulher,1950-1959,BA,Simone
 24857,manhã,simone,11,794,Mulher,1950-1959,BA,Simone
@@ -25680,7 +25680,7 @@
 25678,madrugar,teresa-cristina,5,674,Mulher,1960-1969,RJ,Teresa Cristina
 25679,maior,teresa-cristina,6,628,Mulher,1960-1969,RJ,Teresa Cristina
 25680,mal,teresa-cristina,17,1934,Mulher,1960-1969,RJ,Teresa Cristina
-25681,malandrar,teresa-cristina,4,604,Mulher,1960-1969,RJ,Teresa Cristina
+25681,malandro,teresa-cristina,4,604,Mulher,1960-1969,RJ,Teresa Cristina
 25682,mandar,teresa-cristina,10,1580,Mulher,1960-1969,RJ,Teresa Cristina
 25683,mangueira,teresa-cristina,16,520,Mulher,1960-1969,RJ,Teresa Cristina
 25684,manhã,teresa-cristina,2,794,Mulher,1960-1969,RJ,Teresa Cristina
@@ -27389,7 +27389,7 @@
 27387,madrugar,xande-de-pilares,5,674,Homem,1960-1969,RJ,Xande de Pilares
 27388,maior,xande-de-pilares,2,628,Homem,1960-1969,RJ,Xande de Pilares
 27389,mal,xande-de-pilares,3,1934,Homem,1960-1969,RJ,Xande de Pilares
-27390,malandrar,xande-de-pilares,3,604,Homem,1960-1969,RJ,Xande de Pilares
+27390,malandro,xande-de-pilares,3,604,Homem,1960-1969,RJ,Xande de Pilares
 27391,mandar,xande-de-pilares,9,1580,Homem,1960-1969,RJ,Xande de Pilares
 27392,manhã,xande-de-pilares,4,794,Homem,1960-1969,RJ,Xande de Pilares
 27393,mar,xande-de-pilares,2,2991,Homem,1960-1969,RJ,Xande de Pilares
@@ -27592,7 +27592,7 @@
 27590,luzir,ze-keti,2,1704,Homem,1920-1929,RJ,Zé Keti
 27591,madrugar,ze-keti,1,674,Homem,1920-1929,RJ,Zé Keti
 27592,mal,ze-keti,3,1934,Homem,1920-1929,RJ,Zé Keti
-27593,malandrar,ze-keti,3,604,Homem,1920-1929,RJ,Zé Keti
+27593,malandro,ze-keti,3,604,Homem,1920-1929,RJ,Zé Keti
 27594,mandar,ze-keti,3,1580,Homem,1920-1929,RJ,Zé Keti
 27595,mangueira,ze-keti,10,520,Homem,1920-1929,RJ,Zé Keti
 27596,matar,ze-keti,3,1245,Homem,1920-1929,RJ,Zé Keti
@@ -27878,7 +27878,7 @@
 27876,madrugar,zeca-pagodinho,20,674,Homem,1950-1959,RJ,Zeca Pagodinho
 27877,maior,zeca-pagodinho,24,628,Homem,1950-1959,RJ,Zeca Pagodinho
 27878,mal,zeca-pagodinho,102,1934,Homem,1950-1959,RJ,Zeca Pagodinho
-27879,malandrar,zeca-pagodinho,13,604,Homem,1950-1959,RJ,Zeca Pagodinho
+27879,malandro,zeca-pagodinho,13,604,Homem,1950-1959,RJ,Zeca Pagodinho
 27880,mandar,zeca-pagodinho,68,1580,Homem,1950-1959,RJ,Zeca Pagodinho
 27881,mangueira,zeca-pagodinho,3,520,Homem,1950-1959,RJ,Zeca Pagodinho
 27882,manhã,zeca-pagodinho,24,794,Homem,1950-1959,RJ,Zeca Pagodinho
@@ -28399,7 +28399,7 @@
 28397,lutar,clementina-de-jesus,1,636,Mulher,1900-1909,RJ,Clementina De Jesus
 28398,madrugar,clementina-de-jesus,2,674,Mulher,1900-1909,RJ,Clementina De Jesus
 28399,mal,clementina-de-jesus,5,1934,Mulher,1900-1909,RJ,Clementina De Jesus
-28400,malandrar,clementina-de-jesus,2,604,Mulher,1900-1909,RJ,Clementina De Jesus
+28400,malandro,clementina-de-jesus,2,604,Mulher,1900-1909,RJ,Clementina De Jesus
 28401,mandar,clementina-de-jesus,9,1580,Mulher,1900-1909,RJ,Clementina De Jesus
 28402,mangueira,clementina-de-jesus,6,520,Mulher,1900-1909,RJ,Clementina De Jesus
 28403,manhã,clementina-de-jesus,18,794,Mulher,1900-1909,RJ,Clementina De Jesus
@@ -29130,7 +29130,7 @@
 29128,lutar,farofa-carioca,5,636,Grupo,,,Farofa Carioca
 29129,madrugar,farofa-carioca,1,674,Grupo,,,Farofa Carioca
 29130,mal,farofa-carioca,4,1934,Grupo,,,Farofa Carioca
-29131,malandrar,farofa-carioca,3,604,Grupo,,,Farofa Carioca
+29131,malandro,farofa-carioca,3,604,Grupo,,,Farofa Carioca
 29132,mandar,farofa-carioca,7,1580,Grupo,,,Farofa Carioca
 29133,mangueira,farofa-carioca,1,520,Grupo,,,Farofa Carioca
 29134,mar,farofa-carioca,1,2991,Grupo,,,Farofa Carioca
@@ -29523,7 +29523,7 @@
 29521,igual,grupo-arruda,2,658,Grupo,,,Grupo Arruda
 29522,inteirar,grupo-arruda,3,1032,Grupo,,,Grupo Arruda
 29523,lutar,grupo-arruda,4,636,Grupo,,,Grupo Arruda
-29524,malandrar,grupo-arruda,1,604,Grupo,,,Grupo Arruda
+29524,malandro,grupo-arruda,1,604,Grupo,,,Grupo Arruda
 29525,menino,grupo-arruda,1,1627,Grupo,,,Grupo Arruda
 29526,mentir,grupo-arruda,2,855,Grupo,,,Grupo Arruda
 29527,morrer,grupo-arruda,2,2666,Grupo,,,Grupo Arruda
@@ -29634,7 +29634,7 @@
 29632,lua,ismael-silva,2,1323,Homem,1900-1909,RJ,Ismael Silva
 29633,lugar,ismael-silva,2,1602,Homem,1900-1909,RJ,Ismael Silva
 29634,mal,ismael-silva,14,1934,Homem,1900-1909,RJ,Ismael Silva
-29635,malandrar,ismael-silva,1,604,Homem,1900-1909,RJ,Ismael Silva
+29635,malandro,ismael-silva,1,604,Homem,1900-1909,RJ,Ismael Silva
 29636,mandar,ismael-silva,4,1580,Homem,1900-1909,RJ,Ismael Silva
 29637,mar,ismael-silva,1,2991,Homem,1900-1909,RJ,Ismael Silva
 29638,melhor,ismael-silva,8,1360,Homem,1900-1909,RJ,Ismael Silva
@@ -31676,7 +31676,7 @@
 31674,lutar,toninho-geraes,3,636,Homem,1960-1969,MG,Toninho Geraes
 31675,luzir,toninho-geraes,4,1704,Homem,1960-1969,MG,Toninho Geraes
 31676,mal,toninho-geraes,2,1934,Homem,1960-1969,MG,Toninho Geraes
-31677,malandrar,toninho-geraes,1,604,Homem,1960-1969,MG,Toninho Geraes
+31677,malandro,toninho-geraes,1,604,Homem,1960-1969,MG,Toninho Geraes
 31678,mandar,toninho-geraes,7,1580,Homem,1960-1969,MG,Toninho Geraes
 31679,manhã,toninho-geraes,1,794,Homem,1960-1969,MG,Toninho Geraes
 31680,mar,toninho-geraes,16,2991,Homem,1960-1969,MG,Toninho Geraes
@@ -32050,7 +32050,7 @@
 32048,lugar,aniceto-do-imperio,2,1602,Homem,1910-1919,RJ,Aniceto Do Império
 32049,madrugar,aniceto-do-imperio,3,674,Homem,1910-1919,RJ,Aniceto Do Império
 32050,mal,aniceto-do-imperio,1,1934,Homem,1910-1919,RJ,Aniceto Do Império
-32051,malandrar,aniceto-do-imperio,1,604,Homem,1910-1919,RJ,Aniceto Do Império
+32051,malandro,aniceto-do-imperio,1,604,Homem,1910-1919,RJ,Aniceto Do Império
 32052,mandar,aniceto-do-imperio,3,1580,Homem,1910-1919,RJ,Aniceto Do Império
 32053,maria,aniceto-do-imperio,3,1022,Homem,1910-1919,RJ,Aniceto Do Império
 32054,melhor,aniceto-do-imperio,4,1360,Homem,1910-1919,RJ,Aniceto Do Império
@@ -32196,7 +32196,7 @@
 32194,lugar,arlindo-neto,1,1602,Homem,1990-1999,RJ,Arlindo Neto
 32195,lutar,arlindo-neto,4,636,Homem,1990-1999,RJ,Arlindo Neto
 32196,luzir,arlindo-neto,1,1704,Homem,1990-1999,RJ,Arlindo Neto
-32197,malandrar,arlindo-neto,1,604,Homem,1990-1999,RJ,Arlindo Neto
+32197,malandro,arlindo-neto,1,604,Homem,1990-1999,RJ,Arlindo Neto
 32198,mandar,arlindo-neto,1,1580,Homem,1990-1999,RJ,Arlindo Neto
 32199,manhã,arlindo-neto,1,794,Homem,1990-1999,RJ,Arlindo Neto
 32200,mar,arlindo-neto,2,2991,Homem,1990-1999,RJ,Arlindo Neto
@@ -32507,7 +32507,7 @@
 32505,madrugar,germano-mathias,1,674,Homem,1930-1939,SP,Germano Mathias
 32506,maior,germano-mathias,1,628,Homem,1930-1939,SP,Germano Mathias
 32507,mal,germano-mathias,1,1934,Homem,1930-1939,SP,Germano Mathias
-32508,malandrar,germano-mathias,3,604,Homem,1930-1939,SP,Germano Mathias
+32508,malandro,germano-mathias,3,604,Homem,1930-1939,SP,Germano Mathias
 32509,mandar,germano-mathias,2,1580,Homem,1930-1939,SP,Germano Mathias
 32510,mangueira,germano-mathias,1,520,Homem,1930-1939,SP,Germano Mathias
 32511,maria,germano-mathias,5,1022,Homem,1930-1939,SP,Germano Mathias
@@ -32813,7 +32813,7 @@
 32811,madrugar,marcos-sacramento,2,674,Homem,1960-1969,RJ,Marcos Sacramento
 32812,maior,marcos-sacramento,1,628,Homem,1960-1969,RJ,Marcos Sacramento
 32813,mal,marcos-sacramento,2,1934,Homem,1960-1969,RJ,Marcos Sacramento
-32814,malandrar,marcos-sacramento,1,604,Homem,1960-1969,RJ,Marcos Sacramento
+32814,malandro,marcos-sacramento,1,604,Homem,1960-1969,RJ,Marcos Sacramento
 32815,manhã,marcos-sacramento,1,794,Homem,1960-1969,RJ,Marcos Sacramento
 32816,mar,marcos-sacramento,1,2991,Homem,1960-1969,RJ,Marcos Sacramento
 32817,medo,marcos-sacramento,1,979,Homem,1960-1969,RJ,Marcos Sacramento
@@ -33634,7 +33634,7 @@
 33632,louco,serginho-meriti,1,1032,Homem,1950-1959,RJ,Serginho Meriti
 33633,maior,serginho-meriti,1,628,Homem,1950-1959,RJ,Serginho Meriti
 33634,mal,serginho-meriti,1,1934,Homem,1950-1959,RJ,Serginho Meriti
-33635,malandrar,serginho-meriti,1,604,Homem,1950-1959,RJ,Serginho Meriti
+33635,malandro,serginho-meriti,1,604,Homem,1950-1959,RJ,Serginho Meriti
 33636,mandar,serginho-meriti,1,1580,Homem,1950-1959,RJ,Serginho Meriti
 33637,mar,serginho-meriti,1,2991,Homem,1950-1959,RJ,Serginho Meriti
 33638,menino,serginho-meriti,2,1627,Homem,1950-1959,RJ,Serginho Meriti
@@ -33919,7 +33919,7 @@
 33917,juntar,aluisio-machado,1,544,Homem,1930-1939,RJ,Aluisio Machado
 33918,lembrar,aluisio-machado,1,1250,Homem,1930-1939,RJ,Aluisio Machado
 33919,mal,aluisio-machado,1,1934,Homem,1930-1939,RJ,Aluisio Machado
-33920,malandrar,aluisio-machado,16,604,Homem,1930-1939,RJ,Aluisio Machado
+33920,malandro,aluisio-machado,16,604,Homem,1930-1939,RJ,Aluisio Machado
 33921,mar,aluisio-machado,1,2991,Homem,1930-1939,RJ,Aluisio Machado
 33922,matar,aluisio-machado,4,1245,Homem,1930-1939,RJ,Aluisio Machado
 33923,menino,aluisio-machado,1,1627,Homem,1930-1939,RJ,Aluisio Machado
@@ -33987,7 +33987,7 @@
 33985,hoje,joao-da-baiana,2,2878,Homem,1880-1889,RJ,João da Baiana
 33986,homem,joao-da-baiana,2,1384,Homem,1880-1889,RJ,João da Baiana
 33987,mal,joao-da-baiana,1,1934,Homem,1880-1889,RJ,João da Baiana
-33988,malandrar,joao-da-baiana,1,604,Homem,1880-1889,RJ,João da Baiana
+33988,malandro,joao-da-baiana,1,604,Homem,1880-1889,RJ,João da Baiana
 33989,mudar,joao-da-baiana,1,1098,Homem,1880-1889,RJ,João da Baiana
 33990,mulher,joao-da-baiana,2,2994,Homem,1880-1889,RJ,João da Baiana
 33991,pagar,joao-da-baiana,2,832,Homem,1880-1889,RJ,João da Baiana
@@ -34268,7 +34268,7 @@
 34266,lutar,pretinho-da-serrinha,1,636,Homem,1970-1979,RJ,Pretinho da Serrinha
 34267,maior,pretinho-da-serrinha,2,628,Homem,1970-1979,RJ,Pretinho da Serrinha
 34268,mal,pretinho-da-serrinha,2,1934,Homem,1970-1979,RJ,Pretinho da Serrinha
-34269,malandrar,pretinho-da-serrinha,2,604,Homem,1970-1979,RJ,Pretinho da Serrinha
+34269,malandro,pretinho-da-serrinha,2,604,Homem,1970-1979,RJ,Pretinho da Serrinha
 34270,mandar,pretinho-da-serrinha,2,1580,Homem,1970-1979,RJ,Pretinho da Serrinha
 34271,matar,pretinho-da-serrinha,2,1245,Homem,1970-1979,RJ,Pretinho da Serrinha
 34272,medo,pretinho-da-serrinha,1,979,Homem,1970-1979,RJ,Pretinho da Serrinha
@@ -34409,7 +34409,7 @@
 34407,madrugar,renato-da-rocinha,2,674,Homem,1970-1979,RJ,Renato da Rocinha
 34408,maior,renato-da-rocinha,2,628,Homem,1970-1979,RJ,Renato da Rocinha
 34409,mal,renato-da-rocinha,4,1934,Homem,1970-1979,RJ,Renato da Rocinha
-34410,malandrar,renato-da-rocinha,5,604,Homem,1970-1979,RJ,Renato da Rocinha
+34410,malandro,renato-da-rocinha,5,604,Homem,1970-1979,RJ,Renato da Rocinha
 34411,mandar,renato-da-rocinha,1,1580,Homem,1970-1979,RJ,Renato da Rocinha
 34412,manhã,renato-da-rocinha,1,794,Homem,1970-1979,RJ,Renato da Rocinha
 34413,mar,renato-da-rocinha,5,2991,Homem,1970-1979,RJ,Renato da Rocinha
@@ -34663,7 +34663,7 @@
 34661,lua,wilson-batista,2,1323,Homem,1910-1919,RJ,Wilson Batista
 34662,lugar,wilson-batista,1,1602,Homem,1910-1919,RJ,Wilson Batista
 34663,maior,wilson-batista,1,628,Homem,1910-1919,RJ,Wilson Batista
-34664,malandrar,wilson-batista,4,604,Homem,1910-1919,RJ,Wilson Batista
+34664,malandro,wilson-batista,4,604,Homem,1910-1919,RJ,Wilson Batista
 34665,mandar,wilson-batista,2,1580,Homem,1910-1919,RJ,Wilson Batista
 34666,mangueira,wilson-batista,2,520,Homem,1910-1919,RJ,Wilson Batista
 34667,matar,wilson-batista,1,1245,Homem,1910-1919,RJ,Wilson Batista
@@ -35184,7 +35184,7 @@
 35182,lutar,pixule,1,636,Homem,1960-1969,RJ,Pixulé
 35183,luzir,pixule,2,1704,Homem,1960-1969,RJ,Pixulé
 35184,maior,pixule,1,628,Homem,1960-1969,RJ,Pixulé
-35185,malandrar,pixule,1,604,Homem,1960-1969,RJ,Pixulé
+35185,malandro,pixule,1,604,Homem,1960-1969,RJ,Pixulé
 35186,mar,pixule,1,2991,Homem,1960-1969,RJ,Pixulé
 35187,matar,pixule,1,1245,Homem,1960-1969,RJ,Pixulé
 35188,menino,pixule,1,1627,Homem,1960-1969,RJ,Pixulé
@@ -35621,23 +35621,23 @@
 35619,salvar,juninho-thybau,12,931,Homem,1990-1999,RJ,Juninho Thybau
 35620,suar,juninho-thybau,3,3445,Homem,1990-1999,RJ,Juninho Thybau
 35621,valer,juninho-thybau,2,1283,Homem,1990-1999,RJ,Juninho Thybau
-35622,amor,laila,8,31458,Mulher,1940-1943,RJ,Laila
-35623,apaixonar,laila,1,714,Mulher,1940-1943,RJ,Laila
-35624,conseguir,laila,2,767,Mulher,1940-1943,RJ,Laila
-35625,coração,laila,1,6266,Mulher,1940-1943,RJ,Laila
-35626,dia,laila,2,4842,Mulher,1940-1943,RJ,Laila
-35627,esquecer,laila,4,2291,Mulher,1940-1943,RJ,Laila
-35628,jogar,laila,2,1562,Mulher,1940-1943,RJ,Laila
-35629,mundo,laila,1,3522,Mulher,1940-1943,RJ,Laila
-35630,novo,laila,1,1685,Mulher,1940-1943,RJ,Laila
-35631,outro,laila,1,2805,Mulher,1940-1943,RJ,Laila
-35632,passar,laila,1,4368,Mulher,1940-1943,RJ,Laila
-35633,pensar,laila,1,2418,Mulher,1940-1943,RJ,Laila
-35634,razão,laila,1,1038,Mulher,1940-1943,RJ,Laila
-35635,refrão,laila,2,1021,Mulher,1940-1943,RJ,Laila
-35636,tentar,laila,2,1107,Mulher,1940-1943,RJ,Laila
-35637,ver,laila,2,9632,Mulher,1940-1943,RJ,Laila
-35638,vontade,laila,1,833,Mulher,1940-1943,RJ,Laila
+35622,amor,laila,8,31458,Mulher,1940-1949,RJ,Laila
+35623,apaixonar,laila,1,714,Mulher,1940-1949,RJ,Laila
+35624,conseguir,laila,2,767,Mulher,1940-1949,RJ,Laila
+35625,coração,laila,1,6266,Mulher,1940-1949,RJ,Laila
+35626,dia,laila,2,4842,Mulher,1940-1949,RJ,Laila
+35627,esquecer,laila,4,2291,Mulher,1940-1949,RJ,Laila
+35628,jogar,laila,2,1562,Mulher,1940-1949,RJ,Laila
+35629,mundo,laila,1,3522,Mulher,1940-1949,RJ,Laila
+35630,novo,laila,1,1685,Mulher,1940-1949,RJ,Laila
+35631,outro,laila,1,2805,Mulher,1940-1949,RJ,Laila
+35632,passar,laila,1,4368,Mulher,1940-1949,RJ,Laila
+35633,pensar,laila,1,2418,Mulher,1940-1949,RJ,Laila
+35634,razão,laila,1,1038,Mulher,1940-1949,RJ,Laila
+35635,refrão,laila,2,1021,Mulher,1940-1949,RJ,Laila
+35636,tentar,laila,2,1107,Mulher,1940-1949,RJ,Laila
+35637,ver,laila,2,9632,Mulher,1940-1949,RJ,Laila
+35638,vontade,laila,1,833,Mulher,1940-1949,RJ,Laila
 35639,amor,samba-do-trabalhador,2,31458,Grupo,,,Samba do Trabalhador
 35640,felicidade,samba-do-trabalhador,1,1110,Grupo,,,Samba do Trabalhador
 35641,maior,samba-do-trabalhador,1,628,Grupo,,,Samba do Trabalhador

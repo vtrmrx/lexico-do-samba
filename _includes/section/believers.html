@@ -1,6 +1,22 @@
-<section class="section-believers">
-  <div class="container">
-    <div class="row">
+<section class="section section-believers">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h2 class="section__title text-left">Artistas que maisfazem referências a divindades</h2>
+      </div>
+      <div class="col-12">
+        <div class="section__description text-left">
+          <p>Menções a cada 100 palavras</p>
+          {% include section-info.html
+            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          %}
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="section__content">
+          {% include content-placeholder.html %}
+        </div>
+      </div>
     </div>
   </div>
 </section>
