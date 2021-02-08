@@ -109,6 +109,13 @@ document.addEventListener("DOMContentLoaded", function() {
         filterNameValue = filterName["_groups"][0][0].value;
     if (filterNameValue !== "all") {
       console.log(filterNameValue);
+      dataSubset = dataSubset.filter(function( obj ) {
+        return obj["Nome"] == filterNameValue;
+      });
+      filters["_groups"][0].forEach(function(filter, index) {
+        let filterKey = filter.getAttribute("data-filter-key");
+        filter.value = dataSubset[0][filterKey];
+      });
     } else {
       filters["_groups"][0].forEach(function(filter, index) {
         let filterKey = filter.getAttribute("data-filter-key");
