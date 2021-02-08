@@ -7,6 +7,51 @@
 
 @import "variables";
 @import "breakpoints";
+@import "font-face";
+
+@include basic-font-face($braveold)
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+h1, h2 {
+  font-family: 'braveold', Georgia, serif;
+  font-style: normal;
+  font-weight: 900;
+  font-variant-ligatures: none;
+  color: $color-preto;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+.lead {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 24px;
+  line-height: 32px;
+  color: $color-preto;
+}
+
+.container-fluid {
+  max-width: 1600px;
+  @include media-breakpoint-up(sm) {
+    width: calc(100% - 16vw);
+  }
+}
 
 .content-placeholder {
   height: 400px;
@@ -19,6 +64,38 @@
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
+  &__row {
+    margin-top: 80px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__title {
+    margin-bottom: 32px;
+  }
+  &__subtitle {
+    margin-bottom: 32px;
+    .section__info {
+      margin-bottom: 0;
+    }
+  }
+  &__description {
+    margin-bottom: 32px;
+    .section__info {
+      margin-bottom: 0;
+      margin-top: 32px;
+    }
+  }
+  &__info {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid $color-preto;
+    line-height: 16px;
+    color: $color-preto;
+    text-decoration: none;
+    margin-bottom: 32px;
+  }
   &-header {
     background-color: $color-vermelho;
     position: fixed;
@@ -26,6 +103,48 @@
     left: 0;
     width: 100%;
     z-index: 1000;
+    padding-left: 16px;
+    padding-right: 16px;
+    @include media-breakpoint-up(lg) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .navbar {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .navbar-toggler {
+      border: none;
+      padding: 4px;
+    }
+    .navbar-nav {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      @include media-breakpoint-up(lg) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .nav-link {
+        @include media-breakpoint-up(lg) {
+          padding: 0;
+          margin-left: 32px;
+        }
+        color: rgba($color-branco, .75);
+        &:hover {
+          color: rgba($color-branco, 1);
+        }
+      }
+    }
+    &__logo {
+      font-family: 'braveold', Georgia, serif;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 32px;
+      line-height: 32px;
+      height: 32px;
+      padding: 0;
+      display: inline-block;
+    }
     &__collapse {
       @include media-breakpoint-up(lg) {
         width: auto;
@@ -66,7 +185,14 @@
 
     }
     &__more-button {
+      margin-top: 16px;
+      width: 100%;
+      text-decoration: none;
+      font-weight: 900;
       color: $color-preto;
+      &:hover {
+        color: $color-preto;
+      }
       &::after {
         content: "menos";
       }
@@ -79,45 +205,119 @@
   }
   &-trends {
     background-color: $color-bege;
+    .section__title, .section__subtitle {
+      color: $color-vermelho;
+    }
   }
   &-playlists {
     background-color: $color-branco;
+    .section__title {
+      color: $color-vermelho;
+    }
+    .section__subtitle {
+      color: $color-verde;
+    }
   }
   &-lyrics {
     background-color: $color-verde-escuro;
+    .section__title, .section__subtitle, p {
+      color: $color-branco;
+    }
+    .section__info {
+      color: $color-branco;
+      border-color: $color-branco;
+    }
+    p {
+      font-weight: 300;
+    }
   }
   &-most-used {
     background-color: $color-vermelho;
+    .section__title, .section__subtitle, p {
+      color: $color-branco;
+    }
+    .section__info {
+      color: $color-branco;
+      border-color: $color-branco;
+    }
+    p {
+      font-weight: 300;
+    }
+    &__modal {
+      .modal-content {
+        background-color: $color-vermelho;
+        border-radius: 0;
+        border: none;
+      }
+    }
   }
   &-decades {
     background-color: $color-rosa;
+    .section__title, .section__subtitle, p {
+      color: $color-preto;
+    }
   }
   &-king {
     background-color: $color-branco;
+    .section__title, .section__subtitle, p {
+      color: $color-preto;
+    }
   }
   &-terms {
     background-color: $color-verde-escuro;
+    .section__title, .section__subtitle, p {
+      color: $color-rosa;
+    }
+    .section__info {
+      color: $color-branco;
+      border-color: $color-branco;
+    }
+    p {
+      font-weight: 300;
+    }
   }
   &-deities {
     background-color: $color-bege;
+    .section__title, .section__subtitle {
+      color: $color-vermelho;
+    }
   }
   &-believers {
     background-color: $color-vermelho;
     width: 100%;
+    .section__title, .section__subtitle, p {
+      color: $color-preto;
+    }
   }
   &-schools {
     background-color: $color-rosa;
     width: 100%;
+    .section__title, .section__subtitle, p {
+      color: $color-preto;
+    }
   }
   &-battle {
     background-color: $color-bege;
+    .section__title, .section__subtitle, p {
+      color: $color-preto;
+    }
   }
   &-spotify {
     background-color: $color-branco;
+    .section__title, .section__subtitle {
+      color: $color-vermelho;
+    }
   }
   &-footer {
     background-color: $color-branco;
     position: relative;
+    p {
+      color: $color-vermelho;
+    }
+    &__copyright {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
     &__illustration {
       width: 100%;
       margin-bottom: 0;

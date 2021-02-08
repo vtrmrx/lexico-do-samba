@@ -1,14 +1,14 @@
 <section class="section section-lyrics">
   <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center section__row">
       <div class="col-12">
-        <h2 class="section__title text-center">Analisando as letras de samba</h2>
+        <h2 class="section__title text-center">“Eu sou o samba”</h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est dui, gravida id ex et, tempor sodales augue. Quisque lobortis velit id nisi ultrices pretium.</p>
+          <p>Como não era possível analisar todos os sambas já feitos, o universo tem suas limitações. Aqui você saberá um pouco mais sobre de onde os dados vieram antes de descobrir onde eles chegaram.</p>
           {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            content="Para criar o universo a ser analisado, partimos da lista de artistas do samba da Wikipédia (link?). ela foi corrigida manualmente incluído alguns nomes que faltavam e excluindo um ou outro que pareciam fora do lugar. Depois disso, todas as músicas listadas na página desse artista no letras.mus foram baixadas e corrigidas. Além disso, verbos foram transformados para a sua versão no infinitivo. O universo tem seus problemas: a maior parte dos artistas são do RJ e são homens. Sabemos que a contribuição de mulheres e de pessoas de fora do Rio de Janeiro foram e continuam sendo essenciais para o samba."
           %}
         </div>
       </div>
@@ -28,38 +28,35 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row section__row">
       <div class="col-12 col-lg-4">
         <h3 class="section__subtitle">
-          As regiões que mais se interessam
-          {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-          %}
+          Década de nascimento <span class="fw-normal">(excluindo grupos)</span>
         </h3>
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="flourish-embed flourish-chart" data-src="visualisation/4253705">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
         </div>
       </div>
       <div class="col-12 col-lg-4">
         <h3 class="section__subtitle">
-          Os termos mais relacionados
-          {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-          %}
+          Sexo
         </h3>
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="flourish-embed flourish-chart" data-src="visualisation/4253788">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
         </div>
       </div>
       <div class="col-12 col-lg-4">
         <h3 class="section__subtitle">
-          Os termos mais relacionados
-          {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
-          %}
+          Estado de nascimento <span class="fw-normal">(excluindo grupos)</span>
         </h3>
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="flourish-embed flourish-chart" data-src="visualisation/4253858">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
         </div>
       </div>
     </div>

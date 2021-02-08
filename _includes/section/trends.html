@@ -1,14 +1,14 @@
 <section class="section section-trends">
   <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center section__row">
       <div class="col-12">
         <h2 class="section__title text-center">“To me guardando pra quando o carnaval chegar”</h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Analisando buscas no google no brasil desde 2004, o samba tem um pico de interesse geral nas épocas de carnaval. Lorem ipsum dolor sit amet.</p>
+          <p>O samba tem um pico de interesse em buscas realizadas no Google que se repete todo ano no carnaval. A explicação está nos termos relacionados que mais aparecem: escola de samba e samba enredo.</p>
           {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            content="Ao contrário da maioria dos dados analisados no Léxico do Samba, informações dessa seção foram extraídas do Google Trends em outubro de 2020. Para obtê-los, eles criam um índice que vai de zero a cem baseado nas buscas feitas por um determinado termo. Esse índice também leva em conta o tamanho da população do local analisado. Aqui ele leva em conta as buscas feitas no Brasil."
           %}
         </div>
       </div>
@@ -20,23 +20,25 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row section__row">
       <div class="col-12 col-lg-6">
         <h3 class="section__subtitle">
-          As regiões que mais se interessam
+          “Você samba de que lado?”
           {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            content="Os locais que mais buscam pelo termo samba no Google são o Rio de Janeiro, a Bahia e Pernambuco. O indicador leva em conta a quantidade de buscas total em cada estado para criar esse índice. Caso isso não acontecesse, o mais provável é que São Paulo aparecesse sempre em primeiro lugar por ser o local mais populoso do Brasil."
           %}
         </h3>
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="flourish-embed flourish-map" data-src="visualisation/4089452">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
         </div>
       </div>
       <div class="col-12 col-lg-6">
         <h3 class="section__subtitle">
-          Os termos mais relacionados
+          Buscas relacionadas
           {% include section-info.html
-            content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            content="A palavra samba é frequentemente buscada em conjunto com outras. O Google lista os cinco termos que mais aparecem. Aqui, a associação ao carnaval nos moldes do Rio de Janeiro fica explícita com escola de samba em primeiro lugar."
           %}
         </h3>
         <div class="section__content">

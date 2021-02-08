@@ -5,13 +5,13 @@
         <div class="section__header">
           <div class="row justify-content-center">
             <div class="col-12">
-              <h2 class="section__title text-center">As palavras mais usadas (top 30?)</h2>
+              <h2 class="section__title text-center">“O que será que será que andam sussurrando em versos e trovas?”</h2>
             </div>
             <div class="col-12 col-lg-8">
               <div class="section__description text-center">
-                <p>Falar aqui as palavras que foram excluídas e tal...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est dui, gravida id ex et, tempor sodales augue. Quisque lobortis velit id nisi ultrices pretium.</p>
+                <p>Para chegar às palavras mais utilizadas nos sambas analisados não é suficiente apenas contá- las. Palavras vazias de sentido foram retiradas da análise. Caso isso não fosse feito, as palavras que liderariam o ranking seriam artigos como “o”, “a” e outros termos como “de”. Não seria muito divertido, né?</p>
                 {% include section-info.html
-                  content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                  content="Por padrão, o gráfico inicia com as 30 palavras mais faladas em todas as letras analisadas. A partir daí, você pode filtrar esses dados levando em conta intérpretes específicos ou características dos cantores: gênero, local de nascimento, década de nascimento. Cada seleção diminui o universo de análise e, assim, as 30 palavras mais usadas."
                 %}
               </div>
             </div>
@@ -22,29 +22,36 @@
         <div class="section__content">
           <div class="info-custom">
             <div class="filter-most-used">
-              <div class="filter-most-used--mobile d-lg-none">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#filterMostUsed">
-                  Organizar por
-                </button>
-                <div data-filter-mobile class="modal fade" id="filterMostUsed" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="filterMostUsedLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable">
+              <div class="filter-most-used--mobile d-lg-none" data-filter-mobile>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group text-center">
+                      <label for="filterName">Artista</label>
+                      <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
+                        <option label="Todos" value="all">Todos</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group text-center">
+                      <label>Dados demográficos</label>
+                      <button type="button" class="btn btn-primary d-block w-100" data-toggle="modal" data-target="#filterMostUsed">
+                        Selecionar filtros
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-most-used__modal modal fade" id="filterMostUsed" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="filterMostUsedLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="filterMostUsedLabel">Filtros</h5>
+                        <h5 class="modal-title" id="filterMostUsedLabel">Filtrar por dados demográficos</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
                         <div class="row">
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterName">Artista</label>
-                              <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
-                                <option label="Todos" value="all">Todos</option>
-                              </select>
-                            </div>
-                          </div>
                           <div class="col-12 col-lg-3">
                             <div class="form-group w-100">
                               <label for="filterGender">Gênero</label>
