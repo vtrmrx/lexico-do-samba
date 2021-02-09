@@ -1,0 +1,9 @@
+<div class="search-item">
+  <p class="search-item__term">{{ include.term }}</p>
+  {% if include.percent %}
+    <div class="search-item__graph">
+      <p class="search-item__graph-label">{{ include.percent }}</p>
+      <div class="search-item__graph-bar" style="width: {{ include.percent }}%"></div>
+    </div>
+  {% endif %}
+</div>

@@ -42,7 +42,14 @@
           %}
         </h3>
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="related-list">
+            {% for search in site.data.relatedSearch limit:5 %}
+              {% include components/search-item.html
+                term = search.termo
+                percent = search.valor
+              %}
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

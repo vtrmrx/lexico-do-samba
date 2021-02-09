@@ -14,7 +14,48 @@
       </div>
       <div class="col-12">
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <h3 class="section__subtitle">Samba</h3>
+              <div class="related-list">
+                {% for song in site.data.playlists-samba limit:5 %}
+                  {% include components/search-item.html
+                    term = song.titulo
+                  %}
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h3 class="section__subtitle">Samba-raiz</h3>
+              <div class="related-list">
+                {% for song in site.data.playlists-samba-raiz limit:5 %}
+                  {% include components/search-item.html
+                    term = song.titulo
+                  %}
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h3 class="section__subtitle">Pagode</h3>
+              <div class="related-list">
+                {% for song in site.data.playlists-pagode limit:5 %}
+                  {% include components/search-item.html
+                    term = song.titulo
+                  %}
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h3 class="section__subtitle">Samba-enredo</h3>
+              <div class="related-list">
+                {% for song in site.data.playlists-samba-enredo limit:5 %}
+                  {% include components/search-item.html
+                    term = song.titulo
+                  %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -230,6 +230,19 @@ p {
     p {
       font-weight: 300;
     }
+    .data-highlight {
+      text-align: center;
+      &__main {
+        font-family: 'braveold', Georgia, serif;
+        color: $color-rosa;
+        font-size: 56px;
+        line-height: 64px;
+        margin-bottom: 8px;
+      }
+      &__aux {
+        color: $color-rosa;
+      }
+    }
   }
   &-most-used {
     background-color: $color-vermelho;
@@ -332,4 +345,56 @@ p {
       }
     }
   }
+}
+
+.related-list {
+  counter-reset: search-item;
+}
+
+.search-item {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: 1px solid $color-preto;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  &__term {
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 40px;
+    position: relative;
+    &::before {
+      counter-increment: search-item;
+      content: counter(search-item);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      text-align: left;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+  &__graph {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+    &__graph-label {
+      margin-right: 12px;
+      text-align: right;
+      font-size: 20px;
+      min-width: 40px;
+    }
+    &__graph-bar {
+      height: 24px;
+      background-color: $color-verde;
+    }
 }
