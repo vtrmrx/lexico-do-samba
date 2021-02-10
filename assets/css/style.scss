@@ -23,6 +23,11 @@ h1, h2 {
   color: $color-preto;
 }
 
+h1 {
+  font-size: 80px;
+  line-height: 88px;
+}
+
 h2 {
   font-size: 40px;
   line-height: 48px;
@@ -32,6 +37,12 @@ h3 {
   font-size: 32px;
   line-height: 40px;
   font-weight: 900;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
 }
 
 .lead {
@@ -333,19 +344,6 @@ p {
       padding-top: 32px;
       padding-bottom: 32px;
     }
-    &__illustration {
-      width: 100%;
-      margin-bottom: 0;
-      z-index: 0;
-      overflow: hidden;
-      img {
-        display: block;
-        width: 100%;
-        // min-width: 800px;
-        margin-left: 50%;
-        transform: translateX(-50%);
-      }
-    }
   }
 }
 
@@ -412,6 +410,22 @@ p {
   }
 }
 
+.thank-section {
+  &__illustration {
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 0;
+    overflow: hidden;
+    img {
+      display: block;
+      width: 100%;
+      // min-width: 800px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
 .card-king {
   background-color: $color-bege;
   text-align: center;
@@ -444,6 +458,7 @@ p {
       font-weight: 700;
       text-transform: uppercase;
       color: #838383;
+      letter-spacing: 1px;
     }
     .words {
       font-size: 16px;
@@ -452,4 +467,83 @@ p {
       color: #838383;
     }
   }
+}
+
+.about-intro {
+  background-color: $color-vermelho;
+  padding-top: calc(80px + 56px);
+  padding-bottom: 80px;
+  &__title {
+    color: $color-preto;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  &__text {
+    color: $color-branco;
+    font-weight: 300;
+  }
+}
+
+.about-team {
+  background-color: $color-bege;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__title {
+    color: $color-verde-escuro;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+  &__text {
+    color: $color-branco;
+    font-weight: 300;
+  }
+}
+
+.team-member {
+  margin-bottom: 48px;
+  &__name {
+    color: $color-vermelho;
+  }
+  &__role {
+    margin-bottom: 16px;
+    color: $color-preto;
+  }
+  &__bio {
+    margin-bottom: 16px;
+    color: $color-preto;
+  }
+  &__social-media {
+    a {
+      color: $color-preto;
+    }
+  }
+}
+
+.recommendations-intro {
+  background-color: $color-rosa;
+  padding-top: calc(80px + 56px);
+  padding-bottom: 80px;
+  &__title {
+    color: $color-verde-escuro;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  &__text {
+    color: $color-preto;
+  }
+}
+
+.recommendations-section {
+  background-color: $color-branco;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__title {
+    color: $color-verde-escuro;
+    margin-bottom: 80px;
+    text-align: left;
+  }
+}
+
+.recommendations-courses, .recommendations-watchlist, .recommendations-follow, {
+  background-color: $color-bege;
 }
