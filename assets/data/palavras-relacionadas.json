@@ -1,0 +1,317 @@
+[
+  {
+    "palavra" : "amor",
+    "relacionadas" : [
+      {
+        "Palavra": "grande",
+        "Valor": "397"
+      },
+      {
+        "Palavra": "amor",
+        "Valor": "397"
+      },
+      {
+        "Palavra": "morrer",
+        "Valor": "198"
+      },
+      {
+        "Palavra": "coração",
+        "Valor": "101"
+      },
+      {
+        "Palavra": "outro",
+        "Valor": "97"
+      },
+      {
+        "Palavra": "existir",
+        "Valor": "88"
+      },
+      {
+        "Palavra": "samba",
+        "Valor": "85"
+      },
+      {
+        "Palavra": "sempre",
+        "Valor": "79"
+      },
+      {
+        "Palavra": "verdadeiro",
+        "Valor": "79"
+      },
+      {
+        "Palavra": "deus",
+        "Valor": "76"
+      }
+    ]
+  },
+  {
+    "palavra" : "samba",
+    "relacionadas" : [
+      {
+        "Palavra": "samba",
+        "Valor": "253"
+      },
+      {
+        "Palavra": "roda",
+        "Valor": "188"
+      },
+      {
+        "Palavra": "cantar",
+        "Valor": "179"
+      },
+      {
+        "Palavra": "amor",
+        "Valor": "81"
+      },
+      {
+        "Palavra": "escola",
+        "Valor": "69"
+      },
+      {
+        "Palavra": "sambar",
+        "Valor": "50"
+      },
+      {
+        "Palavra": "pé",
+        "Valor": "42"
+      },
+      {
+        "Palavra": "dançar",
+        "Valor": "32"
+      },
+      {
+        "Palavra": "areia",
+        "Valor": "30"
+      },
+      {
+        "Palavra": "quente",
+        "Valor": "29"
+      }
+    ]
+  },
+  {
+    "palavra" : "mulher",
+    "relacionadas" : [
+      {
+        "Palavra": "mulher",
+        "Valor": "267"
+      },
+      {
+        "Palavra": "minha",
+        "Valor": "130"
+      },
+      {
+        "Palavra": "amada",
+        "Valor": "103"
+      },
+      {
+        "Palavra": "casar",
+        "Valor": "45"
+      },
+      {
+        "Palavra": "feia",
+        "Valor": "37"
+      },
+      {
+        "Palavra": "bonita",
+        "Valor": "36"
+      },
+      {
+        "Palavra": "brasileira",
+        "Valor": "31"
+      },
+      {
+        "Palavra": "homem",
+        "Valor": "28"
+      },
+      {
+        "Palavra": "linda",
+        "Valor": "25"
+      },
+      {
+        "Palavra": "nome",
+        "Valor": "21"
+      }
+    ]
+  },
+  {
+    "palavra" : "homem",
+    "relacionadas" : [
+      {
+        "Palavra": "gol",
+        "Valor": "44"
+      },
+      {
+        "Palavra": "só",
+        "Valor": "41"
+      },
+      {
+        "Palavra": "mulher",
+        "Valor": "29"
+      },
+      {
+        "Palavra": "feliz",
+        "Valor": "29"
+      },
+      {
+        "Palavra": "matar",
+        "Valor": "24"
+      },
+      {
+        "Palavra": "homem",
+        "Valor": "15"
+      },
+      {
+        "Palavra": "vida",
+        "Valor": "14"
+      },
+      {
+        "Palavra": "samba",
+        "Valor": "11"
+      },
+      {
+        "Palavra": "bom",
+        "Valor": "11"
+      },
+      {
+        "Palavra": "mau",
+        "Valor": "11"
+      }
+    ]
+  },
+  {
+    "palavra" : "ela",
+    "relacionadas" : [
+      {
+        "Palavra": "passar",
+        "Valor": "88"
+      },
+      {
+        "Palavra": "gostar",
+        "Valor": "74"
+      },
+      {
+        "Palavra": "minha",
+        "Valor": "71"
+      },
+      {
+        "Palavra": "amor",
+        "Valor": "64"
+      },
+      {
+        "Palavra": "mexer",
+        "Valor": "58"
+      },
+      {
+        "Palavra": "dia",
+        "Valor": "51"
+      },
+      {
+        "Palavra": "voltar",
+        "Valor": "50"
+      },
+      {
+        "Palavra": "pegar",
+        "Valor": "46"
+      },
+      {
+        "Palavra": "chegar",
+        "Valor": "46"
+      },
+      {
+        "Palavra": "vida",
+        "Valor": "43"
+      }
+    ]
+  },
+  {
+    "palavra" : "ele",
+    "relacionadas" : [
+      {
+        "Palavra": "deixar",
+        "Valor": "61"
+      },
+      {
+        "Palavra": "amor",
+        "Valor": "59"
+      },
+      {
+        "Palavra": "pagar",
+        "Valor": "53"
+      },
+      {
+        "Palavra": "seu",
+        "Valor": "36"
+      },
+      {
+        "Palavra": "mulher",
+        "Valor": "30"
+      },
+      {
+        "Palavra": "carregar",
+        "Valor": "33"
+      },
+      {
+        "Palavra": "reprodutor",
+        "Valor": "30"
+      },
+      {
+        "Palavra": "coração",
+        "Valor": "31"
+      },
+      {
+        "Palavra": "samba",
+        "Valor": "22"
+      },
+      {
+        "Palavra": "deus",
+        "Valor": "18"
+      }
+    ]
+  },
+  {
+    "palavra" : "pobre",
+    "relacionadas" : [
+      {
+        "Palavra": "coração",
+        "Valor": "69"
+      },
+      {
+        "Palavra": "coitado",
+        "Valor": "22"
+      },
+      {
+        "Palavra": "peito",
+        "Valor": "12"
+      },
+      {
+        "Palavra": "pobre",
+        "Valor": "20"
+      },
+      {
+        "Palavra": "mulher",
+        "Valor": "11"
+      },
+      {
+        "Palavra": "filho",
+        "Valor": "8"
+      },
+      {
+        "Palavra": "felicidade",
+        "Valor": "8"
+      },
+      {
+        "Palavra": "rapaz",
+        "Valor": "7"
+      },
+      {
+        "Palavra": "nascer",
+        "Valor": "7"
+      },
+      {
+        "Palavra": "infeliz",
+        "Valor": "6"
+      }
+    ]
+  }
+]

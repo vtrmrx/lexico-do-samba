@@ -398,3 +398,14 @@ p {
       background-color: $color-verde;
     }
 }
+
+.related-words-cloud {
+  .related-words-term {
+    transition: opacity .25s ease;
+  }
+  &:hover {
+    .related-words-term {
+      opacity: .3;
+    }
+  }
+}
