@@ -137,6 +137,7 @@ p {
     }
     &__logo {
       font-family: 'braveold', Georgia, serif;
+      font-variant-ligatures: none;
       font-weight: 900;
       font-style: normal;
       font-size: 32px;
@@ -234,6 +235,7 @@ p {
       text-align: center;
       &__main {
         font-family: 'braveold', Georgia, serif;
+        font-variant-ligatures: none;
         color: $color-rosa;
         font-size: 56px;
         line-height: 64px;
@@ -272,7 +274,7 @@ p {
   }
   &-king {
     background-color: $color-branco;
-    .section__title, .section__subtitle, p {
+    .section__title, .section__subtitle {
       color: $color-preto;
     }
   }
@@ -406,6 +408,48 @@ p {
   &:hover {
     .related-words-term {
       opacity: .3;
+    }
+  }
+}
+
+.card-king {
+  background-color: $color-bege;
+  text-align: center;
+  padding: 32px;
+  margin-bottom: 24px;
+  &__word {
+    font-family: 'braveold', Georgia, serif;
+    font-variant-ligatures: none;
+    font-size: 56px;
+    line-height: 64px;
+    color: $color-vermelho;
+    margin-bottom: 16px;
+  }
+  &__artist {
+    font-family: 'braveold', Georgia, serif;
+    font-variant-ligatures: none;
+    font-size: 32px;
+    line-height: 40px;
+    color: $color-verde-escuro;
+    margin-bottom: 8px;
+  }
+  &__frequency {
+    color: $color-verde-escuro;
+  }
+  &__related-words {
+    margin-top: 24px;
+    .title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #838383;
+    }
+    .words {
+      font-size: 16px;
+      line-height: 24px;
+      font-style: italic;
+      color: #838383;
     }
   }
 }

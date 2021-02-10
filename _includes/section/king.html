@@ -14,7 +14,21 @@
       </div>
       <div class="col-12">
         <div class="section__content">
-          {% include content-placeholder.html %}
+          <div class="row">
+            {% for palavra in site.data.reis-das-palavras %}
+              <div class="col-12 col-lg-4">
+                <div class="card-king">
+                  <p class="card-king__word">{{ palavra.palavra }}</p>
+                  <p class="card-king__artist">{{ palavra.artista }}</p>
+                  <p class="card-king__frequency">{{ palavra.frequencia }}</p>
+                  <div class="card-king__related-words">
+                    <p class="title">Palavras relacionadas</p>
+                    <p class="words">palavra semelhante, outra, palavra,  outra, palavra</p>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>
