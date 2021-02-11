@@ -24,36 +24,60 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 80px;
-  line-height: 88px;
+  font-size: 40px;
+  line-height: 48px;
+  @include media-breakpoint-up(lg) {
+    font-size: 80px;
+    line-height: 88px;
+  }
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 32px;
+  @include media-breakpoint-up(lg) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 h3 {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+    line-height: 40px;
+  }
   font-weight: 900;
 }
 
 h4 {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+    line-height: 40px;
+  }
   font-weight: 400;
 }
 
 .lead {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 28px;
   font-weight: 400;
+  @include media-breakpoint-up(lg) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 p {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+    line-height: 32px;
+  }
   color: $color-preto;
 }
 
@@ -151,11 +175,16 @@ p {
       font-variant-ligatures: none;
       font-weight: 900;
       font-style: normal;
-      font-size: 32px;
-      line-height: 32px;
-      height: 32px;
+      font-size: 24px;
+      line-height: 24px;
+      height: 24px;
       padding: 0;
       display: inline-block;
+      @include media-breakpoint-up(lg) {
+        font-size: 32px;
+        line-height: 32px;
+        height: 32px;
+      }
     }
     &__collapse {
       @include media-breakpoint-up(lg) {
@@ -245,12 +274,20 @@ p {
     }
     .data-highlight {
       text-align: center;
+      margin-bottom: 32px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
       &__main {
         font-family: 'braveold', Georgia, serif;
         font-variant-ligatures: none;
         color: $color-rosa;
-        font-size: 56px;
-        line-height: 64px;
+        font-size: 40px;
+        line-height: 48px;
+        @include media-breakpoint-up(lg) {
+          font-size: 56px;
+          line-height: 64px;
+        }
         margin-bottom: 8px;
       }
       &__aux {
@@ -350,6 +387,10 @@ p {
 
 .related-list {
   counter-reset: search-item;
+  margin-bottom: 48px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
 }
 
 .search-item {
@@ -435,16 +476,24 @@ p {
   &__word {
     font-family: 'braveold', Georgia, serif;
     font-variant-ligatures: none;
-    font-size: 56px;
-    line-height: 64px;
+    font-size: 40px;
+    line-height: 48px;
+    @include media-breakpoint-up(lg) {
+      font-size: 56px;
+      line-height: 64px;
+    }
     color: $color-vermelho;
     margin-bottom: 16px;
   }
   &__artist {
     font-family: 'braveold', Georgia, serif;
     font-variant-ligatures: none;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+      line-height: 40px;
+    }
     color: $color-verde-escuro;
     margin-bottom: 8px;
   }
@@ -581,4 +630,11 @@ p {
 
 .filter-most-used {
   margin-bottom: 32px;
+}
+
+.spotify-playlist {
+  margin-bottom: 32px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 0;
+  }
 }
