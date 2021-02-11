@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
   let svg = d3.select("#mostUsedViz")
               .append("svg")
               .style("width", "100%")
-              .style("overflow", "visible")
               .attr("viewBox", `0 0 ${svgWidth} ${Math.round(svgHeight)}`);
 
   svg.append("g").attr("class", "circle-nodes");
@@ -24,25 +23,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setNodes(dataSet, svg, rangeMin, rangeMax, aspectRatio);
 
-    let filtersContainer = d3.select("[data-filter-desktop]");
+    let filtersDesktopContainer = d3.select("[data-filter-desktop]"),
+        filtersMobileContainer = d3.select("[data-filter-mobile]");
 
-    let filters = filtersContainer.selectAll("[data-filter-dynamic]");
+    let filtersDesktop = filtersDesktopContainer.selectAll("[data-filter-dynamic]"),
+        filtersMobile = filtersMobileContainer.selectAll("[data-filter-dynamic]");
 
-    let availableOptions = setFilterOptions(dataSet, filters);
+    let availableOptions = setFilterOptions(dataSet, filtersDesktop);
 
-    setFilters(availableOptions, filtersContainer);
+    setFilters(availableOptions, filtersDesktopContainer, filtersMobileContainer);
 
-    let filterTabs = document.querySelectorAll('#mostUsedTabs button[data-bs-toggle="tab"]');
-    filterTabs.forEach(tab => tab.addEventListener('show.bs.tab', function (event) {
-      filters["_groups"][0].forEach(function(filter, index) {
-        filter.value = "all";
-      });
-      updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio);
-    }));
-
-    filters.on("change", function() {
-      updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio);
+    filtersDesktop.on("change", function(){
+      updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
     });
+
+    filtersMobile.on("change", function(){
+      updateFilters("mobile", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
+      $(filtersMobileContainer["_groups"][0][0]).modal('hide');
+    });
+
 
     let resizeTimeout;
     window.addEventListener("resize", function(event) {
@@ -60,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
           rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
           svg.attr("viewBox", `0 0 ${svgWidth} ${ Math.round(svgHeight) }`);
           console.log(aspectRatio);
-          updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio);
+          updateFilters("desktop", dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio);
           viewportWidth = newViewportWidth;
         }, 1500);
       }
@@ -88,19 +87,23 @@ document.addEventListener("DOMContentLoaded", function() {
     return filterOptions;
   }
 
-  function setFilters(filtersData, filtersContainer) {
+  function setFilters(filtersData, filtersDesktopContainer, filtersMobileContainer) {
     filtersData.forEach(function(filter, i) {
-      filtersContainer.select(`[data-filter-key="${filter.key}"]`)
+      filtersDesktopContainer.select(`[data-filter-key="${filter.key}"]`)
         .selectAll("option:not([value=all])").data(filter.values)
+        .enter().append("option")
+          .text(function(d) { return d });
+      filtersMobileContainer.select(`[data-filter-key="${filter.key}"]`)
+        .selectAll("option:not([value=all]").data(filter.values)
         .enter().append("option")
           .text(function(d) { return d });
     });
   }
 
-  function updateFilters(eventSource, dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio) {
+  function updateFilters(eventSource, dataSet, filtersDesktopContainer, filtersMobileContainer, rangeMin, rangeMax, aspectRatio) {
     let dataSubset = dataSet;
     let filterArray = [],
-        filterTarget = filtersContainer,
+        filterTarget = (eventSource == "mobile") ? filtersMobileContainer : filtersDesktopContainer,
         filters = filterTarget.selectAll("[data-filter-dynamic]"),
         filterName = filterTarget.select('[data-filter-key="Nome"]'),
         filterNameValue = filterName["_groups"][0][0].value;
@@ -111,9 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
       filters["_groups"][0].forEach(function(filter, index) {
         let filterKey = filter.getAttribute("data-filter-key");
-        if(filterKey !== "Nome") {
-          filter.value = "all";
-        }
+        filter.value = "all";
       });
     } else {
       filters["_groups"][0].forEach(function(filter, index) {
@@ -125,6 +126,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
+    let filtersSource = (eventSource == "mobile") ? filtersMobileContainer : filtersDesktopContainer,
+        filtersTarget = (eventSource == "mobile") ? filtersDesktopContainer : filtersMobileContainer;
+    filtersSource.selectAll("[data-filter-dynamic]")["_groups"][0].forEach(function(filter, i) {
+      let filterKey = filter.getAttribute("data-filter-key");
+      filtersTarget.select(`[data-filter-key="${filterKey}"]`)["_groups"][0][0].value = filter.value;
+    });
     if(dataSubset.length > 0) {
       resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio);
     } else {

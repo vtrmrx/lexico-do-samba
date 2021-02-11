@@ -22,66 +22,7 @@
         <div class="section__content">
           <div class="info-custom">
             <div class="filter-most-used">
-              <div class="filter-most-used--mobile d-none" data-filter-mobile>
-                <div class="row">
-                  <div class="col-6">
-                    <div class="form-group text-center">
-                      <label for="filterName">Artista</label>
-                      <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
-                        <option label="Todos" value="all">Todos</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="form-group text-center">
-                      <label>Dados demográficos</label>
-                      <button type="button" class="btn btn-primary d-block w-100" data-toggle="modal" data-target="#filterMostUsed">
-                        Selecionar filtros
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="section-most-used__modal modal fade" id="filterMostUsed" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="filterMostUsedLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="filterMostUsedLabel">Filtrar por dados demográficos</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterGender">Gênero</label>
-                              <select class="form-control" name="filterGender" data-filter-dynamic="true" data-filter-key="Gênero">
-                                <option label="Todos" value="all">Todos</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterDecade">Década de nascimento</label>
-                              <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="Década de nascimento">
-                                <option label="Todas" value="all">Todas</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="col-12 col-lg-3">
-                            <div class="form-group w-100">
-                              <label for="filterState">Estado</label>
-                              <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="UF de nascimento">
-                                <option label="Todos" value="all">Todos</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
               <div class="filter-most-used--desktop" data-filter-desktop>
                 <div class="row justify-content-center">
                   <div class="col-12 col-lg-8">
@@ -89,7 +30,7 @@
                     <p class="text-center">Filtrar por:</p>
                     <br>
 
-                    <ul class="most-used-tabs nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                    <ul class="most-used-tabs nav nav-tabs justify-content-center" id="mostUsedTabs" role="tablist">
                       <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="filtrar-artista-tab" data-bs-toggle="tab" data-bs-target="#filtrar-artista" type="button" role="tab" aria-controls="filtrar-artista" aria-selected="true">Artistas</button>
                       </li>
@@ -149,11 +90,3 @@
     </div>
   </div>
 </section>
-
-<script type="text/javascript">
-  let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-  let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl)
-  })
-</script>
-<script src="{{ '/assets/js/mostUsedWords.js' | prepend: site.baseurl }}"></script>
