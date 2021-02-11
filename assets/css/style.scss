@@ -160,6 +160,7 @@ p {
     &__collapse {
       @include media-breakpoint-up(lg) {
         width: auto;
+        flex-grow: 0;
       }
     }
   }
@@ -546,4 +547,34 @@ p {
 
 .recommendations-courses, .recommendations-watchlist, .recommendations-follow, {
   background-color: $color-bege;
+}
+
+.most-used-tabs {
+  margin-bottom: 32px;
+  border-bottom: 1px solid $color-rosa;
+  .nav-link {
+    border: none;
+    color: $color-branco;
+    &.active {
+      background-color: $color-rosa;
+      color: $color-preto;
+    }
+  }
+}
+
+.most-used-tab-content {
+  label {
+    color: $color-branco;
+    margin-bottom: 8px;
+  }
+  select {
+    background-color: transparent;
+    color: $color-branco;
+    border-color: $color-branco;
+    &:focus {
+      background-color: transparent;
+      color: $color-branco;
+      border-color: $color-rosa;
+    }
+  }
 }
