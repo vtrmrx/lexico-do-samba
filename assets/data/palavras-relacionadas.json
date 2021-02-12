@@ -268,50 +268,5 @@
         "Valor": "18"
       }
     ]
-  },
-  {
-    "palavra" : "pobre",
-    "relacionadas" : [
-      {
-        "Palavra": "coração",
-        "Valor": "69"
-      },
-      {
-        "Palavra": "coitado",
-        "Valor": "22"
-      },
-      {
-        "Palavra": "peito",
-        "Valor": "12"
-      },
-      {
-        "Palavra": "pobre",
-        "Valor": "20"
-      },
-      {
-        "Palavra": "mulher",
-        "Valor": "11"
-      },
-      {
-        "Palavra": "filho",
-        "Valor": "8"
-      },
-      {
-        "Palavra": "felicidade",
-        "Valor": "8"
-      },
-      {
-        "Palavra": "rapaz",
-        "Valor": "7"
-      },
-      {
-        "Palavra": "nascer",
-        "Valor": "7"
-      },
-      {
-        "Palavra": "infeliz",
-        "Valor": "6"
-      }
-    ]
   }
 ]

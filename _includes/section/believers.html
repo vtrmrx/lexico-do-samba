@@ -1,22 +1,15 @@
-<section class="section section-believers">
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="section__title text-left">“A menina dos olhos de Oyá”</h2>
+<section class="section section-believers d-flex flex-column">
+  <div class="container-fluid d-flex flex-column flex-grow-1">
+    <div class="d-flex flex-column justify-content-between flex-grow-1">
+      <div class="section__header">
+        <h2 class="section__title text-left">“A menina dos <br>olhos de Oyá”</h2>
+        {% include section-info.html
+          content="Para poder fazer a comparação, primeiros chegamos ao total de palavras por artista e depois ao total de referências a divindades feitas por ele. Dividindo um pelo outro chegou-se ao índice proporcional para cada artista."
+        %}
       </div>
-      <div class="col-12">
-        <div class="section__description text-left">
-          <p>* menções a cada 100 palavras</p>
-          {% include section-info.html
-            content="Para poder fazer a comparação, primeiros chegamos ao total de palavras por artista e depois ao total de referências a divindades feitas por ele. Dividindo um pelo outro chegou-se ao índice proporcional para cada artista."
-          %}
-        </div>
-      </div>
-      <div class="col-12">
-        <div class="section__content">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/4385978">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+      <div class="section__content d-flex flex-column flex-grow-1 justify-content-center">
+        <div class="flourish-embed flourish-chart" data-src="visualisation/4385978">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
         </div>
       </div>
     </div>

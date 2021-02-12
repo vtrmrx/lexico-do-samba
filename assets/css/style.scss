@@ -41,7 +41,7 @@ h2 {
   }
 }
 
-h3 {
+@mixin h3 {
   font-size: 20px;
   line-height: 24px;
   @include media-breakpoint-up(lg) {
@@ -51,6 +51,8 @@ h3 {
   font-weight: 900;
 }
 
+h3 { @include h3; }
+
 h4 {
   font-size: 20px;
   line-height: 24px;
@@ -59,6 +61,19 @@ h4 {
     line-height: 40px;
   }
   font-weight: 400;
+}
+
+a {
+  color: $color-preto;
+  &:hover {
+    color: $color-verde-escuro;
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .lead {
@@ -71,7 +86,7 @@ h4 {
   }
 }
 
-p {
+@mixin p {
   font-size: 16px;
   line-height: 24px;
   @include media-breakpoint-up(lg) {
@@ -79,6 +94,13 @@ p {
     line-height: 32px;
   }
   color: $color-preto;
+}
+
+p { @include p; }
+
+.small {
+  // font-size: 16px;
+  // line-height: 24px;
 }
 
 .container-fluid {
@@ -200,9 +222,12 @@ p {
     &__title {
       position: relative;
       z-index: 1;
+      padding-top: 32px;
     }
     &__logo {
       max-width: 80%;
+      height: 192px;
+      width: auto;
     }
     &__illustration {
       width: 100%;
@@ -222,6 +247,11 @@ p {
     background-color: $color-vermelho;
     &__text {
       color: $color-preto;
+      margin-bottom: 16px;
+    }
+    .collapse {
+      .collapse-content {
+      }
     }
     &__more {
 
@@ -249,6 +279,11 @@ p {
     background-color: $color-bege;
     .section__title, .section__subtitle {
       color: $color-vermelho;
+    }
+    .section__content {
+      @include media-breakpoint-up(lg) {
+        padding-right: 64px;
+      }
     }
   }
   &-playlists {
@@ -389,15 +424,15 @@ p {
   counter-reset: search-item;
   margin-bottom: 48px;
   @include media-breakpoint-up(lg) {
-    margin-bottom: 0;
+    margin-bottom: 48px;
   }
 }
 
 .search-item {
   display: flex;
   flex-flow: row nowrap;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-bottom: 1px solid $color-preto;
   &:first-child {
     padding-top: 0;
@@ -411,6 +446,8 @@ p {
     padding-right: 12px;
     padding-left: 40px;
     position: relative;
+    font-size: 16px;
+    line-height: 24px;
     &::before {
       counter-increment: search-item;
       content: counter(search-item);
@@ -421,22 +458,25 @@ p {
       height: 32px;
       text-align: left;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
   &__graph {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
   }
     &__graph-label {
       margin-right: 12px;
       text-align: right;
-      font-size: 20px;
+      font-size: 16px;
+      line-height: 24px;
       min-width: 40px;
     }
     &__graph-bar {
-      height: 24px;
+      height: 16px;
       background-color: $color-verde;
     }
 }
@@ -486,19 +526,14 @@ p {
     margin-bottom: 16px;
   }
   &__artist {
-    font-family: 'braveold', Georgia, serif;
-    font-variant-ligatures: none;
-    font-size: 24px;
-    line-height: 32px;
-    @include media-breakpoint-up(lg) {
-      font-size: 32px;
-      line-height: 40px;
-    }
+    @include h3
     color: $color-verde-escuro;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
   &__frequency {
     color: $color-verde-escuro;
+    font-size: 16px;
+    line-height: 24px;
   }
   &__related-words {
     margin-top: 24px;
@@ -563,9 +598,6 @@ p {
     color: $color-preto;
   }
   &__social-media {
-    a {
-      color: $color-preto;
-    }
   }
 }
 
@@ -589,12 +621,12 @@ p {
   padding-bottom: 80px;
   &__title {
     color: $color-verde-escuro;
-    margin-bottom: 80px;
+    margin-bottom: 64px;
     text-align: left;
   }
 }
 
-.recommendations-courses, .recommendations-watchlist, .recommendations-follow, {
+.recommendations-watchlist, .recommendations-readings, {
   background-color: $color-bege;
 }
 
@@ -636,5 +668,23 @@ p {
   margin-bottom: 32px;
   @include media-breakpoint-up(lg) {
     margin-bottom: 0;
+  }
+}
+
+.recommentation-item {
+  margin-bottom: 48px;
+  &__title {
+    color: $color-vermelho;
+    margin-bottom: 16px;
+  }
+  &__author {
+
+  }
+  &__description {
+    margin-bottom: 16px;
+  }
+  &__link {
+    @include p;
+    font-weight: 700;
   }
 }

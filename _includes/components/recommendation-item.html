@@ -1,0 +1,7 @@
+<div class="recommentation-item">
+  <h3 class="recommentation-item__title">
+    {{ include.title }}{% if include.author %}, <span class="recommentation-item__author fw-normal">{{ include.author }}</span>{% endif %}
+  </h3>
+  <p class="recommentation-item__description">{{ include.description}}</p>
+  <a href="{{ include.link }}" target="_blank" class="recommentation-item__link">Link</a>
+</div>
