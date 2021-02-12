@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
         rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
         rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
 
-    setNodes(dataSet, svg, rangeMin, rangeMax, aspectRatio);
+    let Tooltip = d3.select("#mostUsedViz")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip-most-used");
+
+    setNodes(dataSet, svg, rangeMin, rangeMax, aspectRatio, Tooltip);
 
     let filtersContainer = d3.select("[data-filter-desktop]");
 
@@ -37,11 +42,11 @@ document.addEventListener("DOMContentLoaded", function() {
       filters["_groups"][0].forEach(function(filter, index) {
         filter.value = "all";
       });
-      updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio);
+      updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio, Tooltip);
     }));
 
     filters.on("change", function() {
-      updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio);
+      updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio, Tooltip);
     });
 
     let resizeTimeout;
@@ -60,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
           rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
           svg.attr("viewBox", `0 0 ${svgWidth} ${ Math.round(svgHeight) }`);
           console.log(aspectRatio);
-          updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio);
+          updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio, Tooltip);
           viewportWidth = newViewportWidth;
         }, 1500);
       }
@@ -97,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  function updateFilters(eventSource, dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio) {
+  function updateFilters(eventSource, dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio, Tooltip) {
     let dataSubset = dataSet;
     let filterArray = [],
         filterTarget = filtersContainer,
@@ -125,19 +130,33 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     }
-    if(dataSubset.length > 0) {
-      resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio);
+    let svgContainer = document.getElementById("mostUsedViz");
+    console.log(svgContainer.classList);
+    if (svgContainer.classList.contains('no-results')) {
+      svgContainer.classList.remove('no-results');
+    }
+    let n = dataSubset.length;
+    if(n > 0) {
+      console.log(dataSubset);
+      resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio, Tooltip);
     } else {
       console.log("busca não encontrou resultados");
-      resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio);
+      if (!svgContainer.classList.contains('no-results')) {
+        svgContainer.classList.add('no-results');
+      }
     }
   }
 
   function sortWords(data) {
     let filteredData = data,
-        filteredWords = [...new Set(filteredData.map(item => item.Palavra))],
+        filteredWords = [...new Set(filteredData.map( function(item) {
+          return item.Palavra;
+        }))],
         quantifiedWords = [];
-    filteredWords.forEach(function(word){
+    let filteredNonEmptyWords = filteredWords.filter(function(value, index, array){
+      return value !== "";
+    });
+    filteredNonEmptyWords.forEach(function(word){
       let wordValue = 0;
       filteredData.filter(function(d) {
         if( d["Palavra"] == word) {
@@ -151,7 +170,25 @@ document.addEventListener("DOMContentLoaded", function() {
     return sortedWords;
   }
 
-  function setNodes(data, svg, rangeMin, rangeMax, aspectRatio) {
+  function setNodes(data, svg, rangeMin, rangeMax, aspectRatio, Tooltip) {
+
+    let mouseover = function(d) {
+      Tooltip
+        .style("opacity", 1)
+    }
+
+    let mousemove = function(d) {
+      let thisData = d3.select(this).data()[0];
+      Tooltip
+        .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} ocorrências</p>`)
+        .style("left", d3.select(this).attr("cx") + "px")
+        .style("top", d3.select(this).attr("cy") + "px");
+    }
+
+    let mouseleave = function(d) {
+      Tooltip
+        .style("opacity", 0)
+    }
 
     let sortedWords = sortWords(data);
     let domainMax = sortedWords[0].size;
@@ -170,7 +207,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .attr("cx", svgWidth / 2)
         .attr("cy", svgHeight / 2)
         .attr("fill", "#FFA1BC")
-        .attr("r", function(d) { return scaleSize(d.size); });
+        .attr("r", function(d) { return scaleSize(d.size); })
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
 
     let labels = svg.select(".label-nodes")
       .selectAll("text")
@@ -232,10 +272,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
   }
 
-  function resetNodes(newData, svg, rangeMin, rangeMax, aspectRatio) {
+  function resetNodes(newData, svg, rangeMin, rangeMax, aspectRatio, Tooltip) {
+
+    let mouseover = function(d) {
+      Tooltip
+        .style("opacity", 1)
+    }
+
+    let mousemove = function(d) {
+      let thisData = d3.select(this).data()[0];
+      Tooltip
+        .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} ocorrências</p>`)
+        .style("left", d3.select(this).attr("cx") + "px")
+        .style("top", d3.select(this).attr("cy") + "px");
+    }
+
+    let mouseleave = function(d) {
+      Tooltip
+        .style("opacity", 0)
+    }
+
     let sortedWords = sortWords(newData);
-    let domainMax = (sortedWords.length > 0) ? sortedWords[0].size : 0;
-    let domainMin = (sortedWords.length > 0) ? sortedWords[sortedWords.length - 1].size : 0;
+    let n = sortedWords.length;
+    if(n < 30) {
+      for (let step = 0; step < (30 - n); step++) {
+        sortedWords.push({
+          "name": "",
+          "size": 0
+        });
+      }
+    }
+
+    let domainMax = sortedWords[0].size;
+    let domainMin = sortedWords[n - 1].size;
+
+    console.log(sortedWords);
+    console.log(domainMax);
+    console.log(domainMin);
 
     let scaleSize = d3.scaleLinear().domain([domainMin, domainMax]).range([rangeMin, rangeMax]);
     let scaleForce = d3.scaleLinear().domain([1, 0.5]).range([0, 0.05]);
@@ -244,7 +317,11 @@ document.addEventListener("DOMContentLoaded", function() {
       .selectAll("circle")
       .data(sortedWords)
       .attr("r", function(d) {
-        return scaleSize(d.size);
+        if(d.size > 0) {
+          return scaleSize(d.size)
+        } else {
+          return 0;
+        }
       })
       .attr("data-word", function(d){
         return d.name;
@@ -256,7 +333,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .attr("cx", svgWidth / 2)
         .attr("cy", svgHeight / 2)
         .attr("fill", "#FFA1BC")
-        .attr("r", function(d) { return scaleSize(d.size); });
+        .attr("r", function(d) { return scaleSize(d.size); })
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave);
 
     circles.exit().remove();
 
@@ -264,7 +344,11 @@ document.addEventListener("DOMContentLoaded", function() {
       .selectAll("text")
       .data(sortedWords)
       .attr("width", function(d){
-        return scaleSize(d.size * 2)
+        if(d.size > 0) {
+          return scaleSize(d.size * 2)
+        } else {
+          return 0;
+        }
       })
       .attr("height", function(d){
         return scaleSize(d.size * 2)
@@ -334,11 +418,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     simulation.nodes(sortedWords)
       .alpha(1).alphaTarget(0)
-      .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(function(d) { console.log(scaleForce(aspectRatio)); return scaleForce(aspectRatio) }))
+      .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(function(d) {
+        return scaleForce(aspectRatio)
+      }))
       .force("center", d3.forceCenter().x(svgWidth / 2).y(svgHeight / 2))
       .force("charge", d3.forceManyBody().strength(.1))
       .force("collide", d3.forceCollide().strength(.2).radius(function(d){
-        return scaleSize(d.size)
+        if(d.size > 0) {
+          return scaleSize(d.size)
+        } else {
+          return 0;
+        }
       })
       .iterations(1));
 

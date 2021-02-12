@@ -76,7 +76,7 @@ button {
   text-align: center;
 }
 
-.lead {
+@mixin text-lead {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
@@ -85,6 +85,8 @@ button {
     line-height: 40px;
   }
 }
+
+.lead { @include text-lead; }
 
 @mixin p {
   font-size: 16px;
@@ -686,5 +688,57 @@ p { @include p; }
   &__link {
     @include p;
     font-weight: 700;
+  }
+}
+
+.most-used-viz {
+  position: relative;
+  svg {
+    transition: opacity .1s ease;
+  }
+  .no-results-message {
+    @include text-lead;
+    color: $color-branco;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .1s ease;
+  }
+  &.no-results {
+    svg {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .no-results-message {
+      opacity: 1;
+    }
+  }
+}
+
+.tooltip-most-used {
+  z-index: 10;
+  background-color: $color-branco;
+  position: absolute;
+  border: none;
+  border-radius: 2px;
+  padding: 8px;
+  pointer-events: none;
+  transform: translate(-50%, 16px);
+  .tooltip-most-used__word {
+    color: $color-preto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tooltip-most-used__value {
+    color: $color-preto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
