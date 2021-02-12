@@ -70,10 +70,17 @@ a {
   }
 }
 
-button {
+[type=button], [type=reset], [type=submit], button {
   -webkit-appearance: none;
+}
+
+button {
   vertical-align: middle;
   text-align: center;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  box-shadow: none;
 }
 
 @mixin text-lead {
@@ -427,6 +434,7 @@ p { @include p; }
   margin-bottom: 48px;
   @include media-breakpoint-up(lg) {
     margin-bottom: 48px;
+    padding-right: 32px;
   }
 }
 
