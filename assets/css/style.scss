@@ -667,6 +667,9 @@ p { @include p; }
       color: $color-branco;
       border-color: $color-rosa;
     }
+    option {
+      color: $color-preto;
+    }
   }
 }
 
