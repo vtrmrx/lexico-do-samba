@@ -181,8 +181,8 @@ document.addEventListener("DOMContentLoaded", function() {
       let thisData = d3.select(this).data()[0];
       Tooltip
         .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} ocorrências</p>`)
-        .style("left", d3.select(this).attr("cx") + "px")
-        .style("top", d3.select(this).attr("cy") + "px");
+        .style("left", (d3.pointer(d)[0]) + "px")
+        .style("top", (d3.pointer(d)[1]) + "px");
     }
 
     let mouseleave = function(d) {
@@ -283,8 +283,8 @@ document.addEventListener("DOMContentLoaded", function() {
       let thisData = d3.select(this).data()[0];
       Tooltip
         .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} ocorrências</p>`)
-        .style("left", d3.select(this).attr("cx") + "px")
-        .style("top", d3.select(this).attr("cy") + "px");
+        .style("left", (d3.pointer(d)[0]) + "px")
+        .style("top", (d3.pointer(d)[1]) + "px");
     }
 
     let mouseleave = function(d) {
