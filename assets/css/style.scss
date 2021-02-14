@@ -568,10 +568,16 @@ p { @include p; }
 .related-words-cloud {
   .related-words-term {
     transition: opacity .25s ease;
+    opacity: .5;
+    @include media-breakpoint-up(lg) {
+      opacity: 1;
+    }
   }
   &:hover {
     .related-words-term {
-      opacity: .3;
+      @include media-breakpoint-up(lg) {
+        opacity: .3;
+      }
     }
   }
 }
