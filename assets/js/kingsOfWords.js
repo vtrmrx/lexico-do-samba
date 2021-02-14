@@ -15,7 +15,7 @@ let sliderKing = tns({
 
 let kingNavContainer = d3.select(".tns-king-nav");
 
-d3.csv("../assets/data/kingsOfWords.csv").then( function(data) {
+d3.csv("../data/reis-das-palavras.csv").then( function(data) {
 
   let kingData = data;
 

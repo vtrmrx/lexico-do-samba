@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     return Math.random() * (max - min) + min;
   }
 
-  d3.json("../assets/data/relatedWords.json").then( function(data) {
+  d3.json("../data/palavras-relacionadas.json").then( function(data) {
 
     let relatedTermsNavButtons = relatedTermsNavContainer
       .selectAll("a").data(data)

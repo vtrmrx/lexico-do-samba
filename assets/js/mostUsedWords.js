@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   svg.append("g").attr("class", "circle-nodes");
   svg.append("g").attr("class", "label-nodes");
 
-  d3.csv("../assets/data/mostUsedWords.csv").then( function(data) {
+  d3.csv("../data/palavras-mais-usadas.csv").then( function(data) {
 
     let dataSet = data,
         rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
