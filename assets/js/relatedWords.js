@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   let relatedTermsContainer = d3.select("#relatedTermsContainer");
+  let relatedTermsNavContainer = d3.select(".tns-related-terms-nav");
 
   function getRandom(min, max) {
     return Math.random() * (max - min) + min;
@@ -8,14 +9,55 @@ document.addEventListener("DOMContentLoaded", function() {
 
   d3.json("../assets/data/palavras-relacionadas.json").then( function(data) {
 
+    let relatedTermsNavButtons = relatedTermsNavContainer
+      .selectAll("a").data(data)
+      .enter().append("a")
+        .attr("class", "tns-related-terms-nav__button")
+        .text(function(d) {
+          return d.palavra
+        });
+
+    relatedTermsNavButtons["_groups"][0][0].classList.add("active");
+
     let termsContainers = relatedTermsContainer
       .selectAll("div").data(data)
       .enter().append("div")
-        .attr("class", "col-12 col-lg-4")
+        .attr("class", "col-lg-4")
         .append("svg")
           .style("width", "100%")
           .attr("viewBox", "0 0 800 800")
           .attr("class", "related-words-cloud");
+
+    let slider = tns({
+      container: '.tns-related-terms',
+      items: 1,
+      gutter: 24,
+      nav: false,
+      controlsText: ["",""],
+      edgePadding: 32,
+      responsive: {
+        992: {
+          disable: true
+        }
+      }
+    });
+
+    relatedTermsNavButtons["_groups"][0].forEach((button, i) => {
+      button.addEventListener('click', function (event) {
+        slider.goTo(i);
+        document.querySelector(".tns-related-terms-nav__button.active").classList.remove("active");
+        button.classList.add("active");
+      });
+    });
+
+    slider.events.on('indexChanged', function (event) {
+      let slideIndex = event.displayIndex - 1;
+      let lastSlideIndex = event.indexCached - event.cloneCount;
+      let buttons = document.querySelectorAll(".tns-related-terms-nav__button");
+      buttons[lastSlideIndex].classList.remove("active");
+      buttons[slideIndex].classList.add("active");
+      console.log(event);
+    });
 
     termsContainers["_groups"][0].forEach((containerElement, i) => {
 

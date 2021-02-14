@@ -119,6 +119,36 @@ p { @include p; }
   }
 }
 
+@mixin row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+  > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);
+    margin-top: var(--bs-gutter-y);
+  }
+}
+
+.row-md {
+  @include media-breakpoint-up(md) {
+    @include row;
+  }
+}
+
+.row-lg {
+  @include media-breakpoint-up(lg) {
+    @include row;
+  }
+}
+
 .content-placeholder {
   height: 400px;
   width: 100%;
@@ -383,6 +413,45 @@ p { @include p; }
     p {
       font-weight: 300;
     }
+    .tns-outer {
+      position: relative;
+      .tns-controls {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        z-index: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        [data-controls] {
+          width: 32px;
+          height: 32px;
+          -webkit-appearance: none;
+          border: none;
+          background: none;
+          &::after {
+            content: "";
+            display: block;
+            border: solid $color-branco;
+            border-width: 0 3px 3px 0;
+            padding: 3px;
+            width: 24px;
+            height: 24px;
+          }
+          &[data-controls=prev] {
+            &::after {
+              transform: translateX(30%) rotate(135deg);
+            }
+          }
+          &[data-controls=next] {
+            &::after {
+              transform: translateX(-30%) rotate(-45deg) ;
+            }
+          }
+        }
+      }
+    }
   }
   &-deities {
     background-color: $color-bege;
@@ -498,6 +567,29 @@ p { @include p; }
   &:hover {
     .related-words-term {
       opacity: .3;
+    }
+  }
+}
+
+.tns-related-terms-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  &__button {
+    color: $color-branco;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 12px;
+    text-decoration: none;
+    min-width: 33.333%;
+    text-align: center;
+    &.active {
+      color: $color-rosa;
+    }
+    &:hover {
+      color: $color-rosa;
     }
   }
 }
