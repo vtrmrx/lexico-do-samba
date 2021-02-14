@@ -424,12 +424,17 @@ p { @include p; }
         z-index: 1;
         top: 50%;
         transform: translateY(-50%);
+        pointer-events: none;
         [data-controls] {
           width: 32px;
           height: 32px;
           -webkit-appearance: none;
           border: none;
           background: none;
+          pointer-events: all;
+          &:focus {
+            outline: none;
+          }
           &::after {
             content: "";
             display: block;
