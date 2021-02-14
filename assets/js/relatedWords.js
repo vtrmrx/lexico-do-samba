@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let relatedTermsNavButtons = relatedTermsNavContainer
       .selectAll("a").data(data)
       .enter().append("a")
-        .attr("class", "tns-related-terms-nav__button")
+        .attr("class", "tns-custom-nav__button")
         .text(function(d) {
           return d.palavra
         });
@@ -28,13 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
           .attr("viewBox", "0 0 800 800")
           .attr("class", "related-words-cloud");
 
-    let slider = tns({
+    let sliderRelatedTerms = tns({
       container: '.tns-related-terms',
       items: 1,
       gutter: 24,
       nav: false,
       controlsText: ["",""],
       edgePadding: 32,
+      preventScrollOnTouch: 'auto',
       responsive: {
         992: {
           disable: true
@@ -44,19 +45,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
     relatedTermsNavButtons["_groups"][0].forEach((button, i) => {
       button.addEventListener('click', function (event) {
-        slider.goTo(i);
-        document.querySelector(".tns-related-terms-nav__button.active").classList.remove("active");
+        sliderRelatedTerms.goTo(i);
+        document.querySelector(".tns-related-terms-nav .tns-custom-nav__button.active").classList.remove("active");
         button.classList.add("active");
       });
     });
 
-    slider.events.on('indexChanged', function (event) {
+    sliderRelatedTerms.events.on('indexChanged', function (event) {
       let slideIndex = event.displayIndex - 1;
       let lastSlideIndex = event.indexCached - event.cloneCount;
-      let buttons = document.querySelectorAll(".tns-related-terms-nav__button");
+      let buttons = document.querySelectorAll(".tns-related-terms-nav .tns-custom-nav__button");
       buttons[lastSlideIndex].classList.remove("active");
       buttons[slideIndex].classList.add("active");
-      console.log(event);
     });
 
     termsContainers["_groups"][0].forEach((containerElement, i) => {
