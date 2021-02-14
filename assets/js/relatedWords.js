@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     return Math.random() * (max - min) + min;
   }
 
-  d3.json("../assets/data/palavras-relacionadas.json").then( function(data) {
+  d3.json("../assets/data/relatedWords.json").then( function(data) {
 
     let relatedTermsNavButtons = relatedTermsNavContainer
       .selectAll("a").data(data)
@@ -74,8 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
       let labelsContainer = container.append("g").attr("class", "related-words-labels");
       let relatedWords = data[i].relacionadas;
 
-      console.log(relatedWords);
-
       let wordCount = relatedWords.length;
 
       let domainMax = relatedWords[0]["Valor"];
@@ -108,8 +106,6 @@ document.addEventListener("DOMContentLoaded", function() {
           .attr("data-word", function(d) {
             return d.Palavra;
           });
-
-      console.log(circles);
 
       let labels = labelsContainer
         .selectAll("text").data(data[i].relacionadas)

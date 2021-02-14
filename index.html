@@ -21,13 +21,7 @@ slug: home
 {% include section/spotify.html %}
 {% include section/thank.html %}
 
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function() {
-    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-    let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-      return new bootstrap.Popover(popoverTriggerEl)
-    })
-  });
-</script>
+<script src="{{ '/assets/js/infoPopovers.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/assets/js/kingsOfWords.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/js/relatedWords.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/js/mostUsedWords.js' | prepend: site.baseurl }}"></script>

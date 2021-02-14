@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   svg.append("g").attr("class", "circle-nodes");
   svg.append("g").attr("class", "label-nodes");
 
-  d3.csv("../assets/data/mostUsedWords_2.csv").then( function(data) {
+  d3.csv("../assets/data/mostUsedWords.csv").then( function(data) {
 
     let dataSet = data,
         rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
           rangeMin = ( containerWidth > 700 ) ? containerWidth / 40 : containerWidth / 20 ,
           rangeMax = ( containerWidth > 700 ) ? containerWidth / 8 : containerWidth / 6;
           svg.attr("viewBox", `0 0 ${svgWidth} ${ Math.round(svgHeight) }`);
-          console.log(aspectRatio);
           updateFilters("desktop", dataSet, filtersContainer, rangeMin, rangeMax, aspectRatio, Tooltip);
           viewportWidth = newViewportWidth;
         }, 1500);
@@ -110,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
         filterName = filterTarget.select('[data-filter-key="Nome"]'),
         filterNameValue = filterName["_groups"][0][0].value;
     if (filterNameValue !== "all") {
-      console.log(filterNameValue);
       dataSubset = dataSubset.filter(function( obj ) {
         return obj["Nome"] == filterNameValue;
       });
@@ -131,16 +129,13 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
     let svgContainer = document.getElementById("mostUsedViz");
-    console.log(svgContainer.classList);
     if (svgContainer.classList.contains('no-results')) {
       svgContainer.classList.remove('no-results');
     }
     let n = dataSubset.length;
     if(n > 0) {
-      console.log(dataSubset);
       resetNodes(dataSubset, svg, rangeMin, rangeMax, aspectRatio, Tooltip);
     } else {
-      console.log("busca não encontrou resultados");
       if (!svgContainer.classList.contains('no-results')) {
         svgContainer.classList.add('no-results');
       }
@@ -261,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function() {
     simulation.nodes(sortedWords)
       .alpha(1).alphaTarget(0)
       .force("y", d3.forceY().strength(.1).y(svgHeight / 2).strength(function(d) {
-        console.log(scaleForce(aspectRatio)); return scaleForce(aspectRatio)
+        return scaleForce(aspectRatio)
       }))
       .force("center", d3.forceCenter().x(svgWidth / 2).y(svgHeight / 2))
       .force("charge", d3.forceManyBody().strength(.1))
@@ -305,10 +300,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let domainMax = sortedWords[0].size;
     let domainMin = sortedWords[n - 1].size;
-
-    console.log(sortedWords);
-    console.log(domainMax);
-    console.log(domainMin);
 
     let scaleSize = d3.scaleLinear().domain([domainMin, domainMax]).range([rangeMin, rangeMax]);
     let scaleForce = d3.scaleLinear().domain([1, 0.5]).range([0, 0.05]);
