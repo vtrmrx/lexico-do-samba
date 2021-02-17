@@ -660,7 +660,7 @@ p { @include p; }
   &__artist {
     @include h3
     color: $color-verde-escuro;
-    margin-bottom: 16px;
+    margin-bottom: 0;
   }
   &__frequency {
     color: $color-verde-escuro;
