@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
       trigger: "focus",
       container: "body",
       boundary: "viewport",
+      placement: "bottom",
       html: true,
       sanitize: false
     })

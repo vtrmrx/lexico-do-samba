@@ -499,6 +499,12 @@ p { @include p; }
     .section__title, .section__subtitle {
       color: $color-vermelho;
     }
+    @include media-breakpoint-down(md) {
+      .section__content {
+        margin-left: -12px;
+        margin-right: -12px;
+      }
+    }
   }
   &-footer {
     background-color: $color-branco;
@@ -651,6 +657,7 @@ p { @include p; }
   text-align: center;
   padding: 32px;
   margin-bottom: 24px;
+  max-width: 100%;
   &__word {
     font-family: 'braveold', Georgia, serif;
     font-variant-ligatures: none;
@@ -913,6 +920,10 @@ p { @include p; }
       }
     }
   }
+}
+
+.tns-spotify-nav {
+  margin-bottom: 32px;
 }
 
 .tns-playlists {
