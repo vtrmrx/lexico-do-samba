@@ -14,8 +14,9 @@
       </div>
       <div class="col-12">
         <div class="section__content">
-          <div class="row">
-            <div class="col-12 col-lg-6">
+          <div class="tns-custom-nav tns-playlists-nav d-md-none"></div>
+          <div class="tns-playlists" id="playlistsContainer">
+            <div class="tns-playlists__item">
               <h3 class="section__subtitle">Samba</h3>
               <div class="related-list">
                 {% for song in site.data.playlists-samba limit:5 %}
@@ -25,7 +26,7 @@
                 {% endfor %}
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="tns-playlists__item">
               <h3 class="section__subtitle">Samba-raiz</h3>
               <div class="related-list">
                 {% for song in site.data.playlists-samba-raiz limit:5 %}
@@ -35,7 +36,7 @@
                 {% endfor %}
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="tns-playlists__item">
               <h3 class="section__subtitle">Pagode</h3>
               <div class="related-list">
                 {% for song in site.data.playlists-pagode limit:5 %}
@@ -45,7 +46,7 @@
                 {% endfor %}
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="tns-playlists__item">
               <h3 class="section__subtitle">Samba-enredo</h3>
               <div class="related-list">
                 {% for song in site.data.playlists-samba-enredo limit:5 %}

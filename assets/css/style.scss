@@ -333,6 +333,12 @@ p { @include p; }
     .section__subtitle {
       color: $color-verde;
     }
+    @include media-breakpoint-down(md) {
+      .section__content {
+        margin-left: -12px;
+        margin-right: -12px;
+      }
+    }
   }
   &-lyrics {
     background-color: $color-verde-escuro;
@@ -890,6 +896,42 @@ p { @include p; }
       flex-flow: row nowrap;
       flex: 1 0 auto;
       width: 33.3333333333%;
+    }
+  }
+}
+
+.tns-playlists-nav {
+  margin-bottom: 32px;
+  .tns-custom-nav__button {
+    color: $color-verde;
+    &.active {
+      color: $color-vermelho;
+    }
+    &:hover {
+      @include media-breakpoint-up(md) {
+        color: $color-vermelho;
+      }
+    }
+  }
+}
+
+.tns-playlists {
+  --bs-gutter-x: 1.5rem;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  @include media-breakpoint-up(md) {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    .tns-playlists__item {
+      padding-left: calc(var(--bs-gutter-x)/ 2);
+      padding-right: calc(var(--bs-gutter-x)/ 2);
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 1 0 auto;
+      width: 50%;
     }
   }
 }
