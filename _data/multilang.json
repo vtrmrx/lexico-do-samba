@@ -1,0 +1,38 @@
+{
+  "languages": ["en", "pt"],
+  "pages": [
+    {
+      "id": "home",
+      "languages": {
+        "pt": {
+          "slug": ""
+        },
+        "en": {
+          "slug": ""
+        }
+      }
+    },
+    {
+      "id": "sobre",
+      "languages": {
+        "pt": {
+          "slug": "sobre"
+        },
+        "en": {
+          "slug": "about"
+        }
+      }
+    },
+    {
+      "id": "recomendacoes",
+      "languages": {
+        "pt": {
+          "slug": "recomendacoes"
+        },
+        "en": {
+          "slug": "recommendations"
+        }
+      }
+    }
+  ]
+}

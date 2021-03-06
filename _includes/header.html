@@ -15,6 +15,24 @@
         <li class="nav-item">
           <a href="{% if page.lang == 'en' %}recommendations{% else %}recomendacoes{% endif %}" class="nav-link">{% if page.lang == 'en' %}Recommendations about samba{% else %}Recomendações sobre samba{% endif %}</a>
         </li>
+        <li class="nav-item language-selector">
+          {% for multilang_page in site.data.multilang.pages %}
+            {% if multilang_page.id == page.id %}
+              {% for lang in multilang_page.languages %}
+                {% if lang[0] == "pt" %}
+                  {% assign prefix = "" %}
+                {% else %}
+                  {% assign prefix = lang[0] | prepend: "/" %}
+                {% endif %}
+                {% if lang[0] == page.lang %}
+                  <a class="nav-lang selected">{{ lang[0] }}</a>
+                {% else %}
+                  <a class="nav-lang" href="{{ prefix }}/{{ lang[1].slug }}">{{ lang[0] }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </li>
       </ul>
     </div>
   </nav>

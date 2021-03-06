@@ -230,6 +230,34 @@ p { @include p; }
           color: rgba($color-branco, 1);
         }
       }
+      .language-selector {
+        margin-top: 16px;
+        @include media-breakpoint-up(lg) {
+          margin-top: 0;
+          margin-left: 48px;
+        }
+      }
+      .nav-lang {
+        padding: 0;
+        margin-left: 16px;
+        padding-left: 16px;
+        border-left: 1px solid $color-branco;
+        color: rgba($color-branco, .75);
+        text-decoration: none;
+        text-transform: uppercase;
+        &:first-child {
+          border: none;
+          margin-left: 0;
+          padding-left: 0;
+        }
+        &:hover {
+          color: rgba($color-branco, 1);
+        }
+        &.selected {
+          color: rgba($color-branco, 1);
+          font-weight: bold;
+        }
+      }
     }
     &__logo {
       font-family: 'braveold', Georgia, serif;
