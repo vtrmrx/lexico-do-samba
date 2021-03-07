@@ -2,7 +2,13 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-left">“Portela e Mangueira sempre foram as primeiras”</h2>
+        <h2 class="section__title text-left">
+          {% if page.lang == "pt" %}
+            “Portela e Mangueira sempre foram as primeiras”
+          {% elsif page.lang == "en" %}
+            “Portela and Mangueira were always the first ones”
+          {% endif %}
+        </h2>
         {% include section-info.html
           content="Aqui o procedimento foi parecido. Primeiro montamos uma lista com todas as escolas de samba do Rio de Janeiro e possíveis sinônimos (verde e rosa para a Mangueira, por exemplo). Depois disso, procuramos por essas palavras (ou conjuntos de palavras) nas letras. Focamos a análise nas escolas cariocas porque o universo contém relativamente poucos artistas de outros locais."
         %}

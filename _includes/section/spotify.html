@@ -2,11 +2,23 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-center">”Pra quem veio só sambar”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            ”Pra quem veio só sambar”
+          {% elsif page.lang == "en" %}
+            &quot;For those who came just to dance samba&quot;
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Não tinha jeito melhor de terminar do que com samba. Pra isso, montamos quatro playlists com as músicas que mais apareceram nas playlists analisadas para esse Léxico do Samba. Aproveite!</p>
+          <p>
+            {% if page.lang == "pt" %}
+              Não tinha jeito melhor de terminar do que com samba. Pra isso, montamos quatro playlists com as músicas que mais apareceram nas playlists analisadas para esse Léxico do Samba. Aproveite!
+            {% elsif page.lang == "en" %}
+              There was no better ending than with samba. For this, we have assembled four playlists with the songs that most appeared in the playlists analyzed for this Samba’s Lexicon. Enjoy!
+            {% endif %}
+          </p>
         </div>
       </div>
       <div class="col-12">

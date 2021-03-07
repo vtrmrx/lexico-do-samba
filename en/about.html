@@ -23,7 +23,7 @@ id: sobre
         <h2 class="about-team__title">Team</h2>
         <div class="about-team__members">
           <div class="row">
-            {% for member in site.data.multilang.team[page.lang] %}
+            {% for member in site.data.team[page.lang] %}
               <div class="col-12 col-lg-6">
                 <div class="team-member">
                   <h3 class="team-member__name">{{ member.name }}</h3>

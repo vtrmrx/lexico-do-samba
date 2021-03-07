@@ -1,13 +1,13 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }}{% if page.title %}  – {% endif %} {{ site.title[page.lang] }}</title>
-  <meta property="og:title" content="Léxico do Samba">
-  <meta property="og:description" content="Quais as palavras mais comuns em sambas? Que palavra é mais usada por cada sambista? Para responder essas e outras perguntas, o Léxico do Samba analisou 14,7 mil músicas, o que levou a 1,8 milhão de palavras.">
+  <meta property="og:title" content="{{ site.title[page.lang] }}">
+  <meta property="og:description" content="{{ site.description[page.lang] }}">
   <meta property="og:image" content="https://www.lexicodosamba.com.br/assets/img/social-thumb.png">
   <meta property="og:url" content="https://www.lexicodosamba.com.br/">
-  <meta name="twitter:title" content="Léxico do Samba">
-  <meta name="twitter:description" content="Quais as palavras mais comuns em sambas? Que palavra é mais usada por cada sambista? Para responder essas e outras perguntas, o Léxico do Samba analisou 14,7 mil músicas, o que levou a 1,8 milhão de palavras.">
-  <meta name="twitter:image" content="https://www.lexicodosamba.com.br/assets/img/social-thumb.png">
+  <meta name="twitter:title" content="{{ site.title[page.lang] }}">
+  <meta name="twitter:description" content="{{ site.description[page.lang] }}">
+  <meta name="twitter:image" content="{{ site.thumbnail[page.lang] }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.gstatic.com">

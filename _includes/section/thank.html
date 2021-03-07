@@ -1,5 +1,11 @@
+{% if page.lang == "pt" %}
+  {% assign thank_url = '/assets/img/footer.svg' %}
+{% elsif page.lang == "en" %}
+  {% assign thank_url = '/assets/img/footer_en.svg' %}
+{% endif %}
+
 <section class="thank-section">
   <figure class="thank-section__illustration">
-    <img src="{{ '/assets/img/footer.svg' | prepend: site.baseurl }}">
+    <img src="{{ thank_url | prepend: site.baseurl }}">
   </figure>
 </section>

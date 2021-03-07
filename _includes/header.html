@@ -16,7 +16,7 @@
           <a href="{% if page.lang == 'en' %}recommendations{% else %}recomendacoes{% endif %}" class="nav-link">{% if page.lang == 'en' %}Recommendations about samba{% else %}Recomendações sobre samba{% endif %}</a>
         </li>
         <li class="nav-item language-selector">
-          {% for multilang_page in site.data.multilang.pages %}
+          {% for multilang_page in site.data.pages %}
             {% if multilang_page.id == page.id %}
               {% for lang in multilang_page.languages %}
                 {% if lang[0] == "pt" %}
