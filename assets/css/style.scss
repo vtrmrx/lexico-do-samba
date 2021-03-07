@@ -332,12 +332,24 @@ p { @include p; }
       &:hover {
         color: $color-preto;
       }
-      &::after {
-        content: "menos";
-      }
-      &.collapsed {
+      &--pt {
         &::after {
-          content: "mais";
+          content: "menos";
+        }
+        &.collapsed {
+          &::after {
+            content: "mais";
+          }
+        }
+      }
+      &--en {
+        &::after {
+          content: "less";
+        }
+        &.collapsed {
+          &::after {
+            content: "more";
+          }
         }
       }
     }

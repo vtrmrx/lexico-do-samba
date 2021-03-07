@@ -20,56 +20,24 @@ id: sobre
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        <h2 class="about-team__title">Equipe</h2>
+        <h2 class="about-team__title">Team</h2>
         <div class="about-team__members">
           <div class="row">
-            <div class="col-12 col-lg-6">
-              <div class="team-member">
-                <h3 class="team-member__name">Lucas Marchesini</h3>
-                <h4 class="team-member__role">Jornalismo de Dados</h4>
-                <p class="team-member__bio">Lucas Marchesini é jornalista de dados com dez anos de experiência e formado em comunicação na Universidade de Brasília. Começou sua trajetória professional no Valor Econômico, onde permaneceu por sete anos. Hoje trabalha no Metrópoles. Tem um mestrado em Jornalismo Computacional e de Dados pela Cardiff University, no Reino Unido. Gosta tanto de trabalhar com dados que faz isso também no seu tempo livre.</p>
-                <p class="team-member__social-media">
-                  <a href="https://twitter.com/LucasMarchesini" target="_blank">twitter</a>,
-                  <a href="https://www.linkedin.com/in/lucas-marchesini-palma-30364a16/" target="_blank">linkedin</a>
-                </p>
+            {% for member in site.data.multilang.team[page.lang] %}
+              <div class="col-12 col-lg-6">
+                <div class="team-member">
+                  <h3 class="team-member__name">{{ member.name }}</h3>
+                  <h4 class="team-member__role">{{ member.role }}</h4>
+                  <p class="team-member__bio">{{ member.bio }}</p>
+                  <p class="team-member__social-media">
+                    {% for medium in member.social-media %}
+                      <a href="{{ medium.url }}" target="_blank">{{ medium.label }}</a>
+                      {% unless forloop.last %},{% endunless %}
+                    {% endfor %}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="col-12 col-lg-6">
-              <div class="team-member">
-                <h3 class="team-member__name">Vítor Marques</h3>
-                <h4 class="team-member__role">Desenvolvedor e Designer UX</h4>
-                <p class="team-member__bio">
-                  Vítor Marques é designer de produtos e desenvolvedor front-end, interessado em projetos que envolvem experimentos visuais, interativos e tecnológicos. Formado em design pela Universidade de Brasília, compõe hoje a equipe do escritório de design Grande Circular, e também trabalha como freelancer. Nas (poucas) horas vagas, tenta tirar um som no violão ou no pandeiro.
-                </p>
-                <p class="team-member__social-media">
-                  <a href="https://www.linkedin.com/in/vitormarquesf/" target="_blank">linkedin</a>,
-                  <a href="https://github.com/vtrmrx" target="_blank">github</a>,
-                  <a href="https://www.instagram.com/vitorvi/" target="_blank">instagram</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6">
-              <div class="team-member">
-                <h3 class="team-member__name">Diego Justino</h3>
-                <h4 class="team-member__role">Ilustrador</h4>
-                <p class="team-member__bio">Diego Justino é designer freelancer e atualmente também compõe a equipe de comunicação do Deputado Distrital Fábio Felix. É preto, periférico e formado em design pela Universidade de Brasília. Desenvolve trabalhos autorais ativistas na luta por igualdade racial e social. Designer multidisciplinar, com branding, editorial e motion design sendo suas áreas de maior atuação comercial.</p>
-                <p class="team-member__social-media">
-                  <a href="https://instagram.com/dnegojustino" target="_blank">instagram</a>,
-                  <a href="https://be.net/diegorjustino" target="_blank">site</a>
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6">
-              <div class="team-member">
-                <h3 class="team-member__name">Nei Valente</h3>
-                <h4 class="team-member__role">Design</h4>
-                <p class="team-member__bio">Nei Valente é um designer gráfico formado em comunicação pela Universidade de Brasília. É especializado em identidade visual, direção de arte e embalagem. Fora do seu emprego busca sempre experimentar outras formas visuais de contar histórias, incluindo principalmente fotografia e colagem.</p>
-                <p class="team-member__social-media">
-                  <a href="https://www.instagram.com/neivalente/" target="_blank">instagram</a>,
-                  <a href="https://neivalente.com/" target="_blank">site</a>
-                </p>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
