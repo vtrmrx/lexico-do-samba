@@ -1,3 +1,9 @@
+{% if page.lang == "pt" %}
+  {% assign kings_data = site.data.reis-das-palavras %}
+{% elsif page.lang == "en" %}
+  {% assign kings_data = site.data.reis-das-palavras_en %}
+{% endif %}
+
 <section class="section section-king">
   <div class="container-fluid">
     <div class="row justify-content-center">
@@ -20,14 +26,15 @@
             {% endif %}
           </p>
           {% include section-info.html
-            content="Seria injusto comparar totais para descobrir quem utilizou mais cada palavra. Artistas com mais músicas estariam sempre em primeiro lugar. Para corrigir isso, nós calculamos a participação de cada palavra no total utilizado pelo intérprete. Assim, é possível comparar alguém que tem 500 músicas com outra pessoa que tem “apenas” 50. Artigos e outras palavra “vazias” de significado foram excluídas da contagem."
+            content_pt="Seria injusto comparar totais para descobrir quem utilizou mais cada palavra. Artistas com mais músicas estariam sempre em primeiro lugar. Para corrigir isso, nós calculamos a participação de cada palavra no total utilizado pelo intérprete. Assim, é possível comparar alguém que tem 500 músicas com outra pessoa que tem “apenas” 50. Artigos e outras palavra “vazias” de significado foram excluídas da contagem."
+            content_en="It would be unfair to compare totals to find out who used each word the most. Artists with the most songs would always come first. To correct this, we calculate the share of each word in the total used by the performer. Thus, it is possible to compare someone who has 500 songs with someone who has &quot;only&quot; 50. Articles and other &quot;empty&quot; words of meaning were excluded from the count."
           %}
         </div>
       </div>
       <div class="col-12">
         <div class="section__content">
           <div class="tns-king">
-            {% for palavra in site.data.reis-das-palavras %}
+            {% for palavra in kings_data %}
               <div class="tns-king__item">
                 <div class="card-king flex-grow-1">
                   <p class="card-king__word">{{ palavra.palavra }}</p>
