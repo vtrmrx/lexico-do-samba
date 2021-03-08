@@ -16,9 +16,15 @@
       </div>
       <div class="col-12">
         <div class="section__content">
-          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/4342936">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/4342936">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/5414039">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

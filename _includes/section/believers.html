@@ -15,9 +15,15 @@
         %}
       </div>
       <div class="section__content d-flex flex-column flex-grow-1 justify-content-center">
-        <div class="flourish-embed flourish-chart" data-src="visualisation/4385978">
-          <script src="https://public.flourish.studio/resources/embed.js"></script>
-        </div>
+        {% if page.lang == "pt" %}
+          <div class="flourish-embed flourish-chart" data-src="visualisation/4385978">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
+        {% elsif page.lang == "en" %}
+          <div class="flourish-embed flourish-chart" data-src="visualisation/5414047">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -27,9 +27,15 @@
       </div>
       <div class="col-12">
         <div class="section__content">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/4089388">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/4089388">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/5414207">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -47,9 +53,15 @@
           %}
         </h3>
         <div class="section__content">
-          <div class="flourish-embed flourish-map" data-src="visualisation/4089452">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-map" data-src="visualisation/4089452">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-map" data-src="visualisation/5414127">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-12 col-lg-6">
