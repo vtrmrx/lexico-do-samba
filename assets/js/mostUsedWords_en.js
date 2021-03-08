@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let mousemove = function(d) {
       let thisData = d3.select(this).data()[0];
       Tooltip
-        .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} appearences</p>`)
+        .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} ocurrences</p>`)
         .style("left", (d3.pointer(d)[0]) + "px")
         .style("top", (d3.pointer(d)[1]) + "px");
     }
@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let mousemove = function(d) {
       let thisData = d3.select(this).data()[0];
       Tooltip
-        .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} appearences</p>`)
+        .html(`<p class="tooltip-most-used__word">${thisData.name}</p><p class="tooltip-most-used__value">${thisData.size} ocurrences</p>`)
         .style("left", (d3.pointer(d)[0]) + "px")
         .style("top", (d3.pointer(d)[1]) + "px");
     }
