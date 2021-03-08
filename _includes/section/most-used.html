@@ -81,7 +81,7 @@
                             {% endif %}
                           </label>
                           <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
-                            <option label="Todos" value="all">
+                            <option label="{% if page.lang == 'pt' %}Todos{% elsif page.lang == 'en' %}All{% endif %}" value="all">
                               {% if page.lang == "pt" %}
                                 Todos
                               {% elsif page.lang == "en" %}
@@ -103,7 +103,7 @@
                                 {% endif %}
                               </label>
                               <select class="form-control" name="filterGender" data-filter-dynamic="true" data-filter-key="Gênero">
-                                <option label="Todos" value="all">
+                                <option label="{% if page.lang == 'pt' %}Todos{% elsif page.lang == 'en' %}All{% endif %}" value="all">
                                   {% if page.lang == "pt" %}
                                     Todos
                                   {% elsif page.lang == "en" %}
@@ -123,7 +123,7 @@
                                 {% endif %}
                               </label>
                               <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="Década de nascimento">
-                                <option label="Todas" value="all">
+                                <option label="{% if page.lang == 'pt' %}Todas{% elsif page.lang == 'en' %}All{% endif %}" value="all">
                                   {% if page.lang == "pt" %}
                                     Todas
                                   {% elsif page.lang == "en" %}
@@ -143,7 +143,7 @@
                                 {% endif %}
                               </label>
                               <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="UF de nascimento">
-                                <option label="Todos" value="all">
+                                <option label="{% if page.lang == 'pt' %}Todos{% elsif page.lang == 'en' %}All{% endif %}" value="all">
                                   {% if page.lang == "pt" %}
                                     Todos
                                   {% elsif page.lang == "en" %}
