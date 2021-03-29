@@ -2,7 +2,7 @@
   <h3 class="social-share__title">Compartilhe:</h3>
   <ul class="media-list">
     <li class="media-list__item">
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{% if page.lang == 'en' %}/en{% else %}/{% endif %}" data-action="" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
+      <a href="https://www.facebook.com/sharer/sharer.php?u={% if page.lang == 'en' %}{{ site.url }}/en{% else %}{{ site.url }}/{% endif %}" data-action="" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
         <svg viewBox="0 0 754 754" aria-label="facebook">
           <path transform="scale(1, -1) translate(-135, -825)" d="M568 581v77.8c0 29.6 19.6 36.4 33.2 36.4 13.8 0 84.2 0 84.2 0v128.8l-116.2 0.8c-128.6 0-157.6-96.2-157.6-158.2v-86h-74.6v-132.6h74.6c0-170.8 0-376.6 0-376.6h156.2c0 0 0 207.8 0 376.6h105.4l13.8 133h-119z"></path>
         </svg>
@@ -10,7 +10,7 @@
       </a>
     </li>
     <li class="media-list__item">
-      <a href="https://twitter.com/share?url={{ site.url }}{% if page.lang == 'en' %}/en{% else %}/{% endif %}" data-action="" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
+      <a href="https://twitter.com/share?url={% if page.lang == 'en' %}{{ site.url }}/en{% else %}{{ site.url }}/{% endif %}" data-action="" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
         <svg viewBox="0 0 804 804" aria-label="twitter">
           <path transform="scale(1, -1) translate(-110, -850)" d="M913.8 716.4c-29.8-14.4-61.4-23.8-94.8-28 34 22 60.2 56.6 72.8 98-32-20.2-67.4-34.6-105-43.2-29.8 34.6-73 56.2-120.2 56.2-91 0-164.8-79.4-164.8-177.6 0-13.8 1.4-27.4 4.2-40.2-136.8 7-258.4 78-339.8 185-14-26.2-22.2-56.6-22.2-89.2 0-61.4 29-116 73.2-147.4-27 1-52.6 8.6-74.6 22.2 0-0.8 0-1.6 0-2.4 0-85.8 56.8-157.4 132.2-174-13.8-4-28.4-5.8-43.6-5.8-10.6 0-20.6 0.8-30.8 3.2 21-70.8 82-122.2 154-123.2-56.4-47.8-127.4-76-204.8-76-13.4 0-26.6 0.8-39.4 2.4 73-50.6 159.4-80 252.8-80 303.2 0 469.2 270.4 469.2 505 0 7.6-0.2 15.2-0.6 22.6 32 25.6 60 56.8 82.2 92.4z"></path>
         </svg>
@@ -18,7 +18,7 @@
       </a>
     </li>
     <li class="media-list__item">
-      <a href="whatsapp://send?text={{ site.url }}{% if page.lang == 'en' %}/en{% else %}/{% endif %}" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
+      <a href="whatsapp://send?text={% if page.lang == 'en' %}{{ site.url }}/en{% else %}{{ site.url }}/{% endif %}" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
         <svg viewBox="0 0 844 844" aria-label="whatsapp">
           <path transform="scale(1, -1) translate(-90, -870)" d="M809.6 747.4c-79 79-184 122.6-295.8 122.6-230.6 0-418.2-187.6-418.2-418.2 0-73.8 19.2-145.6 55.8-209l-59.4-216.8 221.8 58.2c61-33.4 129.8-50.8 199.8-51h0.2c0 0 0 0 0 0 230.4 0 418.2 187.6 418.2 418.2 0 111.8-43.4 216.8-122.4 296zM513.8 103.8v0c-62.6 0-123.6 16.8-177 48.4l-12.6 7.6-131.6-34.6 35.2 128.2-8.2 13.2c-34.8 55.4-53.2 119.4-53.2 185 0 191.6 156 347.6 347.8 347.6 92.8 0 180.2-36.2 245.8-102s101.8-153 101.8-246c-0.6-191.4-156.4-347.4-348-347.4zM704.4 364.2c-10.4 5.2-61.8 30.6-71.4 34s-16.6 5.2-23.6-5.2c-7-10.4-27-34-33-41s-12.2-7.8-22.6-2.6c-10.4 5.2-44.2 16.2-84 51.8-31 27.8-52 62-58.2 72.4-6 10.4-0.6 16.2 4.6 21.4 4.8 4.6 10.4 12.2 15.6 18.4s7 10.4 10.4 17.4c3.4 7 1.8 13-0.8 18.4-2.6 5.2-23.6 56.6-32.2 77.6-8.4 20.4-17 17.6-23.6 18-6 0.4-13 0.4-20 0.4s-18.2-2.6-27.8-13c-9.6-10.4-36.6-35.8-36.6-87.2s37.4-101.2 42.6-108.2c5.2-7 73.6-112.6 178.6-157.8 25-10.8 44.4-17.2 59.6-22 25-8 47.8-6.8 65.8-4.2 20 3 61.8 25.2 70.6 49.6s8.8 45.4 6 49.6c-2.6 4.4-9.6 7-20 12.2z"></path>
         </svg>
@@ -26,11 +26,11 @@
       </a>
     </li>
     <li class="media-list__item">
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{% if page.lang == 'en' %}/en{% else %}/{% endif %}" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={% if page.lang == 'en' %}{{ site.url }}/en{% else %}{{ site.url }}/{% endif %}" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path transform="scale(0.85)" transform-origin="center" d="M33.325 0H2.65C1.2 0 0 1.15 0 2.6V33.4C0 34.825 1.2 36 2.65 36H33.325C34.8 36 36 34.825 36 33.4V2.6C36 1.15 34.8 0 33.325 0ZM10.675 30.675H5.325V13.5H10.675V30.675ZM8 11.15C6.3 11.15 4.9 9.75 4.9 8.05C4.9 6.35 6.275 4.95 8 4.95C9.7 4.95 11.1 6.325 11.1 8.05C11.1 9.75 9.725 11.15 8 11.15ZM30.675 30.675H25.35V22.325C25.35 20.325 25.325 17.775 22.575 17.775C19.8 17.775 19.375 19.95 19.375 22.175V30.675H14.025V13.5H19.15V15.85H19.225C19.925 14.5 21.675 13.075 24.275 13.075C29.675 13.075 30.675 16.625 30.675 21.25V30.675Z"/>
         </svg>
-        <span class="hidden" arial-label="whatsapp" role="button">linkedin</span>
+        <span class="hidden" arial-label="linkedin" role="button">linkedin</span>
       </a>
     </li>
   </ul>
