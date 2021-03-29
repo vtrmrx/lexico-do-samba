@@ -986,3 +986,35 @@ p { @include p; }
     }
   }
 }
+
+.social-share {
+  padding-top: 32px;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    padding-top: 64px;
+  }
+}
+
+.media-list {
+  margin-top: 32px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    width: 32px;
+    height: 32px;
+    list-style-type: none;
+    margin-left: 16px;
+    &:first-child {
+      margin-left: 0;
+    }
+    svg {
+      fill: $color-preto;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+}
