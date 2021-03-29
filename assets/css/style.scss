@@ -230,6 +230,34 @@ p { @include p; }
           color: rgba($color-branco, 1);
         }
       }
+      .language-selector {
+        margin-top: 16px;
+        @include media-breakpoint-up(lg) {
+          margin-top: 0;
+          margin-left: 48px;
+        }
+      }
+      .nav-lang {
+        padding: 0;
+        margin-left: 16px;
+        padding-left: 16px;
+        border-left: 1px solid $color-branco;
+        color: rgba($color-branco, .75);
+        text-decoration: none;
+        text-transform: uppercase;
+        &:first-child {
+          border: none;
+          margin-left: 0;
+          padding-left: 0;
+        }
+        &:hover {
+          color: rgba($color-branco, 1);
+        }
+        &.selected {
+          color: rgba($color-branco, 1);
+          font-weight: bold;
+        }
+      }
     }
     &__logo {
       font-family: 'braveold', Georgia, serif;
@@ -304,12 +332,24 @@ p { @include p; }
       &:hover {
         color: $color-preto;
       }
-      &::after {
-        content: "menos";
-      }
-      &.collapsed {
+      &--pt {
         &::after {
-          content: "mais";
+          content: "menos";
+        }
+        &.collapsed {
+          &::after {
+            content: "mais";
+          }
+        }
+      }
+      &--en {
+        &::after {
+          content: "less";
+        }
+        &.collapsed {
+          &::after {
+            content: "more";
+          }
         }
       }
     }
@@ -943,6 +983,38 @@ p { @include p; }
       flex-flow: column nowrap;
       flex: 1 0 auto;
       width: 50%;
+    }
+  }
+}
+
+.social-share {
+  padding-top: 32px;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    padding-top: 64px;
+  }
+}
+
+.media-list {
+  margin-top: 32px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 0;
+  justify-content: center;
+  align-items: center;
+  &__item {
+    width: 32px;
+    height: 32px;
+    list-style-type: none;
+    margin-left: 16px;
+    &:first-child {
+      margin-left: 0;
+    }
+    svg {
+      fill: $color-preto;
+    }
+    .hidden {
+      display: none;
     }
   }
 }

@@ -2,13 +2,26 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-center">”Esse jogo não é um a um”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            ”Esse jogo não é um a um”
+          {% elsif page.lang == "en" %}
+            &quot;This game is not one-on-one&quot;
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Um duelo entre palavras. O objetivo dessa comparação é ver se alguma palavra aparece mais ou menos que o termo associado.</p>
+          <p>
+            {% if page.lang == "pt" %}
+              Um duelo entre palavras. O objetivo dessa comparação é ver se alguma palavra aparece mais ou menos que o termo associado.
+            {% elsif page.lang == "en" %}
+              A duel between words. The purpose of this comparison is to see if any word appears more or less than the associated term.
+            {% endif %}
+          </p>
           {% include section-info.html
-            content="Para fazer a comparação, primeiro definimos um grupo de palavras que se sobressaíram ao analisarmos o banco de dados geral. Depois, definimos quais termos seriam comparados com cada uma dessas palavras. No fim, procuramos por essas novas palavras no banco de dados geral."
+            content_pt="Para fazer a comparação, primeiro definimos um grupo de palavras que se sobressaíram ao analisarmos o banco de dados geral. Depois, definimos quais termos seriam comparados com cada uma dessas palavras. No fim, procuramos por essas novas palavras no banco de dados geral."
+            content_en="To do the comparison, we first defined a group of words that stood out when analyzing the overall database. Then we defined which terms would be compared with each of these words. Finally, we searched the overall database for these new words."
           %}
         </div>
       </div>
@@ -16,9 +29,15 @@
         <div class="section__content">
           <div class="row">
             <div class="col-12">
-              <div class="flourish-embed flourish-chart" data-src="visualisation/4358997">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-              </div>
+              {% if page.lang == "pt" %}
+                <div class="flourish-embed flourish-chart" data-src="visualisation/4358997">
+                  <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+              {% elsif page.lang == "en" %}
+                <div class="flourish-embed flourish-chart" data-src="visualisation/5414168">
+                  <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+              {% endif %}
             </div>
           </div>
         </div>

@@ -1,8 +1,14 @@
+{% if page.lang == "pt" %}
+  {% assign cover_url = '/assets/img/logo-vertical.svg' %}
+{% elsif page.lang == "en" %}
+  {% assign cover_url = '/assets/img/logo-vertical_en.svg' %}
+{% endif %}
+
 <section class="section-cover">
   <div class="container-fluid">
     <div class="row">
       <h1 class="section-cover__title text-center">
-        <img class="section-cover__logo" src="{{ '/assets/img/logo-vertical.svg' | prepend: site.baseurl }}" alt="{{ site.title }}">
+        <img class="section-cover__logo" src="{{ cover_url | prepend: site.baseurl }}" alt="{{ site.title[include.lang] }}">
       </h1>
     </div>
   </div>

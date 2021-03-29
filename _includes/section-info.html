@@ -1,8 +1,13 @@
+{% if page.lang == "pt" %}
+  {% assign content = include.content_pt %}
+{% elsif page.lang == "en" %}
+  {% assign content = include.content_en %}
+{% endif %}
 <a tabindex="0"
   class="btn btn-link section__info"
   type="button"
   role="button"
   data-bs-toggle="popover"
-  data-bs-content="{{ include.content }}">
+  data-bs-content="{{ content }}">
   ?
 </a>

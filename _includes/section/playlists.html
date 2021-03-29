@@ -2,13 +2,26 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-center">“Quem se atreve a me dizer do que é feito o samba”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            “Quem se atreve a me dizer do que é feito o samba”
+          {% elsif page.lang == "en" %}
+            “Who dares to say what Samba is made of”
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Isso é samba ou pagode? Talvez você já tenha tido essa discussão. Uma das respostas possíveis para essa pergunta é ver o que as pessoas acham. Para isso, analisamos playlists para cada gênero no Spotify e selecionamos as músicas que mais aparecem.</p>
+          <p>
+            {% if page.lang == "pt" %}
+              Isso é samba ou pagode? Talvez você já tenha tido essa discussão. Uma das respostas possíveis para essa pergunta é ver o que as pessoas acham. Para isso, analisamos playlists para cada gênero no Spotify e selecionamos as músicas que mais aparecem.
+            {% elsif page.lang == "en" %}
+              Is this samba or pagode? Maybe you had that discussion. A possible way to answer it is looking for what people think about both genres. We analyzed playlist for each type of music and selected the songs thar showed up more frequently.
+            {% endif %}
+          </p>
           {% include section-info.html
-            content="O levantamento começou selecionando as 2 mil playlists mais populares contendo as palavras samba, pagode, samba raiz e samba enredo. Em todos os casos foram excluídas playlists que continham outra palavra desse grupo. Um exemplo: uma playlist chamada “Samba e Pagode” não contou para a análise já que seria muito difícil separar qual música é de cada gênero na opinião da pessoa que criou a lista de músicas. Os dados para essa lista lista foram coletados do spotify em junho de 2020."
+            content_pt="O levantamento começou selecionando as 2 mil playlists mais populares contendo as palavras samba, pagode, samba raiz e samba enredo. Em todos os casos foram excluídas playlists que continham outra palavra desse grupo. Um exemplo: uma playlist chamada “Samba e Pagode” não contou para a análise já que seria muito difícil separar qual música é de cada gênero na opinião da pessoa que criou a lista de músicas. Os dados para essa lista lista foram coletados do spotify em junho de 2020."
+            content_en="The survey began by selecting the 2000 most popular playlists containing the words samba, pagode, samba raiz and samba enredo. In all cases, playlists containing another word from this group were excluded. An example: a playlist called &quot;Samba e Pagode&quot; did not count for the analysis since it would be very difficult to separate which song is from each genre in the opinion of the person who created the playlist. The data for this playlist was collected from Spotify in June 2020."
           %}
         </div>
       </div>
@@ -27,7 +40,13 @@
               </div>
             </div>
             <div class="tns-playlists__item">
-              <h3 class="section__subtitle">Samba-raiz</h3>
+              <h3 class="section__subtitle">
+                {% if page.lang == "pt" %}
+                  Samba-raiz
+                {% elsif page.lang == "en" %}
+                  Traditional Samba
+                {% endif %}
+              </h3>
               <div class="related-list">
                 {% for song in site.data.playlists-samba-raiz limit:5 %}
                   {% include components/search-item.html
@@ -47,7 +66,13 @@
               </div>
             </div>
             <div class="tns-playlists__item">
-              <h3 class="section__subtitle">Samba-enredo</h3>
+              <h3 class="section__subtitle">
+                {% if page.lang == "pt" %}
+                  Samba-enredo
+                {% elsif page.lang == "en" %}
+                  Samba-plot
+                {% endif %}
+              </h3>
               <div class="related-list">
                 {% for song in site.data.playlists-samba-enredo limit:5 %}
                   {% include components/search-item.html

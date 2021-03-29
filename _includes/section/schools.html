@@ -2,16 +2,29 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-left">“Portela e Mangueira sempre foram as primeiras”</h2>
+        <h2 class="section__title text-left">
+          {% if page.lang == "pt" %}
+            “Portela e Mangueira sempre foram as primeiras”
+          {% elsif page.lang == "en" %}
+            “Portela and Mangueira were always the first ones”
+          {% endif %}
+        </h2>
         {% include section-info.html
-          content="Aqui o procedimento foi parecido. Primeiro montamos uma lista com todas as escolas de samba do Rio de Janeiro e possíveis sinônimos (verde e rosa para a Mangueira, por exemplo). Depois disso, procuramos por essas palavras (ou conjuntos de palavras) nas letras. Focamos a análise nas escolas cariocas porque o universo contém relativamente poucos artistas de outros locais."
+          content_pt="Aqui o procedimento foi parecido. Primeiro montamos uma lista com todas as escolas de samba do Rio de Janeiro e possíveis sinônimos (verde e rosa para a Mangueira, por exemplo). Depois disso, procuramos por essas palavras (ou conjuntos de palavras) nas letras. Focamos a análise nas escolas cariocas porque o universo contém relativamente poucos artistas de outros locais."
+          content_en="Here the procedure was similar. First we made a list of all the samba schools in Rio de Janeiro and possible synonyms (green and pink for Mangueira, for example). After that we searched for these words (or sets of words) in the lyrics. We focused the analysis on the Rio de Janeiro schools because the universe contains relatively few artists from other places."
         %}
       </div>
       <div class="col-12">
         <div class="section__content">
-          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/4342936">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/4342936">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/5414039">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

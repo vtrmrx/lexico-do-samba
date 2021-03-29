@@ -1,6 +1,16 @@
-title: Léxico do Samba
-email: your-email@example.com
-description: >-
-  Teste
+languages:
+  - en
+  - pt
+title:
+  en: Samba's Lexicon
+  pt: Léxico do Samba
+description:
+  en: What are the most common words in samba songs? Which word is the most used by each sambista? To answer these and other questions, the Samba's Lexicon analyzed 14,700 songs, which led to a dataset with 1.8 million words.
+  pt: Quais as palavras mais comuns em sambas? Que palavra é mais usada por cada sambista? Para responder essas e outras perguntas, o Léxico do Samba analisou 14,7 mil músicas, o que levou a 1,8 milhão de palavras.
+thumbnail:
+  en: "social-thumb_en.png"
+  pt: "social-thumb.png"
 baseurl: ""
-url: ""
+url:
+  en: "https://www.lexicodosamba.com.br/"
+  pt: "https://www.lexicodosamba.com.br/en/"

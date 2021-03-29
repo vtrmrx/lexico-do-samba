@@ -5,13 +5,26 @@
         <div class="section__header">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-              <h2 class="section__title text-center">“O que será que será que andam <wbr>sussurrando em versos e trovas?”</h2>
+              <h2 class="section__title text-center">
+                {% if page.lang == "pt" %}
+                  “O que será que será que andam sussurrando em versos e trovas?”
+                {% elsif page.lang == "en" %}
+                  &quot;What are they whispering in verse and trope?&quot;
+                {% endif %}
+              </h2>
             </div>
             <div class="col-12 col-lg-8">
               <div class="section__description text-center">
-                <p>Para chegar às palavras mais utilizadas nos sambas analisados não é suficiente apenas contá- las. Palavras vazias de sentido foram retiradas da análise. Caso isso não fosse feito, as palavras que liderariam o ranking seriam artigos como “o”, “a” e outros termos como “de”. Não seria muito divertido, né?</p>
+                <p>
+                  {% if page.lang == "pt" %}
+                    Para chegar às palavras mais utilizadas nos sambas analisados não é suficiente apenas contá- las. Palavras vazias de sentido foram retiradas da análise. Caso isso não fosse feito, as palavras que liderariam o ranking seriam artigos como “o”, “a” e outros termos como “de”. Não seria muito divertido, né?
+                  {% elsif page.lang == "en" %}
+                    It is not enough to count words to unearth the most often used in samba songs. Words with no particular meaning were excluded from the analysis. If we did not do this, the most frequent words would be articles such as “the” or “a”. It wouldn’t be very fun, no?
+                  {% endif %}
+                </p>
                 {% include section-info.html
-                  content="Por padrão, o gráfico inicia com as 30 palavras mais faladas em todas as letras analisadas. A partir daí, você pode filtrar esses dados levando em conta intérpretes específicos ou características dos cantores: gênero, local de nascimento, década de nascimento. Cada seleção diminui o universo de análise e, assim, as 30 palavras mais usadas."
+                  content_pt="Por padrão, o gráfico inicia com as 30 palavras mais faladas em todas as letras analisadas. A partir daí, você pode filtrar esses dados levando em conta intérpretes específicos ou características dos cantores: gênero, local de nascimento, década de nascimento. Cada seleção diminui o universo de análise e, assim, as 30 palavras mais usadas."
+                  content_en="By default, the chart starts with the 30 most spoken words in all the lyrics analyzed. From there you can filter this data by taking into account specific performers or characteristics of the singers: gender, place of birth and decade of birth. Each selection narrows the universe of analysis and thus the 30 most used words."
                 %}
               </div>
             </div>
@@ -27,24 +40,54 @@
                 <div class="row justify-content-center">
                   <div class="col-12 col-lg-8">
 
-                    <p class="text-center">Filtrar por:</p>
+                    <p class="text-center">
+                      {% if page.lang == "pt" %}
+                        Filtrar por:
+                      {% elsif page.lang == "en" %}
+                        Filter by:
+                      {% endif %}
+                    </p>
                     <br>
 
                     <ul class="most-used-tabs nav nav-tabs justify-content-center" id="mostUsedTabs" role="tablist">
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="filtrar-artista-tab" data-bs-toggle="tab" data-bs-target="#filtrar-artista" type="button" role="tab" aria-controls="filtrar-artista" aria-selected="true">Artistas</button>
+                        <button class="nav-link active" id="filtrar-artista-tab" data-bs-toggle="tab" data-bs-target="#filtrar-artista" type="button" role="tab" aria-controls="filtrar-artista" aria-selected="true">
+                          {% if page.lang == "pt" %}
+                            Artistas
+                          {% elsif page.lang == "en" %}
+                            Artists
+                          {% endif %}
+                        </button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="filtrar-dados-demograficos-tab" data-bs-toggle="tab" data-bs-target="#filtrar-dados-demograficos" type="button" role="tab" aria-controls="filtrar-dados-demograficos" aria-selected="false">Dados demográficos</button>
+                        <button class="nav-link" id="filtrar-dados-demograficos-tab" data-bs-toggle="tab" data-bs-target="#filtrar-dados-demograficos" type="button" role="tab" aria-controls="filtrar-dados-demograficos" aria-selected="false">
+                          {% if page.lang == "pt" %}
+                            Dados demográficos
+                          {% elsif page.lang == "en" %}
+                            Demographic criteria
+                          {% endif %}
+                        </button>
                       </li>
                     </ul>
 
                     <div class="most-used-tab-content tab-content" id="filters-tabContent">
                       <div class="tab-pane fade show active" id="filtrar-artista" role="tabpanel" aria-labelledby="filtrar-artista-tab">
                         <div class="form-group">
-                          <label for="filterName">Selecione um(a) artista</label>
+                          <label for="filterName">
+                            {% if page.lang == "pt" %}
+                              Selecione um(a) artista
+                            {% elsif page.lang == "en" %}
+                              Pick an artist
+                            {% endif %}
+                          </label>
                           <select class="form-control" name="filterName" data-filter-dynamic="true" data-filter-key="Nome">
-                            <option label="Todos" value="all">Todos</option>
+                            <option label="{% if page.lang == 'pt' %}Todos{% elsif page.lang == 'en' %}All{% endif %}" value="all">
+                              {% if page.lang == "pt" %}
+                                Todos
+                              {% elsif page.lang == "en" %}
+                                All
+                              {% endif %}
+                            </option>
                           </select>
                         </div>
                       </div>
@@ -52,25 +95,61 @@
                         <div class="row">
                           <div class="col-4">
                             <div class="form-group w-100">
-                              <label for="filterGender">Gênero</label>
+                              <label for="filterGender">
+                                {% if page.lang == "pt" %}
+                                  Gênero
+                                {% elsif page.lang == "en" %}
+                                  Gender
+                                {% endif %}
+                              </label>
                               <select class="form-control" name="filterGender" data-filter-dynamic="true" data-filter-key="Gênero">
-                                <option label="Todos" value="all">Todos</option>
+                                <option label="{% if page.lang == 'pt' %}Todos{% elsif page.lang == 'en' %}All{% endif %}" value="all">
+                                  {% if page.lang == "pt" %}
+                                    Todos
+                                  {% elsif page.lang == "en" %}
+                                    All
+                                  {% endif %}
+                                </option>
                               </select>
                             </div>
                           </div>
                           <div class="col-4">
                             <div class="form-group w-100">
-                              <label for="filterDecade">Década Nasc.</label>
+                              <label for="filterDecade">
+                                {% if page.lang == "pt" %}
+                                  Década Nasc.
+                                {% elsif page.lang == "en" %}
+                                  Bith decade
+                                {% endif %}
+                              </label>
                               <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="Década de nascimento">
-                                <option label="Todas" value="all">Todas</option>
+                                <option label="{% if page.lang == 'pt' %}Todas{% elsif page.lang == 'en' %}All{% endif %}" value="all">
+                                  {% if page.lang == "pt" %}
+                                    Todas
+                                  {% elsif page.lang == "en" %}
+                                    All
+                                  {% endif %}
+                                </option>
                               </select>
                             </div>
                           </div>
                           <div class="col-4">
                             <div class="form-group w-100">
-                              <label for="filterState">Estado</label>
+                              <label for="filterState">
+                                {% if page.lang == "pt" %}
+                                  Estado
+                                {% elsif page.lang == "en" %}
+                                  Place of Birth
+                                {% endif %}
+                              </label>
                               <select class="form-control" name="filterState" data-filter-dynamic="true" data-filter-key="UF de nascimento">
-                                <option label="Todos" value="all">Todos</option>
+                                <option label="{% if page.lang == 'pt' %}Todos{% elsif page.lang == 'en' %}All{% endif %}" value="all">
+                                  {% if page.lang == "pt" %}
+                                    Todos
+                                  {% elsif page.lang == "en" %}
+                                    All
+                                  {% endif %}
+                                </option>
                               </select>
                             </div>
                           </div>
@@ -84,7 +163,11 @@
             <div class="info-custom__viz">
               <div id="mostUsedViz" class="most-used-viz">
                 <p class="no-results-message">
-                  Não encontramos ninguém com essas características no nosso universo de dados
+                  {% if page.lang == "pt" %}
+                    Não encontramos ninguém com essas características no nosso universo de dados
+                  {% elsif page.lang == "en" %}
+                    We couldn’t find any artists matching selected criteria
+                  {% endif %}
                 </p>
               </div>
             </div>

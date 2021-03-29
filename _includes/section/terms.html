@@ -2,13 +2,26 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-center">“Diz-me com quem andas, te direi quem és”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            “Diz-me com quem andas, te direi quem és”
+          {% elsif page.lang == "en" %}
+            &quot;Tell me who you walk with, I will tell you who you are&quot;
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Palavras não são ilhas, elas estão sempre conectadas umas as outras. Aqui analisamos com quem elas mais aparecem (antes ou depois).</p>
+          <p>
+            {% if page.lang == "pt" %}
+              Palavras não são ilhas, elas estão sempre conectadas umas as outras. Aqui analisamos com quem elas mais aparecem (antes ou depois).
+            {% elsif page.lang == "en" %}
+              Words are not islands; they are always connected to each other. Here we analyze with which they appear the most (before or after).
+            {% endif %}
+          </p>
           {% include section-info.html
-            content="Para obter esses dados, calculamos os termos que aparecem até dois espaços antes ou depois da palavra analisada. Na frase anterior “até”, “dois”, “antes” e “depois” seriam levados em conta caso o foco fosse a palavra “espaço”. Como é possível ver nesse exemplo, também excluímos artigos, conjunções e outras palavras vazias de significado."
+            content_pt="Para obter esses dados, calculamos os termos que aparecem até dois espaços antes ou depois da palavra analisada. Na frase anterior “até”, “dois”, “antes” e “depois” seriam levados em conta caso o foco fosse a palavra “espaço”. Como é possível ver nesse exemplo, também excluímos artigos, conjunções e outras palavras vazias de significado."
+            content_en="To obtain this data, we calculated the terms that appear up to two spaces before or after the analyzed word. In the previous sentence &quot;up to&quot;, &quot;two&quot;, &quot;before&quot; and &quot;after&quot; would be taken into account if the focus was on the word &quot;space&quot;. As you can see from this example, we also excluded articles, conjunctions and other empty words."
           %}
         </div>
       </div>

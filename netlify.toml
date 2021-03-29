@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/"
+  to = "/en"
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/sobre"
+  to = "/en/about"
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/recomendacoes"
+  to = "/en/recommendations"
+  conditions = {Language = ["en"]}

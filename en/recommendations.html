@@ -1,0 +1,86 @@
+---
+layout: default
+title: Recommendations about samba
+lang: en
+id: recomendacoes
+---
+
+<section class="recommendations-intro">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h1 class="recommendations-intro__title">Recommendations <br>about samba</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recommendations-section recommendations-follow">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="recommendations-section__title">To follow</h2>
+        {% for recommentation in site.data.recommendations.follow[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recommendations-section recommendations-watchlist">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="recommendations-section__title">To watch</h2>
+        {% for recommentation in site.data.recommendations.watch[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            author=recommentation.author
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recommendations-section recommendations-listen">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="recommendations-section__title">To listen</h2>
+        {% for recommentation in site.data.recommendations.listen[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recommendations-section recommendations-readings">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="recommendations-section__title">To read</h2>
+        {% for recommentation in site.data.recommendations.read[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            author=recommentation.author
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

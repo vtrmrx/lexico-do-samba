@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Recomendações sobre samba
+lang: pt
+id: recomendacoes
 ---
 
 <section class="recommendations-intro">
@@ -18,43 +20,13 @@ title: Recomendações sobre samba
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <h2 class="recommendations-section__title">Para seguir</h2>
-
-        {% include components/recommendation-item.html
-          title="Pensamento Social do Sambas"
-          description="Os sambistas e pesquisadores Vinícius Natal e Mauro Cordeiro se juntaram para oferecer conteúdo de extrema qualidade sobre o Samba. Além de textos nos blogs e debates interessantes no canal do Youtube, a dupla aindaoferece cursos diversos que divulgam em seus perfis. Vale acompanhar e ficar atento a data de inscrição dopróximo curso."
-          link="https://www.pensamentosocialdosamba.com/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Nei Lopes"
-          description="O perfil é descrito como “a porta aberta para o universe existencial e de criação de Nei Lopes”. Lá você vai poder ficar por dentro dos lançamentos musicais, livros e palestras do intellectual."
-          link="https://www.instagram.com/neilopesoficial/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Luiz Antonio Simas"
-          description="Simas é escritor, historiador, compositor, babalaô e um excelente contador de histórias. Em seu perfil está constantemente divulgando conteúdos ligados ao samba e a cultura brasileira, incluindo os podcasts que integra, os livros que escreve e os cursos que oferece de tempos em tempos."
-          link="https://www.instagram.com/luizantoniosimas/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Museu do Samba"
-          description="Durante o isolamento, o perfil vem fazendo lives em seu Instagram com sambistas e especialistas em bate papos interessantes sobre samba e com alguns momentos de cantorias."
-          link="https://www.instagram.com/museudosamba/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Samba Book"
-          description="O samba book reúne e homenageia os maiores nomes do samba através de álbums, vídeos, lives, livros e postagens em suas redes sociais. Vale a pena conferir e acompanhar!"
-          link="https://www.instagram.com/sambabook/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Leonardo Bruno"
-          description="Leonardo Bruno é jornalista, roteirista, professor, comentarista de carnaval e autor dos livros “Zeca Pagodinho”, “Salgueiro” e “Vila Isabel”. Em seu perfil, além de postar momentos históricos do carnaval e do samba, traz convidados para bate papos e links para entrevistas interessantes. Vale seguir."
-          link="https://www.instagram.com/leonardobruno_oficial/"
-        %}
-
+        {% for recommentation in site.data.recommendations.follow[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -65,42 +37,14 @@ title: Recomendações sobre samba
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <h2 class="recommendations-section__title">Para assistir</h2>
-
-        {% include components/recommendation-item.html
-          title="Guardiões do Samba"
-          author="Eric Belhassen e Mark Belhassen"
-          description="O documentário foi produzido em homenagem aos 100 anos do samba. Mostra o cotidiano de grandes nomes do samba e traz depoimentos de diversas personalidades como Martinho da Vila, Nei Lopes, Monarco, Gilberto Gil, Tia Zélia, Nelson Sargento e Tia Surica, entre outros."
-          link="http://www.adorocinema.com/filmes/filme-231474/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="O Mistério do Samba"
-          author="Lula Buarque de Hollanda, Carolina Jabor e Marisa Monte"
-          description="As gravações do documentário tiveram início 10 anos antes de seu lançamento quando Marisa Monte pesquisava sobre a obra de integrantes da Velha Guarda da Portela. O filme traz valiosos depoimentos que nos mostram o cotidiano e as histórias da escola."
-          link="https://www.companhiadasletras.com.br/detalhe.php?codigo=13885"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Candeia"
-          author="Lula Buarque de Hollanda, Luiz Antonio Pilar"
-          description="O documentário, lançado 40 anos após a morte de Candeia, conta a história da vida de da obra de um dos mais importantes sambistas de todos os tempos. Assista e conheça mais sobre esse imenso símbolo de resistência do samba, compositor da Portela e idealizador do GRES Quilombo."
-          link="https://canalcurta.tv.br/filme/?name=candeia"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Onde a Coruja Dorme"
-          author="Simplício Neto e Márcia Derraik"
-          description="O filme mostra um pouco do universo de Bezerra da Silva e traz o cotidiano e depoimentos de personagens menos conhecidos que fizeram parte da formação do imaginário que se construiu ao redor do sambista."
-          link="http://www.adorocinema.com/filmes/filme- 204051/#:~:text=Onde%20a%20Coruja%20Dorme%20%C3%A9,passou%20para%20emplacar%20como%20artista."
-        %}
-
-        {% include components/recommendation-item.html
-          title="Clementina"
-          author="Ana Rieper"
-          description="Lançado em 2019, o documentário conta a trajetória de Clementina de Jesus, figura fundamental para o entendimento da ligação da cultura brasileira com a cultura africana e para a história do samba."
-          link="https://tamandua.tv.br/filme/?name=clementina"
-        %}
-
+        {% for recommentation in site.data.recommendations.watch[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            author=recommentation.author
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -111,25 +55,13 @@ title: Recomendações sobre samba
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <h2 class="recommendations-section__title">Para ouvir</h2>
-
-        {% include components/recommendation-item.html
-          title="Papo de Samba Podcast"
-          description="“Histórias, músicas e entrevistas em clima de botequim”. No podcast publicado quinzenalmente, Ágata, Augusto, Aron e Thales trazem temas interessantes sobre samba que incluem temas como “as parcerias mais importantes do samba”, “sambas sobre samba” e muitos outros."
-          link="https://open.spotify.com/show/1FZVFiIFvsXwB5zd5ykNcs?si=BcCpjCO4RsSenxFH-RNFAQ"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Sambacast"
-          description="Podcast que traz entrevistas e análises de sambistas e grupos. Abordam desde nomes consagrados como Jorge Aragão até novos fenômenos como é o caso do Menos é Mais."
-          link="https://open.spotify.com/show/54jAFhwOxB5Y6P1APSwpSl?si=V_T2jTjsSnOgQlfP9-d_Dg"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Batuques e Confetes"
-          description="Podcast de Nath Fischer e Gabi Moreira que traz historias do samba, blocos, escolas de samba e outros temas ligados ao carnaval. Com enfoque maior no carnaval do Rio Janeiro e sua ligação com o samba, mas por vezes abordando também outros ritmos e regiões."
-          link="https://open.spotify.com/show/2CaaUSt9jlki0HdQgZJ5KU?si=SKZ0QbP0RVCGt49KOlp-Ig"
-        %}
-
+        {% for recommentation in site.data.recommendations.listen[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -140,28 +72,14 @@ title: Recomendações sobre samba
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <h2 class="recommendations-section__title">Para ler</h2>
-
-        {% include components/recommendation-item.html
-          title="Dicionário da história social do samba"
-          author="Nei Lopes e Luiz Antonio Simas"
-          description="De maneira leve e intrigrante, os autores reconstroem as histórias do ritmo e da memória cultural do nosso país através de verbetes organizados em ordem alfabética. Os verbetes vão de termos utilizados no universo do ritmo musical até nomes de personalidades importantes para a construção do samba que conhecemos hoje."
-          link="https://www.record.com.br/produto/dicionario-da-historia-social-do-samba/"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Uma história do samba: as origens"
-          author="Lira Neto"
-          description="O primeiro volume de uma trilogia que conta a história do samba, com enfoque para o samba urbano carioca. Neste primeiro volume o autor conta a história do surgimento do samba até os primeiros desfiles das escolas de samba do Rio de Janeiro. Os outros volumes ainda não foram lançados."
-          link="https://www.companhiadasletras.com.br/detalhe.php?codigo=13885"
-        %}
-
-        {% include components/recommendation-item.html
-          title="Compositoras do Brasil e do samba"
-          author="Jornal Nexo"
-          description="Série de reportagens do Jornal Nexo sobre mulheres que ajudaram a forjar o samba e a cultura do nosso país."
-          link="https://www.nexojornal.com.br/especial/2021/02/09/Compositoras-do-Brasil-e-do-samba"
-        %}
-
+        {% for recommentation in site.data.recommendations.read[page.lang] %}
+          {% include components/recommendation-item.html
+            title=recommentation.title
+            author=recommentation.author
+            description=recommentation.description
+            link=recommentation.link
+          %}
+        {% endfor %}
       </div>
     </div>
   </div>

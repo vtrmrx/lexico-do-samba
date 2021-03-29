@@ -1,0 +1,46 @@
+---
+layout: default
+title: About
+lang: en
+id: sobre
+---
+
+<section class="about-intro">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h1 class="about-intro__title">About</h1>
+        <p class="about-intro__text">Samba’s Lexicon project was made by four people. Learn more about their work through the links below:</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-team">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h2 class="about-team__title">Team</h2>
+        <div class="about-team__members">
+          <div class="row">
+            {% for member in site.data.team[page.lang] %}
+              <div class="col-12 col-lg-6">
+                <div class="team-member">
+                  <h3 class="team-member__name">{{ member.name }}</h3>
+                  <h4 class="team-member__role">{{ member.role }}</h4>
+                  <p class="team-member__bio">{{ member.bio }}</p>
+                  <p class="team-member__social-media">
+                    {% for medium in member.social-media %}
+                      <a href="{{ medium.url }}" target="_blank">{{ medium.label }}</a>
+                      {% unless forloop.last %},{% endunless %}
+                    {% endfor %}
+                  </p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

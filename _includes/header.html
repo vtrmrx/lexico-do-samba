@@ -1,19 +1,37 @@
 <header class="section-header">
   <nav class="navbar navbar-dark navbar-expand-lg justify-content-between">
-    <a class="navbar-brand section-header__logo" href="/">Léxico do Samba</a>
+    <a class="navbar-brand section-header__logo" href="{% if page.lang == 'en' %}/en{% else %}/{% endif %}">{% if page.lang == 'en' %}Samba's Lexicon{% else %}Léxico do Samba{% endif %}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir Menu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse section-header__collapse" id="navbarMenu">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="sobre" class="nav-link">Sobre</a>
+          <a href="{% if page.lang == 'en' %}about{% else %}sobre{% endif %}" class="nav-link">{% if page.lang == 'en' %}About{% else %}Sobre{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a href="https://github.com/vtrmrx/lexico-do-samba/tree/main/data" class="nav-link" target="_blank">Bancos de Dados</a>
+          <a href="https://github.com/vtrmrx/lexico-do-samba/tree/main/data" class="nav-link" target="_blank">{% if page.lang == 'en' %}Database{% else %}Bancos de Dados{% endif %}</a>
         </li>
         <li class="nav-item">
-          <a href="/recomendacoes" class="nav-link">Recomendações sobre samba</a>
+          <a href="{% if page.lang == 'en' %}recommendations{% else %}recomendacoes{% endif %}" class="nav-link">{% if page.lang == 'en' %}Recommendations about samba{% else %}Recomendações sobre samba{% endif %}</a>
+        </li>
+        <li class="nav-item language-selector">
+          {% for multilang_page in site.data.pages %}
+            {% if multilang_page.id == page.id %}
+              {% for lang in multilang_page.languages %}
+                {% if lang[0] == "pt" %}
+                  {% assign prefix = "" %}
+                {% else %}
+                  {% assign prefix = lang[0] | prepend: "/" %}
+                {% endif %}
+                {% if lang[0] == page.lang %}
+                  <a class="nav-lang selected">{{ lang[0] }}</a>
+                {% else %}
+                  <a class="nav-lang" href="{{ prefix }}/{{ lang[1].slug }}">{{ lang[0] }}</a>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
         </li>
       </ul>
     </div>

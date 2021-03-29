@@ -2,21 +2,40 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-center">“É corpo, é alma, é religião”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            “É corpo, é alma, é religião”
+          {% elsif page.lang == "en" %}
+            &quot;It is body, it is soul, it is religion&quot;
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>O samba tem a influência de diversas religiões e em especial as de matriz africana. Os terreiros estão na gênese do ritmo. A ligação umbilical entre essas religiões e o samba está também no sincretismo que as une ao catolicismo e religiões indígenas. Tudo isso está no samba e buscamos mapear parte da questão ao procurar por nomes de divindades nas músicas analisadas.</p>
+          <p>
+            {% if page.lang == "pt" %}
+              O samba tem a influência de diversas religiões e em especial as de matriz africana. Os terreiros estão na gênese do ritmo. A ligação umbilical entre essas religiões e o samba está também no sincretismo que as une ao catolicismo e religiões indígenas. Tudo isso está no samba e buscamos mapear parte da questão ao procurar por nomes de divindades nas músicas analisadas.
+            {% elsif page.lang == "en" %}
+              Samba has the influence of several religions, especially those of African origin. The terreiros (religious centers) are at the genesis of the rhythm. The umbilical connection between these religions and samba is also in the syncretism that unites them with Catholicism and indigenous religions. All this is in the samba and we tried to map part of the question by looking for names of deities in the analyzed songs.
+            {% endif %}
+          </p>
           {% include section-info.html
-            content="Para chegar a esse resultado, primeiro criamos um banco de dados com as divindades das religiões de matiz africana, indígenas e com termos associados ao catolicismo. Em seguida, procuramos por essas palavras no banco de dados geral. Além disso, agrupamos termos que se referem à mesma divindade, como Janaína e Iemanjá e unificamos grafias (Yemanjá e Iemanjá). Em alguns casos, o nome de cidades influenciou no resultado final, como em São Paulo. Não foram incluídos no levantamento termos como Maria e José por também serem nomes comuns. Além disso, “Deus” também não foi adicionado pelo grande número de aparições em expressões linguísticas. No universo, a palavra Deus aparece 2590 vezes."
+            content_pt="Para chegar a esse resultado, primeiro criamos um banco de dados com as divindades das religiões de matiz africana, indígenas e com termos associados ao catolicismo. Em seguida, procuramos por essas palavras no banco de dados geral. Além disso, agrupamos termos que se referem à mesma divindade, como Janaína e Iemanjá e unificamos grafias (Yemanjá e Iemanjá). Em alguns casos, o nome de cidades influenciou no resultado final, como em São Paulo. Não foram incluídos no levantamento termos como Maria e José por também serem nomes comuns. Além disso, “Deus” também não foi adicionado pelo grande número de aparições em expressões linguísticas. No universo, a palavra Deus aparece 2590 vezes."
+            content_en="To arrive at this result, we first created a database with the deities of religions of African and indigenous origin and with terms associated with Catholicism. Then we searched for these words in the general database. In addition, we grouped terms that refer to the same deity, such as Janaína and Iemanjá, and unified spellings (Yemanjá and Iemanjá). In some cases, the name of the city influenced the final result, as in São Paulo. Terms such as Maria and José were not included in the survey because they are also common names. Also, &quot;God&quot; was not added because of the large number of appearances in linguistic expressions. In the universe, the word God appears 2590 times."
           %}
         </div>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__content">
-          <div class="flourish-embed flourish-hierarchy" data-src="visualisation/4304073">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/4304073">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/5414092">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

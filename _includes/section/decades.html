@@ -2,21 +2,40 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-12">
-        <h2 class="section__title text-center">“Deixa o tempo passar, você tem muito tempo”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            “Deixa o tempo passar, você tem muito tempo”
+          {% elsif page.lang == "en" %}
+            &quot;Let the time go by, you&#39;ve got plenty of time&quot;
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Será que a data de nascimento do/a cantor/a afeta os termos usados em cada música? Esse gráfico animado mostra como evoluíram as palavras mais utilizadas em sambas ao longo do tempo.</p>
+          <p>
+            {% if page.lang == "pt" %}
+              Será que a data de nascimento do/a cantor/a afeta os termos usados em cada música? Esse gráfico animado mostra como evoluíram as palavras mais utilizadas em sambas ao longo do tempo.
+            {% elsif page.lang == "en" %}
+              Does the singer&#39;s birth date affect the terms used in each song? This animated chart shows how the most commonly used words in sambas have evolved over time.
+            {% endif %}
+          </p>
           {% include section-info.html
-            content="O gráfico separa as palavras mais falados por década de nascimento do intérprete da música. Esse recorte foi feito porque não era viável obter a informação da data de composição das 14,7 mil músicas analisadas. Como ele é animado, é possível que você perca alguma informação. Não se preocupe, é possível pausar e controlar a passagem do tempo no gráfico. Experimente."
+            content_pt="O gráfico separa as palavras mais falados por década de nascimento do intérprete da música. Esse recorte foi feito porque não era viável obter a informação da data de composição das 14,7 mil músicas analisadas. Como ele é animado, é possível que você perca alguma informação. Não se preocupe, é possível pausar e controlar a passagem do tempo no gráfico. Experimente."
+            content_en="The graph separates the most spoken words by decade of birth of the song&#39;s interpreter. This criteria was used because it was not feasible to obtain the information on the date of composition of the 14.7 thousand songs analyzed. Since it is animated, it is possible that you will miss some information. Don&#39;t worry, you can pause and control the passage of time on the graph. Try it out."
           %}
         </div>
       </div>
       <div class="col-12 col-lg-12">
         <div class="section__content">
-          <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/4253929">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/4253929">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/5414173">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

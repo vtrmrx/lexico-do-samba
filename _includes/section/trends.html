@@ -2,43 +2,78 @@
   <div class="container-fluid">
     <div class="row justify-content-center section__row">
       <div class="col-12">
-        <h2 class="section__title text-center">“To me guardando pra quando o carnaval chegar”</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            “To me guardando pra quando o carnaval chegar”
+          {% elsif page.lang == "en" %}
+            “I am keeping myself fror when carnival comes”
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>O samba tem um pico de interesse em buscas realizadas no Google que se repete todo ano no carnaval. A explicação está nos termos relacionados que mais aparecem: escola de samba e samba enredo.</p>
+          <p>
+            {% if page.lang == "pt" %}
+              O samba tem um pico de interesse em buscas realizadas no Google que se repete todo ano no carnaval. A explicação está nos termos relacionados que mais aparecem: escola de samba e samba enredo.
+            {% elsif page.lang == "en" %}
+              Google searches for samba follows a distinct pattern. There is a huge spike when it is carnival. The explanation is on the most connected terms: “school of samba” and “samba plot”. Both terms are deeply connected with the carnival in Rio de Janeiro.
+            {% endif %}
+          </p>
           {% include section-info.html
-            content="Ao contrário da maioria dos dados analisados no Léxico do Samba, informações dessa seção foram extraídas do Google Trends em outubro de 2020. Para obtê-los, eles criam um índice que vai de zero a cem baseado nas buscas feitas por um determinado termo. Esse índice também leva em conta o tamanho da população do local analisado. Aqui ele leva em conta as buscas feitas no Brasil."
+            content_pt="Ao contrário da maioria dos dados analisados no Léxico do Samba, informações dessa seção foram extraídas do Google Trends em outubro de 2020. Para obtê-los, eles criam um índice que vai de zero a cem baseado nas buscas feitas por um determinado termo. Esse índice também leva em conta o tamanho da população do local analisado. Aqui ele leva em conta as buscas feitas no Brasil."
+            content_en="Unlike most of the data analyzed in the Samba Lexicon, information in this section was extracted from Google Trends in October 2020. To get it, they create an index that goes from zero to one hundred based on searches made for a given term. This index also takes into account the population size of the analyzed site. Here it takes into account searches made in Brazil."
           %}
         </div>
       </div>
       <div class="col-12">
         <div class="section__content">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/4089388">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/4089388">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/5414207">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
     <div class="row section__row">
       <div class="col-12 col-lg-6">
         <h3 class="section__subtitle">
-          Interesse por estado
+          {% if page.lang == "pt" %}
+            Interesse por estado
+          {% elsif page.lang == "en" %}
+            Interest in samba by state
+          {% endif %}
           {% include section-info.html
-            content="Os locais que mais buscam pelo termo samba no Google são o Rio de Janeiro, a Bahia e Pernambuco. O indicador leva em conta a quantidade de buscas total em cada estado para criar esse índice. Caso isso não acontecesse, o mais provável é que São Paulo aparecesse sempre em primeiro lugar por ser o local mais populoso do Brasil."
+            content_pt="Os locais que mais buscam pelo termo samba no Google são o Rio de Janeiro, a Bahia e Pernambuco. O indicador leva em conta a quantidade de buscas total em cada estado para criar esse índice. Caso isso não acontecesse, o mais provável é que São Paulo aparecesse sempre em primeiro lugar por ser o local mais populoso do Brasil."
+            content_en="Rio de Janeiro, Bahia, and Pernambuco are the places where people google more the term samba. The indicator takes into account the total amount of searches in each state to create this index. If this did not happen, it is most likely that São Paulo would always appear in first place because it is the most populated place in Brazil."
           %}
         </h3>
         <div class="section__content">
-          <div class="flourish-embed flourish-map" data-src="visualisation/4089452">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-map" data-src="visualisation/4089452">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-map" data-src="visualisation/5414127">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-12 col-lg-6">
         <h3 class="section__subtitle">
-          Buscas relacionadas
+          {% if page.lang == "pt" %}
+            Buscas relacionadas
+          {% elsif page.lang == "en" %}
+            Connected searches
+          {% endif %}
           {% include section-info.html
-            content="A palavra samba é frequentemente buscada em conjunto com outras. O Google lista os 10 termos que mais aparecem. Aqui, a associação ao carnaval nos moldes do Rio de Janeiro fica explícita com escola de samba em primeiro lugar."
+            content_pt="A palavra samba é frequentemente buscada em conjunto com outras. O Google lista os 10 termos que mais aparecem. Aqui, a associação ao carnaval nos moldes do Rio de Janeiro fica explícita com escola de samba em primeiro lugar."
+            content_en="The word samba is often googled in conjunction with others. Google lists the top 10 terms that appear most often. Here, the association with carnival in the Rio de Janeiro tradition is explicit with “samba school” in first place."
           %}
         </h3>
         <div class="section__content">

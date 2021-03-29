@@ -2,14 +2,27 @@
   <div class="container-fluid">
     <div class="row justify-content-center section__row">
       <div class="col-12">
-        <h2 class="section__title text-center">"É por isso que eu vivo no clube do samba"</h2>
+        <h2 class="section__title text-center">
+          {% if page.lang == "pt" %}
+            "É por isso que eu vivo no clube do samba"
+          {% elsif page.lang == "en" %}
+            &quot;That is why I live in samba’s club&quot;
+          {% endif %}
+        </h2>
       </div>
       <div class="col-12 col-lg-8">
         <div class="section__description text-center">
-          <p>Como não era possível analisar todos os sambas já feitos, o universo tem suas limitações. Aqui você saberá um pouco mais sobre de onde os dados vieram antes de descobrir onde eles chegaram.</p>
+          <p>
+            {% if page.lang == "pt" %}
+              Como não era possível analisar todos os sambas já feitos, o universo tem suas limitações. Aqui você saberá um pouco mais sobre de onde os dados vieram antes de descobrir onde eles chegaram.
+            {% elsif page.lang == "en" %}
+              We recognize some limitations in the data’s universe. Here, you will have more information about where the data came from before finding out where it leads.
+            {% endif %}
+          </p>
           {% include section-info.html
             html="true"
-            content="Para criar o universo a ser analisado, partimos da <a data-href='https://pt.wikipedia.org/wiki/Categoria:Sambistas' href='https://pt.wikipedia.org/wiki/Categoria:Sambistas' target='_blank'>lista de artistas do samba da Wikipédia</a>. Ela foi corrigida manualmente de forma pontual com a inclusão de um ou outro nome. Depois disso, todas as músicas listadas na página desse artista no letras.mus foram baixadas e corrigidas. Além disso, verbos foram transformados para a sua versão no infinitivo. Mesmo com todo o nosso esforço, o universo final continua com problemas: a maior parte dos artistas são do RJ e são homens. Sabemos que a contribuição de mulheres e de pessoas de fora do Rio de Janeiro foram e continuam sendo essenciais para o samba. O principal fator que definiu a lista final foi a quantidade de letras disponíveis do artista. Por conta disso, alguns/algumas sambistas que admiramos acabaram ficando de fora."
+            content_pt="Para criar o universo a ser analisado, partimos da <a data-href='https://pt.wikipedia.org/wiki/Categoria:Sambistas' href='https://pt.wikipedia.org/wiki/Categoria:Sambistas' target='_blank'>lista de artistas do samba da Wikipédia</a>. Ela foi corrigida manualmente de forma pontual com a inclusão de um ou outro nome. Depois disso, todas as músicas listadas na página desse artista no letras.mus foram baixadas e corrigidas. Além disso, verbos foram transformados para a sua versão no infinitivo. Mesmo com todo o nosso esforço, o universo final continua com problemas: a maior parte dos artistas são do RJ e são homens. Sabemos que a contribuição de mulheres e de pessoas de fora do Rio de Janeiro foram e continuam sendo essenciais para o samba. O principal fator que definiu a lista final foi a quantidade de letras disponíveis do artista. Por conta disso, alguns/algumas sambistas que admiramos acabaram ficando de fora."
+            content_en="To create the universe to be analyzed, we started with the <a data-href='https://pt.wikipedia.org/wiki/Categoria:Sambistas' href='https://pt.wikipedia.org/wiki/Categoria:Sambistas' target='_blank'>list of samba artists on Wikipedia</a>. It was manually corrected by adding one name or another. After that, all songs listed on this artist&#39;s page on letras.mus were downloaded and corrected. Also, verbs were transformed to their infinitive version. Even with all our efforts, the final universe still has problems: most of the artists are from Rio de Janeiro and are men. We know that the contribution of women and people from outside Rio de Janeiro were and still are essential for samba. The main factor that defined the final list was the number of lyrics available from the artist. Because of this, some sambistas that we admire ended up being left out."
           %}
         </div>
       </div>
@@ -18,20 +31,46 @@
           <div class="row">
             <div class="col-12 col-lg-4">
               <div class="data-highlight">
-                <p class="data-highlight__main">199</p>
-                <p class="data-highlight__aux">artistas analisados</p>
+                <p class="data-highlight__main">
+                  199
+                </p>
+                <p class="data-highlight__aux">
+                  {% if page.lang == "pt" %}
+                    artistas analisados
+                  {% elsif page.lang == "en" %}
+                    analyzed artists
+                  {% endif %}
+                </p>
               </div>
             </div>
             <div class="col-12 col-lg-4">
               <div class="data-highlight">
                 <p class="data-highlight__main">14.693</p>
-                <p class="data-highlight__aux">músicas analisadas</p>
+                <p class="data-highlight__aux">
+                  {% if page.lang == "pt" %}
+                    músicas analisadas
+                  {% elsif page.lang == "en" %}
+                    analyzed songs
+                  {% endif %}
+                </p>
               </div>
             </div>
             <div class="col-12 col-lg-4">
               <div class="data-highlight">
-                <p class="data-highlight__main">1,8 milhão</p>
-                <p class="data-highlight__aux">de palavras</p>
+                <p class="data-highlight__main">
+                  {% if page.lang == "pt" %}
+                    1,8 milhão
+                  {% elsif page.lang == "en" %}
+                    1,8 million
+                  {% endif %}
+                </p>
+                <p class="data-highlight__aux">
+                  {% if page.lang == "pt" %}
+                    de palavras
+                  {% elsif page.lang == "en" %}
+                    terms
+                  {% endif %}
+                </p>
               </div>
             </div>
           </div>
@@ -41,33 +80,64 @@
     <div class="row section__row">
       <div class="col-12 col-lg-4">
         <h3 class="section__subtitle text-center">
-          Década de nascimento <br><span class="fw-light small">(excluindo grupos de samba)</span>
+          {% if page.lang == "pt" %}
+            Década de nascimento <br><span class="fw-light small">(excluindo grupos de samba)</span>
+          {% elsif page.lang == "en" %}
+            Birth decade <br><span class="fw-light small">(does not include groups)</span>
+          {% endif %}
         </h3>
         <div class="section__content">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/4253705">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/4253705">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/5414149">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-12 col-lg-4">
         <h3 class="section__subtitle text-center">
-          Sexo
-          <br><br>
+          {% if page.lang == "pt" %}
+            Sexo
+            <br><br>
+          {% elsif page.lang == "en" %}
+            Gender
+            <br><br>
+          {% endif %}
         </h3>
         <div class="section__content">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/4253788" style="padding-left: 48px; padding-right: 48px;">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/4253788" style="padding-left: 48px; padding-right: 48px;">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/5414143" style="padding-left: 48px; padding-right: 48px;">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
       <div class="col-12 col-lg-4">
         <h3 class="section__subtitle text-center">
-          Estado de nascimento <br><span class="fw-light small">(excluindo grupos de samba)</span>
+          {% if page.lang == "pt" %}
+            Estado de nascimento <br><span class="fw-light small">(excluindo grupos de samba)</span>
+          {% elsif page.lang == "en" %}
+            Place of birth <br><span class="fw-light small">(does not include groups)</span>
+          {% endif %}
         </h3>
         <div class="section__content">
-          <div class="flourish-embed flourish-chart" data-src="visualisation/4253858">
-            <script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
+          {% if page.lang == "pt" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/4253858">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% elsif page.lang == "en" %}
+            <div class="flourish-embed flourish-chart" data-src="visualisation/5414166">
+              <script src="https://public.flourish.studio/resources/embed.js"></script>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

@@ -1,0 +1,270 @@
+[  {
+    "palavra" : "love",
+    "relacionadas" : [
+      {
+        "Palavra": "big",
+        "Valor": "397"
+      },
+      {
+        "Palavra": "love",
+        "Valor": "397"
+      },
+      {
+        "Palavra": "to die",
+        "Valor": "198"
+      },
+      {
+        "Palavra": "heart",
+        "Valor": "101"
+      },
+      {
+        "Palavra": "another",
+        "Valor": "97"
+      },
+      {
+        "Palavra": "to exist",
+        "Valor": "88"
+      },
+      {
+        "Palavra": "samba",
+        "Valor": "85"
+      },
+      {
+        "Palavra": "always",
+        "Valor": "79"
+      },
+      {
+        "Palavra": "true",
+        "Valor": "79"
+      },
+      {
+        "Palavra": "god",
+        "Valor": "76"
+      }
+    ]
+  },
+  {
+    "palavra" : "samba",
+    "relacionadas" : [
+      {
+        "Palavra": "samba",
+        "Valor": "253"
+      },
+      {
+        "Palavra": "circle",
+        "Valor": "188"
+      },
+      {
+        "Palavra": "to sing",
+        "Valor": "179"
+      },
+      {
+        "Palavra": "love",
+        "Valor": "81"
+      },
+      {
+        "Palavra": "school",
+        "Valor": "69"
+      },
+      {
+        "Palavra": "to dance samba",
+        "Valor": "50"
+      },
+      {
+        "Palavra": "foot",
+        "Valor": "42"
+      },
+      {
+        "Palavra": "to dance",
+        "Valor": "32"
+      },
+      {
+        "Palavra": "sand",
+        "Valor": "30"
+      },
+      {
+        "Palavra": "hot",
+        "Valor": "29"
+      }
+    ]
+  },
+  {
+    "palavra" : "woman",
+    "relacionadas" : [
+      {
+        "Palavra": "woman",
+        "Valor": "267"
+      },
+      {
+        "Palavra": "mine",
+        "Valor": "130"
+      },
+      {
+        "Palavra": "beloved",
+        "Valor": "103"
+      },
+      {
+        "Palavra": "to marry",
+        "Valor": "45"
+      },
+      {
+        "Palavra": "ugly",
+        "Valor": "37"
+      },
+      {
+        "Palavra": "pretty",
+        "Valor": "36"
+      },
+      {
+        "Palavra": "Brazilian",
+        "Valor": "31"
+      },
+      {
+        "Palavra": "man",
+        "Valor": "28"
+      },
+      {
+        "Palavra": "pretty",
+        "Valor": "25"
+      },
+      {
+        "Palavra": "name",
+        "Valor": "21"
+      }
+    ]
+  },
+  {
+    "palavra" : "man",
+    "relacionadas" : [
+      {
+        "Palavra": "goal",
+        "Valor": "44"
+      },
+      {
+        "Palavra": "alone",
+        "Valor": "41"
+      },
+      {
+        "Palavra": "woman",
+        "Valor": "29"
+      },
+      {
+        "Palavra": "happy",
+        "Valor": "29"
+      },
+      {
+        "Palavra": "to kill",
+        "Valor": "24"
+      },
+      {
+        "Palavra": "man",
+        "Valor": "15"
+      },
+      {
+        "Palavra": "life",
+        "Valor": "14"
+      },
+      {
+        "Palavra": "samba",
+        "Valor": "11"
+      },
+      {
+        "Palavra": "good",
+        "Valor": "11"
+      },
+      {
+        "Palavra": "bad",
+        "Valor": "11"
+      }
+    ]
+  },
+  {
+    "palavra" : "she",
+    "relacionadas" : [
+      {
+        "Palavra": "to pass by",
+        "Valor": "88"
+      },
+      {
+        "Palavra": "to like",
+        "Valor": "74"
+      },
+      {
+        "Palavra": "mine",
+        "Valor": "71"
+      },
+      {
+        "Palavra": "love",
+        "Valor": "64"
+      },
+      {
+        "Palavra": "to move",
+        "Valor": "58"
+      },
+      {
+        "Palavra": "day",
+        "Valor": "51"
+      },
+      {
+        "Palavra": "to go back",
+        "Valor": "50"
+      },
+      {
+        "Palavra": "to catch",
+        "Valor": "46"
+      },
+      {
+        "Palavra": "to arrive",
+        "Valor": "46"
+      },
+      {
+        "Palavra": "life",
+        "Valor": "43"
+      }
+    ]
+  },
+  {
+    "palavra" : "he",
+    "relacionadas" : [
+      {
+        "Palavra": "to let go",
+        "Valor": "61"
+      },
+      {
+        "Palavra": "love",
+        "Valor": "59"
+      },
+      {
+        "Palavra": "to pay",
+        "Valor": "53"
+      },
+      {
+        "Palavra": "yours",
+        "Valor": "36"
+      },
+      {
+        "Palavra": "woman",
+        "Valor": "30"
+      },
+      {
+        "Palavra": "to carry",
+        "Valor": "33"
+      },
+      {
+        "Palavra": "to reproduce",
+        "Valor": "30"
+      },
+      {
+        "Palavra": "heart",
+        "Valor": "31"
+      },
+      {
+        "Palavra": "samba",
+        "Valor": "22"
+      },
+      {
+        "Palavra": "god",
+        "Valor": "18"
+      }
+    ]
+  }]
