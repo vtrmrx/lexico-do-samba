@@ -1,5 +1,5 @@
 <div class="social-share">
-  <h3 class="social-share__title">Compartilhe:</h3>
+  <h3 class="social-share__title">{% if page.lang == 'en' %}Share{% else %}Compartilhe{% endif %}</h3>
   <ul class="media-list">
     <li class="media-list__item">
       <a href="https://www.facebook.com/sharer/sharer.php?u={% if page.lang == 'en' %}https://www.lexicodosamba.com.br/en{% else %}https://www.lexicodosamba.com.br/{% endif %}" data-action="" target="_blank" rel="noopener noreferrer" title="{{ site.title[page.lang] }}">
